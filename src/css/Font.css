@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('../../public/font/Pretendard-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../../public/font/Pretendard-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../../public/font/Pretendard-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../../public/font/Pretendard-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('../../public/font/Pretendard-Thin.ttf');
+}
+
+.pretendard-EB {
+    font-family: 'Pretendard-ExtraBold';
+}
+
+.pretendard-B {
+    font-family: 'Pretendard-Bold';
+}
+
+.pretendard-R {
+    font-family: 'Pretendard-Regular';
+}
+
+.pretendard-L {
+    font-family: 'Pretendard-Light';
+}
+
+.pretendard-T {
+    font-family: 'Pretendard-Thin';
+}
