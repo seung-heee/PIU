@@ -1,60 +1,28 @@
-import { useRef } from 'react';
-import { useEffect } from 'react';
-import '../../css/Home.css';
 import { useState } from 'react';
-import gsap from 'gsap';
+import '../../css/Home.css';
 const Main = () => {
-    const itemsRef = useRef(null);
-    const [clickedIndex, setClickedIndex] = useState(0);
+    const [selectedElement, setSelectedElement] = useState(0);
 
-    useEffect(() => {
-        console.log(clickedIndex);
-        console.log(itemsRef.current);
-        if (itemsRef.current) {
-            const items = itemsRef.current.querySelectorAll('.item');
+    const handleActive = (index) => {
+        setSelectedElement(index);
+    };
 
-            const expand = (item, i) => {
-                items.forEach((it, ind) => {
-                    if (i === ind) return;
-                    it.classList.remove('clicked');
-                });
-
-                if (clickedIndex === i) {
-                    setClickedIndex(null);
-                    gsap.to(item, {
-                        width: '8vw',
-                        duration: 2,
-                        ease: 'elastic(1, .6)',
-                    });
-                } else {
-                    setClickedIndex(i);
-                    item.classList.add('clicked');
-                    gsap.to(items, {
-                        width: '8vw',
-                        duration: 2,
-                        ease: 'elastic(1, .6)',
-                    });
-                    gsap.to(item, {
-                        width: '50vw',
-                        duration: 2.5,
-                        ease: 'elastic(1, .3)',
-                    });
-                }
-            };
-
-            items.forEach((item, i) => {
-                item.addEventListener('click', () => expand(item, i));
-            });
-        }
-    }, [clickedIndex]);
 
     return (
         <div className="Main section min-h-screen">
-            <div className="group " ref={itemsRef}>
-                <div className="item">first</div>
-                <div className="item">second</div>
-                <div className="item">third</div>
-                <div className="item">fourth</div>
+            <div className="slideBox flex justify-center items-center w-screen mx-auto h-screen">
+                <div className={`slideItem ${selectedElement === 0 ? "grow active" : ""}`} onClick={() => { handleActive(0) }}>
+                    <h3>Tisger1</h3>
+                </div>
+                <div className={`slideItem ${selectedElement === 1 ? "grow active" : ""}`} onClick={() => { handleActive(1) }}>
+                    <h3>Tiger2</h3>
+                </div>
+                <div className={`slideItem ${selectedElement === 2 ? "grow active" : ""}`} onClick={() => { handleActive(2) }}>
+                    <h3>Tiger3</h3>
+                </div>
+                <div className={`slideItem ${selectedElement === 3 ? "grow active" : ""}`} onClick={() => { handleActive(3) }}>
+                    <h3>Tiger4</h3>
+                </div>
             </div>
         </div>
 

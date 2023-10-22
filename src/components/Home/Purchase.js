@@ -1,6 +1,8 @@
 const Purchase = () => {
     return (
-        <div className="section min-h-screen">purchase</div>
+        <div className="section min-h-screen">
+            민서
+        </div>
     )
 }
 
