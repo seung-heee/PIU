@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { images } from '../../utils/images';
 
 const About = () => {
+    const Navigate = useNavigate();
+
     return (
         <div className="section min-h-screen">
             <div className="p-12">
@@ -22,8 +24,8 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className="text-right mt-5 text-xl">
-                        <Link to='#'>Meet Our Team</Link>
+                    <div className="text-right mt-5 text-xl" onClick={() => { Navigate(`/team`) }}>
+                        Meet Our Team
                     </div>
                 </div>
             </div>

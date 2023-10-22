@@ -1,0 +1,30 @@
+.AboutCompany img {
+    height: 600px;
+}
+
+@media screen and (max-width: 50rem) {
+    .AboutCompany {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutCompany>div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .AboutCompanyContent {
+        text-align: start;
+        padding: 10px;
+        font-size: 20px !important;
+    }
+    .AboutCompanyContent>div>p {
+        font-size: 23px;
+    }
+    .AboutCompany img {
+        height: auto;
+    }
+}
+
+.fp-watermark {
+    display: none;
+}
