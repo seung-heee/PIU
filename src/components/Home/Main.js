@@ -7,7 +7,6 @@ const Main = () => {
         setSelectedElement(index);
     };
 
-
     return (
         <div className="Main section min-h-screen">
             <div className="slideBox flex justify-center items-center w-screen mx-auto h-screen">

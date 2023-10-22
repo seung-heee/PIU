@@ -1,0 +1,5 @@
+const PATH = process.env.PUBLIC_URL;
+
+export const images = {
+    company: PATH + '/img/company.jpg',
+};

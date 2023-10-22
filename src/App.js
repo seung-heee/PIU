@@ -6,7 +6,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App pretendard-R">
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>

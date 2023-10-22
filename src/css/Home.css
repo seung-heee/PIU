@@ -1,3 +1,5 @@
+/* main */
+
 .slideItem {
     min-height: 95vh;
     width: 10%;
@@ -12,6 +14,23 @@
 .slideBox .active {
     filter: blur(0px);
 }
+
+.mainContent {
+    padding: 50px;
+}
+
+
+/* help1 */
+
+
+/* about */
+
+.AboutCompany img {
+    height: 600px;
+}
+
+
+/* 반응형 */
 
 @media screen and (max-width: 50rem) {
     .slideBox {
@@ -36,4 +55,28 @@
     .slideBox .active {
         filter: blur(0px);
     }
+    .AboutCompany {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutCompany>div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .AboutCompanyContent {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px !important;
+    }
+    .AboutCompanyContent>div>p {
+        font-size: 23px;
+    }
+    .AboutCompany img {
+        height: auto;
+    }
+}
+
+.fp-watermark {
+    display: none;
 }
