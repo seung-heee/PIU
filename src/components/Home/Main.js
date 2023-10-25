@@ -1,27 +1,17 @@
 import { useState } from 'react';
 import '../../css/Home.css';
+import Accordion from './Accordion';
 const Main = () => {
-    const [selectedElement, setSelectedElement] = useState(0);
-
-    const handleActive = (index) => {
-        setSelectedElement(index);
-    };
+    const [selected, setSelected] = useState(0);
+    const [showText, setShowText] = useState(false);
 
     return (
         <div>
             <div className="slideBox flex justify-center items-center mx-auto">
-                <div className={`slideItem ${selectedElement === 0 ? "grow active" : ""}`} onClick={() => { handleActive(0) }}>
-                    <h3>Tisger1</h3>
-                </div>
-                <div className={`slideItem ${selectedElement === 1 ? "grow active" : ""}`} onClick={() => { handleActive(1) }}>
-                    <h3>Tiger2</h3>
-                </div>
-                <div className={`slideItem ${selectedElement === 2 ? "grow active" : ""}`} onClick={() => { handleActive(2) }}>
-                    <h3>Tiger3</h3>
-                </div>
-                <div className={`slideItem ${selectedElement === 3 ? "grow active" : ""}`} onClick={() => { handleActive(3) }}>
-                    <h3>Tiger4</h3>
-                </div>
+                <Accordion level={0} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />
+                <Accordion level={1} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />
+                <Accordion level={2} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />
+                <Accordion level={3} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />
             </div>
         </div>
 
