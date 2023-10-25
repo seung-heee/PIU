@@ -8,8 +8,8 @@ const Main = () => {
     };
 
     return (
-        <div className="Main section min-h-screen">
-            <div className="slideBox flex justify-center items-center w-screen mx-auto h-screen">
+        <div>
+            <div className="slideBox flex justify-center items-center mx-auto">
                 <div className={`slideItem ${selectedElement === 0 ? "grow active" : ""}`} onClick={() => { handleActive(0) }}>
                     <h3>Tisger1</h3>
                 </div>

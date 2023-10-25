@@ -1,8 +1,48 @@
 /* main */
 
+body {
+    margin: 0;
+}
+
+
+/* 사이드메뉴바 */
+
+.full-page-controls button:nth-child(1) {
+    display: none;
+}
+
+.full-page-controls button:nth-last-child(1) {
+    display: none;
+}
+
+.full-page-controls button {
+    background-color: rgb(172, 172, 172);
+    border-radius: 10px;
+    border: 1px solid rgb(172, 172, 172);
+    width: 5px;
+    height: 15px;
+    margin: 0 5px;
+    font-size: 0px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.full-page-controls {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 40%;
+    right: 20px;
+    align-items: flex-end;
+}
+
+.full-page-controls button:disabled {
+    background-color: black;
+    border: 1px solid black;
+}
+
 .slideItem {
-    min-height: 95vh;
-    width: 10%;
     background-color: antiquewhite;
     border-radius: 20px;
     margin: 10px;
@@ -18,12 +58,6 @@
 .mainContent {
     padding: 50px;
 }
-
-
-/* help1 */
-
-
-/* about */
 
 
 /* 반응형 */

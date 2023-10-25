@@ -18,10 +18,14 @@
         font-size: 20px !important;
     }
     .AboutCompanyContent>div>p {
-        font-size: 23px;
+        font-size: 1.5rem;
     }
     .AboutCompany img {
         height: auto;
+        margin: 0 auto;
+    }
+    .PIUTEXT {
+        font-size: 3rem !important;
     }
 }
 

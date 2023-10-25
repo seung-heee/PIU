@@ -1,6 +1,6 @@
 const Metaverse = () => {
     return (
-        <div>메타버슥</div>
+        <div>메타버스</div>
     )
 }
 

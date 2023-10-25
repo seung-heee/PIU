@@ -1,32 +1,41 @@
-import { useEffect } from 'react';
+import { FullPage, Slide } from 'react-full-page';
 import About from '../components/Home/About';
 import Help1 from '../components/Home/Help1';
 import Help2 from '../components/Home/Help2';
 import Help3 from '../components/Home/Help3';
 import Main from '../components/Home/Main';
 import Purchase from '../components/Home/Purchase';
-import fullpage from 'fullpage.js';
 import Nav from '../components/Nav';
+import Purchase2 from '../components/Home/Purchase2';
 
 const Home = () => {
-    useEffect(() => {
-        new fullpage('#fullpage', {
-            autoScrolling: true,
-            scrollHorizontally: false,
-            anchors: ['nav', 'main', 'help1', 'help2', 'help3', 'purchase', 'about']
-        });
-    }, []);
-
     return (
-        <div id="fullpage">
-            <Nav />
-            <Main />
-            <Help1 />
-            <Help2 />
-            <Help3 />
-            <Purchase />
-            <About />
-        </div>
+        <FullPage controls controlProps={{ className: 'slide-navigation' }}>
+            <Slide>
+                <div className="w-full h-full">
+                    <Nav />
+                    <Main />
+                </div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><Help1 /></div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><Help2 /></div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><Help3 /></div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><Purchase /></div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><Purchase2 /></div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><About /></div>
+            </Slide>
+        </FullPage>
     )
 }
 
