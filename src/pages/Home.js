@@ -3,6 +3,7 @@ import About from '../components/Home/About';
 import Help1 from '../components/Home/Help1';
 import Help2 from '../components/Home/Help2';
 import Help3 from '../components/Home/Help3';
+import Help4 from '../components/Home/Help4';
 import Main from '../components/Home/Main';
 import Purchase from '../components/Home/Purchase';
 import Nav from '../components/Nav';
@@ -25,6 +26,9 @@ const Home = () => {
             </Slide>
             <Slide>
                 <div className="w-full h-full"><Help3 /></div>
+            </Slide>
+            <Slide>
+                <div className="w-full h-full"><Help4 /></div>
             </Slide>
             <Slide>
                 <div className="w-full h-full"><Purchase /></div>

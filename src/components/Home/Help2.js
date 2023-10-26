@@ -1,6 +1,6 @@
 const Help2 = () => {
     return (
-        <div className="section min-h-screen">help2</div>
+        <div className="min-h-screen">help2</div>
     )
 }
 
