@@ -7,7 +7,7 @@ const Main = () => {
 
     return (
         <div>
-            <div className="slideBox flex justify-center items-center mx-auto">
+            <div className="slideBox flex justify-center items-center mx-auto container">
                 <Accordion level={0} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />
                 <Accordion level={1} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />
                 <Accordion level={2} selected={selected} setSelected={setSelected} showText={showText} setShowText={setShowText} />

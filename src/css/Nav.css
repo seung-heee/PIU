@@ -1,13 +1,13 @@
 .Nav {
     height: 8%;
-    background-color: rgb(10, 31, 56);
-    color: white;
+    color: rgb(10, 31, 56);
+    background-color: white;
 }
 
 .RunningPIU {
-    background-color: white;
-    padding: 8px 15px;
-    color: #0b1f38;
-    border-radius: 10px;
+    background-color: rgb(10, 31, 56);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px 20px;
     font-weight: bold;
 }

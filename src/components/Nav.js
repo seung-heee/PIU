@@ -3,8 +3,8 @@ import { images } from '../utils/images';
 
 const Nav = () => {
     return (
-        <div className="Nav mb-6">
-            <ul className='flex justify-evenly items-center h-full'>
+        <div className="Nav mb-3 flex justify-center pretendard-B text-lg">
+            <ul className='container flex justify-evenly items-center h-full '>
                 <li><img src={images.Logo} alt="Logo" className='w-10' /></li>
                 <li>캠페인 소개</li>
                 <li>기업 소개</li>

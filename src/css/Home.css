@@ -22,11 +22,11 @@ body::-webkit-scrollbar {
 }
 
 .full-page-controls button {
-    background-color: rgb(172, 172, 172);
+    background-color: white;
     border-radius: 10px;
-    border: 1px solid rgb(172, 172, 172);
+    border: 1px solid #0A1F38;
     width: 10px;
-    height: 18px;
+    height: 10px;
     font-size: 0px;
     cursor: pointer;
     margin: 5px;
@@ -36,8 +36,8 @@ body::-webkit-scrollbar {
 /* 사이드 활성화 페이지 */
 
 .full-page-controls button:disabled {
-    background-color: black;
-    border: 1px solid black;
+    background-color: #0A1F38;
+    border: 1px solid #0A1F38;
 }
 
 .full-page-controls button:nth-child(1) {
@@ -52,8 +52,9 @@ body::-webkit-scrollbar {
 /* help3 */
 
 .Help3 {
-    background-color: rgb(10, 31, 56);
+    background-color: #A8DEEA;
     color: white;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .Help3Title {
@@ -65,30 +66,46 @@ body::-webkit-scrollbar {
     border: 4px solid white;
     text-align: center;
     border-radius: 15px;
+    width: 500px;
 }
 
+
+/* help4 */
+
 .grid1 {
-    background-image: url('../../public/img/kuma6.jpg');
-    background-position: center;
-    background-size: contain;
+    background-image: url('../../public/img/main4.jpg');
 }
 
 .grid2 {
-    background-image: url('../../public/img/kuma7.jpg');
-    background-position: center;
-    background-size: contain;
+    background-image: url('../../public/img/griddog.jpg');
 }
 
 .grid3 {
-    background-image: url('../../public/img/kuma8.jpg');
-    background-position: center;
-    background-size: contain;
+    background-image: url('../../public/img/main1.jpg');
 }
 
 .grid4 {
-    background-image: url('../../public/img/kuma9.jpg');
-    background-position: center;
-    background-size: contain;
+    background-image: url('../../public/img/main3.jpg');
+}
+
+.gridItem {
+    backdrop-filter: brightness(100%);
+}
+
+.gridItem:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+.gridItem:hover p {
+    visibility: visible;
+    text-align: center;
 }
 
 
