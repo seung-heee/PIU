@@ -14,7 +14,6 @@ body::-webkit-scrollbar {
     position: fixed;
     display: flex;
     flex-direction: column;
-    width: 100%;
     bottom: 40%;
     right: 80px;
     align-items: flex-end;
@@ -73,19 +72,19 @@ body::-webkit-scrollbar {
 /* help4 */
 
 .grid1 {
-    background-image: url('../../public/img/main4.jpg');
+    background-image: url('../../public/img/main5.jpg');
 }
 
 .grid2 {
-    background-image: url('../../public/img/griddog.jpg');
+    background-image: url('../../public/img/main8.jpg');
 }
 
 .grid3 {
-    background-image: url('../../public/img/main1.jpg');
+    background-image: url('../../public/img/main7.jpg');
 }
 
 .grid4 {
-    background-image: url('../../public/img/main3.jpg');
+    background-image: url('../../public/img/main6.jpg');
 }
 
 .gridItem {

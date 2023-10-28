@@ -1,33 +1,19 @@
-.AboutCompany img {
-    height: 600px;
+.AboutTitle {
+    font-size: 100px;
 }
 
-@media screen and (max-width: 50rem) {
-    .AboutCompany {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .AboutCompany>div {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .AboutCompanyContent {
-        text-align: start;
-        padding: 10px;
-        font-size: 20px !important;
-    }
-    .AboutCompanyContent>div>p {
-        font-size: 1.5rem;
-    }
-    .AboutCompany img {
-        height: auto;
-        margin: 0 auto;
-    }
-    .PIUTEXT {
-        font-size: 3rem !important;
-    }
+.About {
+    background-color: #f3f7f8;
 }
+
+.person img {
+    width: 160px;
+    height: 160px;
+    background-color: #d2d2d2;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 50rem) {}
 
 .fp-watermark {
     display: none;
