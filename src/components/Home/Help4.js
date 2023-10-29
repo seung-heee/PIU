@@ -1,9 +1,5 @@
-import { useState } from 'react';
 import '../../css/Home.css';
-import { images } from '../../utils/images';
 const Help4 = () => {
-    const [active, setActive] = useState(0);
-
     return (
         <div className="help4">
             <div className="help4Box grid grid-cols-2 min-h-screen text-white text-3xl pretendard-B">

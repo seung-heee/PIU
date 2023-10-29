@@ -19,9 +19,9 @@ const About = () => {
                 </div>
                 <div className="mt-5 mb-5 text-2xl w-10/12">PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유vPIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.기견들을 지키기 위해 최선을 다합니다. PIU는 유기견들을 지키기 위해 최선을 다합니다 PIU는 유기견들을 지키기 위해 최선을 다합니다 </div>
                 <div className="flex text-4xl mb-10">
-                    <Link to='#'><ImYoutube className="mx-2" /></Link>
-                    <Link to='#'><AiFillInstagram className="mx-2" /></Link>
-                    <Link to='#'><RiKakaoTalkFill className="mx-2" /></Link>
+                    <Link to='https://www.youtube.com/@piu_official675' target="_blank"><ImYoutube className="mx-2" /></Link>
+                    <Link to='#' target="_blank"><AiFillInstagram className="mx-2" /></Link>
+                    <Link to='#' target="_blank"><RiKakaoTalkFill className="mx-2" /></Link>
                 </div>
                 <div className="h-32 my-10">후원기업</div>
                 <hr className="my-5" />

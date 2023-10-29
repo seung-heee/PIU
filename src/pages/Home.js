@@ -39,7 +39,7 @@ const Home = () => {
             <Slide>
                 <div className="w-full h-full"><About /></div>
             </Slide>
-        </FullPage>
+        </FullPage >
     )
 }
 

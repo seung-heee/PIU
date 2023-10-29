@@ -1,0 +1,97 @@
+[{
+        "id": 1,
+        "image": "seunghee",
+        "name": "김현준",
+        "department": "산업경영공학과 17",
+        "role": "Front-End",
+        "position": "WEB"
+    },
+    {
+        "id": 2,
+        "image": "seunghee",
+        "name": "주영민",
+        "department": "미디어소프트웨어학과 17",
+        "role": "Front-End",
+        "position": "WEB"
+    },
+    {
+        "id": 3,
+        "image": "seunghee",
+        "name": "노승희",
+        "department": "미디어소프트웨어학과 20",
+        "role": "Front-End",
+        "position": "WEB"
+    },
+    {
+        "id": 4,
+        "image": "seunghee",
+        "name": "천민우",
+        "department": "컴퓨터공학과 18",
+        "role": "Back-End",
+        "position": "WEB"
+    },
+    {
+        "id": 5,
+        "image": "seunghee",
+        "name": "정택원",
+        "department": "컴퓨터공학과 19",
+        "role": "Back-End",
+        "position": "METAVERSE"
+    },
+    {
+        "id": 6,
+        "image": "seunghee",
+        "name": "남민지",
+        "department": "컴퓨터공학과 21",
+        "role": "Back-End",
+        "position": "METAVERSE"
+    },
+    {
+        "id": 7,
+        "image": "seunghee",
+        "name": "서민주",
+        "department": "관광개발학과 22",
+        "role": "웹디자인",
+        "position": "METAVERSE"
+    },
+    {
+        "id": 8,
+        "image": "seunghee",
+        "name": "백지예",
+        "department": "도시디자인정보공학과 22",
+        "role": "영상촬영 및 편집",
+        "position": "METAVERSE"
+    },
+    {
+        "id": 9,
+        "image": "seunghee",
+        "name": "박주혁",
+        "department": "중어중문학과 17",
+        "role": "기획총괄 및 검수",
+        "position": "MODELING"
+    },
+    {
+        "id": 10,
+        "image": "seunghee",
+        "name": "홍다빈",
+        "department": "경영학과 21",
+        "role": "검수",
+        "position": "MODELING"
+    },
+    {
+        "id": 11,
+        "image": "seunghee",
+        "name": "정구민",
+        "department": "국어국문학과 22",
+        "role": "영상 촬영",
+        "position": "MODELING"
+    },
+    {
+        "id": 12,
+        "image": "seunghee",
+        "name": "성민정",
+        "department": "연극영화학부 20",
+        "role": "검수",
+        "position": "MODELING"
+    }
+]

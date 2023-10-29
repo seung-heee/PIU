@@ -6,5 +6,6 @@ export const images = {
     Logo: PATH + '/img/Logo.png',
     dogpng: PATH + '/img/dogpng.png',
     kuma4: PATH + '/img/kuma4.jpg',
-    main5: PATH + '/img/main5.jpg'
+    main5: PATH + '/img/main5.jpg',
+    seunghee: PATH + '/img/person/seunghee.png'
 };
