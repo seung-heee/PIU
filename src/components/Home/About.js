@@ -5,7 +5,7 @@ import { ImYoutube } from "react-icons/im";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { BsDot } from "react-icons/bs";
 import { PiArrowFatLineRightBold } from "react-icons/pi";
-import SponsoringCompany from "../about/SponsoringCompany";
+import SponsoringCompany from "../about/SponsoringCompany.js";
 
 const About = () => {
     const Navigate = useNavigate();
@@ -25,7 +25,7 @@ const About = () => {
                     <Link to='#' target="_blank"><AiFillInstagram className="mx-2" /></Link>
                     <Link to='#' target="_blank"><RiKakaoTalkFill className="mx-2" /></Link>
                 </div>
-                <div className="h-32 my-10">
+                <div>
                     <SponsoringCompany />
                 </div>
                 <hr className="my-5" />

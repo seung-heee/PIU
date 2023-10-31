@@ -1,11 +1,10 @@
 .Nav {
-    height: 8%;
-    color: rgb(10, 31, 56);
-    background-color: white;
+    height: 10%;
+    color: black;
 }
 
 .RunningPIU {
-    background-color: rgb(10, 31, 56);
+    background-image: linear-gradient(252deg, #f6136e, #b620e0 49%, #8533ff);
     padding: 10px 20px;
     color: white;
     border-radius: 8px 20px;

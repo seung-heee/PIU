@@ -3,7 +3,7 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 const Help3 = () => {
     return (
-        <div className="Help3 min-h-screen max-h-screen flex justify-center">
+        <div className="Help3 min-h-screen max-h-screen flex justify-center ">
             <div className='container flex'>
                 <div className='flex flex-col justify-center'>
                     <div className=' Help3Title pretendard-EB text-5xl px-16 pt-16 pb-5'>"가상 동반자를 현실로"<br />

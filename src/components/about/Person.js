@@ -12,7 +12,6 @@ const Person = ({ id }) => {
                         <div className='flex flex-col justify-center items-center mt-2'>
                             <p>{person.name}</p>
                             <p>{person.department}</p>
-                            <p>{person.role}</p>
                         </div>
                     </>
                 )

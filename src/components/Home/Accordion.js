@@ -1,4 +1,5 @@
 import '../../css/Accordion.css';
+import '../../css/media.css';
 
 const Accordion = ({ level, selected, setSelected, showText, setShowText }) => {
     const handleActive = (index) => {
@@ -20,7 +21,7 @@ const Accordion = ({ level, selected, setSelected, showText, setShowText }) => {
     ]
 
     return (
-        <div className={`slideItem slideItem${level} ${selected === level ? "active grow" : ""}`} onClick={() => { handleActive(level) }}>
+        <div className={`w-1/12 slideItem slideItem${level} ${selected === level ? "active grow" : ""}`} onClick={() => { handleActive(level) }}>
             {showText &&
                 <>
                     <div>

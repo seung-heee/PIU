@@ -15,13 +15,19 @@ module.exports = {
           '0%': {
             transform: 'translateX(0px)'
           },
+          '50%': {
+            transform: 'translateX(-1280px)'
+          },
+          '50.1%': {
+            transform: 'translateX(1280px)'
+          },
           '100%': {
-            transform: 'translateX(-1400px)'
+            transform: 'translateX(0px)'
           },
         },
       },
       animation: {
-        slider: 'slider 10s linear infinite'
+        slider: 'slider 20s linear infinite'
       }
     },
   },

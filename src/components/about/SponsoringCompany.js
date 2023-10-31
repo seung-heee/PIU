@@ -1,26 +1,19 @@
+import { useState } from "react";
+import '../../css/About.css';
 import { images } from '../../utils/images';
+import Company from '../../utils/Company.json';
 
 const SponsoringCompany = () => {
+    const [animate, setAnimate] = useState(true);
+    const onStop = () => setAnimate(false);
+    const onRun = () => setAnimate(true);
+
     return (
-        <div className='container mainSkill pb-16 relative'>
-            <div className='flex flex-row mb-10 absolute animate-slider'>
-                <img src={images.kuma4} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.seunghee} alt="" className='w-28' />
-                <img src={images.seunghee} alt="" className='w-28' />
-                <img src={images.seunghee} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.main5} alt="" className='w-28' />
-                <img src={images.seunghee} alt="" className='w-28' />
-                <img src={images.seunghee} alt="" className='w-28' />
-                <img src={images.seunghee} alt="" className='w-28' />
-            </div>
+        <div className="wrapper">
+            <div className="">후원기업</div>
+
         </div>
-    )
+    );
 }
 
-export default SponsoringCompany
+export default SponsoringCompany;

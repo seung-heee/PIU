@@ -15,7 +15,7 @@ const Team = () => {
             </Link>
             <div className='flex flex-col items-center justify-center min-h-screen'>
                 <div className='flex justify-end items-center w-10/12'>
-                    <div className='pretendard-EB text-5xl w-1/4 text-center'>METAVERSE</div>
+                    <div className='pretendard-EB text-4xl w-1/4 text-center'>METAVERSE</div>
                     <div className='people flex grow justify-center w-3/4'>
                         {metaverse.map((person) => {
                             return (
@@ -25,7 +25,7 @@ const Team = () => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center w-10/12'>
-                    <div className='pretendard-EB text-5xl w-1/4 text-center'>3D MODELING</div>
+                    <div className='pretendard-EB text-4xl w-1/4 text-center'>3D MODELING</div>
                     <div className='people flex grow justify-center w-3/4'>
                         {modeling.map((person) => {
                             return (
@@ -35,7 +35,7 @@ const Team = () => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center w-10/12'>
-                    <div className='pretendard-EB text-5xl w-1/4 text-center'>WEB</div>
+                    <div className='pretendard-EB text-4xl w-1/4 text-center'>WEB</div>
                     <div className='people flex grow justify-center w-3/4'>
                         {web.map((person) => {
                             return (

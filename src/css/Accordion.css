@@ -3,7 +3,6 @@
 .slideItem {
     overflow: hidden;
     height: 85vh;
-    width: 200px;
     border-radius: 20px;
     margin: 12px;
     cursor: pointer;
@@ -16,7 +15,7 @@
 }
 
 .slideItem0 {
-    background-image: url('../../public/img/main1.jpg');
+    background-image: url('../../public/img/meta1.png');
     background-position: center;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .slideItem1 {
-    background-image: url('../../public/img/main2.jpg');
+    background-image: url('../../public/img/meta2.png');
     background-position: center;
 }
 
@@ -36,7 +35,7 @@
 }
 
 .slideItem2 {
-    background-image: url('../../public/img/main3.jpg');
+    background-image: url('../../public/img/meta3.png');
     background-position: center;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -48,7 +47,7 @@
 }
 
 .slideItem3 {
-    background-image: url('../../public/img/main4.jpg');
+    background-image: url('../../public/img/meta4.png');
     background-position: center;
 }
 

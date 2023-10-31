@@ -11,35 +11,37 @@ import Purchase2 from '../components/Home/Purchase2';
 
 const Home = () => {
     return (
-        <FullPage controls controlProps={{ className: 'slide-navigation' }}>
-            <Slide>
-                <div className="w-full h-full">
-                    <Nav />
-                    <Main />
-                </div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><Help1 /></div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><Help2 /></div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><Help3 /></div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><Help4 /></div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><Purchase /></div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><Purchase2 /></div>
-            </Slide>
-            <Slide>
-                <div className="w-full h-full"><About /></div>
-            </Slide>
-        </FullPage >
+        <>
+            <FullPage controls controlProps={{ className: 'slide-navigation' }}>
+                <Slide>
+                    <div className="w-full h-full">
+                        <Nav />
+                        <Main />
+                    </div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Help1 /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Help2 /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Help3 /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Help4 /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Purchase /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Purchase2 /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><About /></div>
+                </Slide>
+            </FullPage >
+        </>
     )
 }
 

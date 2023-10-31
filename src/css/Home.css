@@ -16,12 +16,12 @@ body::-webkit-scrollbar {
     flex-direction: column;
     bottom: 40%;
     right: 80px;
-    align-items: flex-end;
+    align-items: center;
     z-index: 1;
 }
 
 .full-page-controls button {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     border: 1px solid #0A1F38;
     width: 10px;
@@ -35,8 +35,10 @@ body::-webkit-scrollbar {
 /* 사이드 활성화 페이지 */
 
 .full-page-controls button:disabled {
-    background-color: #0A1F38;
+    background-color: #fff;
     border: 1px solid #0A1F38;
+    width: 14px;
+    height: 14px;
 }
 
 .full-page-controls button:nth-child(1) {
@@ -51,8 +53,7 @@ body::-webkit-scrollbar {
 /* help3 */
 
 .Help3 {
-    background-color: #A8DEEA;
-    color: white;
+    background-color: white;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -62,7 +63,7 @@ body::-webkit-scrollbar {
 }
 
 .help3Btn {
-    border: 4px solid white;
+    border: 4px solid black;
     text-align: center;
     border-radius: 15px;
     width: 500px;
@@ -117,30 +118,24 @@ body::-webkit-scrollbar {
 }
 
 
-/* 반응형 */
+/* 반응형 
 
 @media screen and (max-width: 50rem) {
     .slideBox {
         display: flex;
-        height: 75vh;
+        height: 10%;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        justify-content: center;
-        align-items: center;
     }
     .slideItem {
         min-height: 8vh;
         min-width: 80%;
-        background-color: antiquewhite;
         border-radius: 20px;
         margin: 10px;
         cursor: pointer;
         transition: all 0.7s ease-in-out;
         filter: blur(2px);
-    }
-    .slideBox .active {
-        filter: blur(0px);
     }
     .AboutCompany {
         flex-direction: column;
@@ -166,4 +161,4 @@ body::-webkit-scrollbar {
 
 .fp-watermark {
     display: none;
-}
+}*/
