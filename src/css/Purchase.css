@@ -1,10 +1,30 @@
 .Aboutgift {
     font-size: 3.5rem;
-    line-height: 1;
+    line-height: 1.1;
 }
 .Aboutgiftcontent{
     font-size: 1.2rem;
 }
-.button1{
-    margin-top: -100px;
+@media screen and (max-width:50rem){
+    .Aboutgift{
+        font-size: 1.8rem;
+        text-align:center;
+        padding-bottom:20px !important;
+    }
+    .Aboutgiftcontent{
+        font-size: 0.85rem;
+        text-align:center;
+    }
+    .gift{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .giftimg{
+        width: 60%;
+    }
+    .button1 button{
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
 }
