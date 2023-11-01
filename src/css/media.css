@@ -32,6 +32,39 @@
         .ul div:last-child {
             display: none;
         }
+        /* help3 */
+        .Help3Title {
+            font-size: 40px;
+            line-height: 45px;
+            padding: 0;
+        }
+        .help3SecondSection {
+            flex-direction: column-reverse;
+            width: 100vw;
+        }
+        .help3SecondSection div {
+            padding: 0;
+            width: 70vw;
+            white-space: normal;
+        }
+        .help3SecondSection div p:first-child {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        .help3Btn {
+            width: 80%;
+            font-size: 25px;
+        }
+        .help3arrowbtn {
+            width: 60px;
+            height: 60px;
+        }
+        .Help3Sub {
+            margin-top: 10px;
+        }
+        .Help3>div>div {
+            text-align: center;
+        }
     }
     
     @media (max-width: 639px) {
@@ -70,5 +103,38 @@
         }
         .ul div:first-child {
             display: none;
+        }
+        /* help3 */
+        .Help3Title {
+            font-size: 30px;
+            line-height: 35px;
+            padding: 0;
+        }
+        .help3SecondSection {
+            flex-direction: column-reverse;
+            width: 100vw;
+        }
+        .help3SecondSection div {
+            padding: 0;
+            width: 70vw;
+            white-space: normal;
+        }
+        .help3SecondSection div p:first-child {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        .help3Btn {
+            width: 100%;
+            font-size: 23px;
+        }
+        .help3arrowbtn {
+            width: 50px;
+            height: 50px;
+        }
+        .Help3Sub {
+            margin-top: 10px;
+        }
+        .Help3>div>div {
+            text-align: center;
         }
     }
