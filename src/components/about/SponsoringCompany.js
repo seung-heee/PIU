@@ -4,14 +4,10 @@ import { images } from '../../utils/images';
 import Company from '../../utils/Company.json';
 
 const SponsoringCompany = () => {
-    const [animate, setAnimate] = useState(true);
-    const onStop = () => setAnimate(false);
-    const onRun = () => setAnimate(true);
 
     return (
-        <div className="wrapper">
+        <div className="SponsoringCompany">
             <div className="">후원기업</div>
-
         </div>
     );
 }

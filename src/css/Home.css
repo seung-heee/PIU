@@ -121,6 +121,10 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+.SponsoringCompany {
+    height: 150px;
+}
+
 
 /* 반응형 
 

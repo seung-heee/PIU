@@ -3,28 +3,7 @@
         "image": "편진범",
         "name": "편진범",
         "department": "미디어소프트웨어학과 18",
-        "position": "METAVERSE"
-    },
-    {
-        "id": 2,
-        "image": "한성진",
-        "name": "한성진",
-        "department": "미디어소프트웨어학과 19",
-        "position": "METAVERSE"
-    },
-    {
-        "id": 3,
-        "image": "장민제",
-        "name": "장민제",
-        "department": "미디어소프트웨어학과 19",
-        "position": "METAVERSE"
-    },
-    {
-        "id": 4,
-        "image": "김지우",
-        "name": "김지우",
-        "department": "미디어소프트웨어학과 18",
-        "position": "WEB"
+        "position": "프로젝트 총괄"
     },
     {
         "id": 5,
@@ -41,12 +20,27 @@
         "position": "METAVERSE"
     },
     {
-        "id": 7,
-        "image": "조성민",
-        "name": "조성민",
-        "department": "미디어소프트웨어학과 20",
-        "position": "MODELING"
+        "id": 4,
+        "image": "김지우",
+        "name": "김지우",
+        "department": "미디어소프트웨어학과 18",
+        "position": "WEB"
     },
+    {
+        "id": 2,
+        "image": "한성진",
+        "name": "한성진",
+        "department": "미디어소프트웨어학과 19",
+        "position": "METAVERSE"
+    },
+    {
+        "id": 3,
+        "image": "장민제",
+        "name": "장민제",
+        "department": "미디어소프트웨어학과 19",
+        "position": "METAVERSE"
+    },
+
     {
         "id": 8,
         "image": "오시율",
@@ -55,12 +49,14 @@
         "position": "MODELING"
     },
     {
-        "id": 9,
-        "image": "김경진",
-        "name": "김경진",
-        "department": "미디어소프트웨어학과 22",
-        "position": "MODELING"
+        "id": 14,
+        "image": "김민지",
+        "name": "김민지",
+        "department": "미디어소프트웨어학과 20",
+        "position": "METAVERSE"
     },
+
+
     {
         "id": 10,
         "image": "노승희",
@@ -69,11 +65,11 @@
         "position": "WEB"
     },
     {
-        "id": 11,
-        "image": "노주희",
-        "name": "노주희",
-        "department": "미디어소프트웨어학과 22",
-        "position": "WEB"
+        "id": 7,
+        "image": "조성민",
+        "name": "조성민",
+        "department": "미디어소프트웨어학과 20",
+        "position": "MODELING"
     },
     {
         "id": 12,
@@ -83,17 +79,24 @@
         "position": "WEB"
     },
     {
+        "id": 9,
+        "image": "김경진",
+        "name": "김경진",
+        "department": "미디어소프트웨어학과 22",
+        "position": "MODELING"
+    },
+    {
+        "id": 11,
+        "image": "노주희",
+        "name": "노주희",
+        "department": "미디어소프트웨어학과 22",
+        "position": "WEB"
+    },
+    {
         "id": 13,
         "image": "신민서",
         "name": "신민서",
         "department": "미디어소프트웨어학과 22",
         "position": "WEB"
-    },
-    {
-        "id": 14,
-        "image": "김민지",
-        "name": "김민지",
-        "department": "미디어소프트웨어학과 20",
-        "position": "METAVERSE"
     }
 ]

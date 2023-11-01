@@ -14,12 +14,12 @@ const About = () => {
         <div className="About min-h-screen flex items-center">
             <div className="container mx-auto flex flex-col">
                 <div className="flex justify-between items-center mb-5">
-                    <div className="AboutTitle pretendard-EB">PIU <span className="text-2xl">Pet In Universe</span></div>
-                    <button className="flex items-center pretendard-B text-xl" onClick={() => { Navigate('team') }}>
+                    <div className="AboutTitle pretendard-EB">PIU <span className="text-2xl AboutSmallTitle">Pet In Universe</span></div>
+                    <button className="flex items-center pretendard-B text-xl" onClick={() => { Navigate('team2') }}>
                         PIU TEAM<PiArrowFatLineRightBold className="ml-1" />
                     </button>
                 </div>
-                <div className="mt-5 mb-5 text-2xl w-10/12">PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유vPIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.기견들을 지키기 위해 최선을 다합니다. PIU는 유기견들을 지키기 위해 최선을 다합니다 PIU는 유기견들을 지키기 위해 최선을 다합니다 </div>
+                <div className="AboutSub mt-5 mb-5 text-2xl w-10/12">PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유vPIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.기견들을 지키기 위해 최선을 다합니다. PIU는 유기견들을 지키기 위해 최선을 다합니다 PIU는 유기견들을 지키기 위해 최선을 다합니다 </div>
                 <div className="flex text-4xl mb-10">
                     <Link to='https://www.youtube.com/@piu_official675' target="_blank"><ImYoutube className="mx-2" /></Link>
                     <Link to='#' target="_blank"><AiFillInstagram className="mx-2" /></Link>
