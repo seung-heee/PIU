@@ -23,6 +23,15 @@
         .AccordionSub {
             font-size: 15px;
         }
+        .Nav {
+            width: 80%;
+            margin: 0 auto;
+            height: 10% !important;
+        }
+        /* Nav */
+        .ul div:last-child {
+            display: none;
+        }
     }
     
     @media (max-width: 639px) {
@@ -52,5 +61,14 @@
         .help4Box {
             grid-template-columns: repeat(1, minmax(0, 1fr));
             font-size: 20px;
+        }
+        /* Nav */
+        .Nav {
+            width: 80%;
+            margin: 0 auto;
+            height: 7% !important;
+        }
+        .ul div:first-child {
+            display: none;
         }
     }

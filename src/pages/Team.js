@@ -15,8 +15,8 @@ const Team = () => {
             </Link>
             <div className='flex flex-col items-center justify-center min-h-screen'>
                 <div className='flex justify-end items-center w-10/12'>
-                    <div className='pretendard-EB text-4xl w-1/4 text-center'>METAVERSE</div>
-                    <div className='people flex grow justify-center w-3/4'>
+                    <div className='pretendard-EB text-4xl w-1/5 text-center'>METAVERSE</div>
+                    <div className='people flex grow justify-center w-4/5'>
                         {metaverse.map((person) => {
                             return (
                                 <><Person id={person.id} /></>
@@ -25,8 +25,8 @@ const Team = () => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center w-10/12'>
-                    <div className='pretendard-EB text-4xl w-1/4 text-center'>3D MODELING</div>
-                    <div className='people flex grow justify-center w-3/4'>
+                    <div className='pretendard-EB text-4xl w-1/5 text-center'>3D MODELING</div>
+                    <div className='people flex grow justify-center w-4/5'>
                         {modeling.map((person) => {
                             return (
                                 <><Person id={person.id} /></>
@@ -35,8 +35,8 @@ const Team = () => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center w-10/12'>
-                    <div className='pretendard-EB text-4xl w-1/4 text-center'>WEB</div>
-                    <div className='people flex grow justify-center w-3/4'>
+                    <div className='pretendard-EB text-4xl w-1/5 text-center'>WEB</div>
+                    <div className='people flex grow justify-center w-4/5'>
                         {web.map((person) => {
                             return (
                                 <><Person id={person.id} /></>

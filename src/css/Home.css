@@ -73,19 +73,23 @@ body::-webkit-scrollbar {
 /* help4 */
 
 .grid1 {
-    background-image: url('../../public/img/main5.jpg');
+    background-image: url('../../public/img/meta1.png');
+    background-position: center;
 }
 
 .grid2 {
-    background-image: url('../../public/img/main8.jpg');
+    background-image: url('../../public/img/meta2.png');
+    background-position: center;
 }
 
 .grid3 {
-    background-image: url('../../public/img/main7.jpg');
+    background-image: url('../../public/img/meta3.png');
+    background-position: center;
 }
 
 .grid4 {
-    background-image: url('../../public/img/main6.jpg');
+    background-image: url('../../public/img/meta4.png');
+    background-position: center;
 }
 
 .gridItem {

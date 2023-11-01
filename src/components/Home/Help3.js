@@ -11,7 +11,7 @@ const Help3 = () => {
                     </div>
                     <div className='w-full flex justify-start items-center'>
                         <div className='w-1/2 pretendard-B pl-16 whitespace-nowrap'>
-                            <p className='text-4xl'>
+                            <p className='text-4xl Help3Sub'>
                                 PIU는 유기견을 지키고, 그들에게 새로운 <br />
                                 따뜻한 가족을 찾아주는데 최선을 다할 것입니다.
                             </p>
@@ -24,7 +24,7 @@ const Help3 = () => {
                             </div>
                         </div>
                         <div className='w-1/2'>
-                            <img src={images.dogpng} alt="강쥐" />
+                            <img src={images.helpDog} alt="강쥐" />
                         </div>
                     </div>
                 </div>
