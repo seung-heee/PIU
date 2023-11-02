@@ -17,6 +17,7 @@
     "react-scrollspy": "^3.4.3",
     "react-scrollspy-navigation": "^1.0.3",
     "react-ui-scrollspy": "^2.3.0",
+    "swiper": "^8.4.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

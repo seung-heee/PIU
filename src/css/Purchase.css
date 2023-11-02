@@ -1,3 +1,4 @@
+/*Purchase1*/
 .Aboutgift {
     font-size: 3.5rem;
     line-height: 1.1;
@@ -27,4 +28,70 @@
         padding: 0.8rem;
         font-size: 0.9rem;
     }
+}
+
+/*Purchase2*/
+.carousel{
+    position: relative;
+    width: calc(min(90rem, 90%));
+    margin: 0 auto;
+    min-height: 100vh;
+    column-gap: 3rem;
+    padding-block: min(20vh, 3rem);
+}
+.myswiper {
+    width: 100%;
+    padding-top: 3.125rem;
+}
+
+.myswiper-slider {
+    background-size: cover;
+    background-position: center;
+}
+.myswiper-slider div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 1;
+    height: 100%;
+}
+
+.swiper-slide-active div a {
+    align-self: flex-start;
+}
+
+.myswiper-slider h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+}
+
+.myswiper-slider p {
+    color: #dadada;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 0.75rem;
+}
+
+.myswiper-slider a {
+    margin: 1.25rem 1.5rem 3.5rem;
+}
+
+.myswiper-slider a:hover {
+    color: #00a4aa;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background: #fff;
 }
