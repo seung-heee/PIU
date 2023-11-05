@@ -32,12 +32,16 @@
 
 /*Purchase2*/
 .carousel{
+    z-index: 0;
     position: relative;
-    width: calc(min(90rem, 90%));
+    width: calc(min(60rem, 90%));
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 80vh;
     column-gap: 3rem;
-    padding-block: min(20vh, 3rem);
+    /*padding-block: min(20vh, 3rem);*/
+}
+.swiper{
+    padding: 50px 0 !important;
 }
 .myswiper {
     width: 100%;
@@ -50,8 +54,6 @@
 }
 .myswiper-slider div {
     display: none;
-    opacity: 0;
-    padding-bottom: 0.625rem;
 }
 
 .swiper-slide-active div {
@@ -62,36 +64,70 @@
     height: 100%;
 }
 
-.swiper-slide-active div a {
-    align-self: flex-start;
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+
+.swiper-pagination-bullet{
+    padding: 30px 30px;
+    border-radius: 0 !important;
+    margin: 0 5px;
+    background-size: cover !important;
 }
 
-.myswiper-slider h2 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 0.625rem;
-    padding: 0 0 0 1.563rem;
-    text-transform: uppercase;
-}
+.swiper-pagination-bullet:nth-child(1) {
+    background-image: url('../../public/img/tok.png') !important;
+  } 
+.swiper-pagination-bullet:nth-child(2) {
+    background-image: url('../../public/img/tok.png') !important;
+  }
+.swiper-pagination-bullet:nth-child(3) {
+    background-image: url('../../public/img/tok.png') !important;
+  }
+.swiper-pagination-bullet:nth-child(4) {
+    background-image: url('../../public/img/tok.png') !important;
+  }
+.swiper-pagination-bullet:nth-child(5) {
+    background-image: url('../../public/img/tok.png') !important;
+  }
 
-.myswiper-slider p {
-    color: #dadada;
-    padding: 0 1.563rem;
-    line-height: 1.6;
-    font-size: 0.75rem;
-}
-
-.myswiper-slider a {
-    margin: 1.25rem 1.5rem 3.5rem;
-}
-
-.myswiper-slider a:hover {
-    color: #00a4aa;
-}
-
-.swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
-    background: #fff;
+	border: 2px solid #00000073;
+}
+
+.swiper-button-next{
+    color:black !important;
+    background-color: #ffffffa4 !important;
+    border-radius: 40px !important;
+    width: 60px !important;
+    height: 60px !important;
+    padding-left: 10px;
+}
+.swiper-button-prev{
+    color:black !important;
+    background-color: #ffffffa4 !important;
+    border-radius: 40px !important;
+    width: 60px !important;
+    height: 60px !important;
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width:50rem){
+    .carousel{
+        width: calc(min(100rem, 100%)) !important;
+        padding-block: min(15vh, 100rem) !important;
+        margin-top: -50px;
+        margin-bottom: -60px;
+    }
+    .myswiper{
+        overflow: hidden !important;
+    }
+    .swiper-pagination-bullet{
+        padding: 20px 20px;
+    }
 }
