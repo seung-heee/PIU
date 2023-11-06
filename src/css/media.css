@@ -161,4 +161,38 @@
         .About>div>div>button {
             margin-bottom: -100px;
         }
+        /* Help2 */
+        .Help2-SwiperSlide>div {
+            flex-direction: column;
+            height: 100vh;
+        }
+        .Help2-SwiperSlide>div>img {
+            width: 95% !important;
+            height: 30vh;
+            padding: 10px 0;
+        }
+        .Help2-SwiperSlide>div>div {
+            width: 95% !important;
+            font-size: 20px;
+            padding: 10px 0;
+        }
+        /* help1 */
+        .Help1Box {
+            padding: 15px;
+        }
+        .Help1First {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .Help1-Swiper {
+            width: 90%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .Help1Last p {
+            width: 100%;
+            font-size: 1rem;
+            line-height: 1rem;
+            text-align: center;
+        }
     }

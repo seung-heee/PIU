@@ -9,19 +9,23 @@ import 'swiper/css/pagination';
 import '../../css/Help2.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { images } from '../../utils/images';
 
 const Help1 = () => {
     return (
         <>
             <div className='bg-sky-400 text-white'>
-                <div className='flex flex-col justify-center min-h-screen p-16'>
-                    <div className='pretendard-B text-5xl'>
+                <div className='Help1Box flex flex-col justify-center min-h-screen container mx-auto'>
+                    <div className='Help1First pretendard-B text-5xl'>
                         <span className='inline-block mb-1'>유기견들은 여러분의 도움과 함께</span><br />
                         새로운 가족을 찾을 수 있습니다.
                     </div>
                     <Swiper
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         effect={'coverflow'}
                         grabCursor={true}
                         centeredSlides={true}
@@ -34,7 +38,7 @@ const Help1 = () => {
                             slideShadows: true,
                         }}
                         pagination={true}
-                        modules={[EffectCoverflow, Pagination]}
+                        modules={[Autoplay, EffectCoverflow, Pagination]}
                         className="Help1-Swiper"
                     >
                         <SwiperSlide className='Help1-SwiperSlide'>
@@ -68,7 +72,7 @@ const Help1 = () => {
                             <img src={images.back1} />
                         </SwiperSlide>
                     </Swiper>
-                    <div className='pretendard-R text-2xl mt-3 flex flex-col items-end justify-end'>
+                    <div className='Help1Last pretendard-R text-2xl mt-3 flex flex-col items-end justify-end'>
                         <p className='break-keep w-6/12 text-right'>
                             "PIU 유기견 캠페인과 함께 전국 유기견들이
                             새로운 삶을 살 수 있도록 힘이 되어주세요.
