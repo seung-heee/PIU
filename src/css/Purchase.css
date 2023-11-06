@@ -1,37 +1,42 @@
 /*Purchase1*/
+
 .Aboutgift {
     font-size: 3.5rem;
     line-height: 1.1;
 }
-.Aboutgiftcontent{
+
+.Aboutgiftcontent {
     font-size: 1.2rem;
 }
-@media screen and (max-width:50rem){
-    .Aboutgift{
+
+@media screen and (max-width:50rem) {
+    .Aboutgift {
         font-size: 1.8rem;
-        text-align:center;
-        padding-bottom:20px !important;
+        text-align: center;
+        padding-bottom: 20px !important;
     }
-    .Aboutgiftcontent{
+    .Aboutgiftcontent {
         font-size: 0.85rem;
-        text-align:center;
+        text-align: center;
     }
-    .gift{
+    .gift {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .giftimg{
+    .giftimg {
         width: 60%;
     }
-    .button1 button{
+    .button1 button {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
 }
 
+
 /*Purchase2*/
-.carousel{
+
+.carousel {
     z-index: 0;
     position: relative;
     width: calc(min(60rem, 90%));
@@ -40,9 +45,11 @@
     column-gap: 3rem;
     /*padding-block: min(20vh, 3rem);*/
 }
-.swiper{
+
+.swiper {
     padding: 50px 0 !important;
 }
+
 .myswiper {
     width: 100%;
     padding-top: 3.125rem;
@@ -52,6 +59,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .myswiper-slider div {
     display: none;
 }
@@ -70,9 +78,9 @@
     background-size: cover;
     background-position: center;
     object-fit: cover;
-  }
+}
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     padding: 30px 30px;
     border-radius: 0 !important;
     margin: 0 5px;
@@ -81,34 +89,39 @@
 
 .swiper-pagination-bullet:nth-child(1) {
     background-image: url('../../public/img/tok.png') !important;
-  } 
-.swiper-pagination-bullet:nth-child(2) {
-    background-image: url('../../public/img/tok.png') !important;
-  }
-.swiper-pagination-bullet:nth-child(3) {
-    background-image: url('../../public/img/tok.png') !important;
-  }
-.swiper-pagination-bullet:nth-child(4) {
-    background-image: url('../../public/img/tok.png') !important;
-  }
-.swiper-pagination-bullet:nth-child(5) {
-    background-image: url('../../public/img/tok.png') !important;
-  }
-
-.swiper-pagination-bullet-active {
-	border: 2px solid #00000073;
 }
 
-.swiper-button-next{
-    color:black !important;
+.swiper-pagination-bullet:nth-child(2) {
+    background-image: url('../../public/img/tok.png') !important;
+}
+
+.swiper-pagination-bullet:nth-child(3) {
+    background-image: url('../../public/img/tok.png') !important;
+}
+
+.swiper-pagination-bullet:nth-child(4) {
+    background-image: url('../../public/img/tok.png') !important;
+}
+
+.swiper-pagination-bullet:nth-child(5) {
+    background-image: url('../../public/img/tok.png') !important;
+}
+
+.swiper-pagination-bullet-active {
+    border: 2px solid #00000073;
+}
+
+.swiper-button-next {
+    color: black !important;
     background-color: #ffffffa4 !important;
     border-radius: 40px !important;
     width: 60px !important;
     height: 60px !important;
     padding-left: 10px;
 }
-.swiper-button-prev{
-    color:black !important;
+
+.swiper-button-prev {
+    color: black !important;
     background-color: #ffffffa4 !important;
     border-radius: 40px !important;
     width: 60px !important;
@@ -116,18 +129,17 @@
     padding-right: 10px;
 }
 
-
-@media screen and (max-width:50rem){
-    .carousel{
+@media screen and (max-width:50rem) {
+    .carousel {
         width: calc(min(100rem, 100%)) !important;
         padding-block: min(15vh, 100rem) !important;
         margin-top: -50px;
         margin-bottom: -60px;
     }
-    .myswiper{
+    .myswiper {
         overflow: hidden !important;
     }
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
         padding: 20px 20px;
     }
 }
