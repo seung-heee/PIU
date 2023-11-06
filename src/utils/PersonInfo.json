@@ -3,42 +3,62 @@
         "image": "편진범",
         "name": "편진범",
         "department": "미디어소프트웨어학과 18",
-        "position": "프로젝트 총괄"
+        "position": "",
+        "email": "hapy1122@naver.com",
+        "role": "프로젝트 총괄"
     },
     {
-        "id": 5,
+        "id": 2,
         "image": "희은",
         "name": "선우희은",
         "department": "미디어소프트웨어학과 20",
-        "position": "MODELING"
+        "position": "MODELING",
+        "email": "hapy1122@naver.com",
+        "role": "MODELING"
     },
     {
-        "id": 6,
+        "id": 3,
         "image": "홍윤서",
         "name": "홍윤서",
         "department": "미디어소프트웨어학과 20",
-        "position": "METAVERSE"
+        "position": "METAVERSE",
+        "email": "hapy1122@naver.com",
+        "role": "METAVERSE"
     },
     {
         "id": 4,
         "image": "김지우",
         "name": "김지우",
         "department": "미디어소프트웨어학과 18",
-        "position": "WEB"
+        "position": "WEB",
+        "email": "hapy1122@naver.com",
+        "role": "Back-End / Nest.js"
     },
     {
-        "id": 2,
+        "id": 5,
+        "image": "조성민",
+        "name": "지우친구님",
+        "department": "미디어소프트웨어학과 22",
+        "position": "WEB",
+        "email": "hapy1122@naver.com",
+        "role": "Back-End / Nest.js"
+    }, {
+        "id": 6,
         "image": "한성진",
         "name": "한성진",
         "department": "미디어소프트웨어학과 19",
-        "position": "METAVERSE"
+        "position": "METAVERSE",
+        "email": "hapy1122@naver.com",
+        "role": "METAVERSE"
     },
     {
-        "id": 3,
+        "id": 7,
         "image": "장민제",
         "name": "장민제",
         "department": "미디어소프트웨어학과 19",
-        "position": "METAVERSE"
+        "position": "METAVERSE",
+        "email": "hapy1122@naver.com",
+        "role": "METAVERSE"
     },
 
     {
@@ -46,14 +66,18 @@
         "image": "오시율",
         "name": "오시율",
         "department": "미디어소프트웨어학과 20",
-        "position": "MODELING"
+        "position": "MODELING",
+        "email": "hapy1122@naver.com",
+        "role": "MODELING"
     },
     {
-        "id": 14,
+        "id": 9,
         "image": "김민지",
         "name": "김민지",
         "department": "미디어소프트웨어학과 20",
-        "position": "METAVERSE"
+        "position": "METAVERSE",
+        "email": "hapy1122@naver.com",
+        "role": "METAVERSE"
     },
 
 
@@ -62,41 +86,52 @@
         "image": "노승희",
         "name": "노승희",
         "department": "미디어소프트웨어학과 20",
-        "position": "WEB"
+        "position": "WEB",
+        "email": "hapy1122@naver.com",
+        "role": "Front-End / React"
     },
     {
-        "id": 7,
+        "id": 11,
         "image": "조성민",
         "name": "조성민",
         "department": "미디어소프트웨어학과 20",
-        "position": "MODELING"
+        "position": "MODELING",
+        "email": "hapy1122@naver.com",
+        "role": "MODELING"
     },
     {
         "id": 12,
         "image": "오인우",
         "name": "오인우",
         "department": "미디어소프트웨어학과 22",
-        "position": "WEB"
-    },
-    {
-        "id": 9,
-        "image": "김경진",
-        "name": "김경진",
-        "department": "미디어소프트웨어학과 22",
-        "position": "MODELING"
-    },
-    {
-        "id": 11,
-        "image": "노주희",
-        "name": "노주희",
-        "department": "미디어소프트웨어학과 22",
-        "position": "WEB"
-    },
-    {
+        "position": "WEB",
+        "email": "hapy1122@naver.com",
+        "role": "Back-End / Nest.js"
+    }, {
         "id": 13,
         "image": "신민서",
         "name": "신민서",
         "department": "미디어소프트웨어학과 22",
-        "position": "WEB"
+        "position": "WEB",
+        "email": "hapy1122@naver.com",
+        "role": "Front-End / React"
+    },
+    {
+        "id": 14,
+        "image": "노주희",
+        "name": "노주희",
+        "department": "미디어소프트웨어학과 22",
+        "position": "WEB",
+        "email": "hapy1122@naver.com",
+        "role": "Back-End / Nest.js"
+    },
+    {
+        "id": 15,
+        "image": "김경진",
+        "name": "김경진",
+        "department": "미디어소프트웨어학과 22",
+        "position": "MODELING",
+        "email": "hapy1122@naver.com",
+        "role": "MODELING"
     }
 ]

@@ -8,6 +8,7 @@ import Main from '../components/Home/Main';
 import Purchase from '../components/Home/Purchase';
 import Nav from '../components/Nav';
 import Purchase2 from '../components/Home/Purchase2';
+import Team2 from './Team2';
 
 const Home = () => {
     return (
@@ -20,10 +21,10 @@ const Home = () => {
                     </div>
                 </Slide>
                 <Slide>
-                    <div className="w-full h-full"><Help1 /></div>
+                    <div className="w-full h-full"><Help2 /></div>
                 </Slide>
                 <Slide>
-                    <div className="w-full h-full"><Help2 /></div>
+                    <div className="w-full h-full"><Help1 /></div>
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><Help3 /></div>
@@ -39,6 +40,9 @@ const Home = () => {
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><About /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Team2 /></div>
                 </Slide>
             </FullPage >
         </>
