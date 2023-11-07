@@ -1,12 +1,14 @@
 import { images } from '../../utils/images';
 import { PiArrowUpRightBold } from "react-icons/pi";
+import PiuTeam from '../PiuTeam';
 
 const Help3 = () => {
     return (
-        <div className="Help3 min-h-screen max-h-screen flex justify-center ">
+        <div className="Help3 min-h-screen max-h-screen flex justify-center relative">
+            <PiuTeam vertical={false} />
             <div className='container flex'>
                 <div className='flex flex-col justify-center'>
-                    <div className=' Help3Title pretendard-EB text-5xl px-16 pt-16 pb-5'>"가상 동반자를 현실로"<br />
+                    <div className=' Help3Title pretendard-EB text-5xl px-16 pt-16'>"가상 동반자를 현실로"<br />
                         : 유기견 입양 캠페인
                     </div>
                     <div className='help3SecondSection w-full flex justify-start items-center break-keep'>
