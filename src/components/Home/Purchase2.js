@@ -21,7 +21,7 @@ const Purchase2 = () => {
     <div className="section min-h-screen">
         <div className='carousel flex justify-center'>
             <Swiper
-            className='myswiper'
+            className='Purchase-swiper'
             modules={[Pagination, EffectCoverflow, Navigation]}
             effect={"coverflow"}
             centeredSlides={"true"}
@@ -35,7 +35,9 @@ const Purchase2 = () => {
             loop={true}
             loopAdditionalSlides={1}
             pagination={{
-                el: '.swiper-pagination',
+                el: '.Purchase-swiper-pagination',
+                bulletClass:".Purchase-swiper-pagination-bullet",
+                bulletActiveClass: ".Purchase-swiper-pagination-bullet-active",
                       clickable: true
               }}
             slidesPerView={2}
@@ -59,25 +61,27 @@ const Purchase2 = () => {
                 }
             }}
             >
-                <SwiperSlide>
+                <SwiperSlide className='Purchase-swiper-slide'>
                     <img src={images.tok} alt="그립톡" className="giftimg" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='Purchase-swiper-slide'>
                     <img src={images.tok} alt="그립톡" className="giftimg" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='Purchase-swiper-slide'>
                     <img src={images.tok} alt="그립톡" className="giftimg" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='Purchase-swiper-slide'>
                     <img src={images.tok} alt="그립톡" className="giftimg" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='Purchase-swiper-slide'>
                     <img src={images.tok} alt="그립톡" className="giftimg" />
                 </SwiperSlide>
-
+                <div className="wrap">
+                    <div className="target" data-scale="2" data-image={images.tok}></div>
+                </div>
                 <div className="swiper-button-next"></div>
                 <div className="swiper-button-prev"></div>
-                <div className='swiper-pagination'></div>
+                <div className='Purchase-swiper-pagination'></div>
             </Swiper>
         </div>
         <div className='button1 flex justify-center items-center w-full'>

@@ -40,23 +40,21 @@
     column-gap: 3rem;
     /*padding-block: min(20vh, 3rem);*/
 }
-.swiper{
-    padding: 50px 0 !important;
-}
-.myswiper {
+.Purchase-swiper {
     width: 100%;
     padding-top: 3.125rem;
+    padding: 50px 0 !important;
 }
 
-.myswiper-slider {
+.Purchase-swiper-slider {
     background-size: cover;
     background-position: center;
 }
-.myswiper-slider div {
+.Purchase-swiper-slider div {
     display: none;
 }
 
-.swiper-slide-active div {
+.Purchase-swiper-slide-active div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -64,7 +62,7 @@
     height: 100%;
 }
 
-.swiper-slide img {
+.Purchase-swiper-slide img {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -72,30 +70,30 @@
     object-fit: cover;
   }
 
-.swiper-pagination-bullet{
+.Purchase-swiper-pagination-bullet{
     padding: 30px 30px;
     border-radius: 0 !important;
     margin: 0 5px;
     background-size: cover !important;
 }
 
-.swiper-pagination-bullet:nth-child(1) {
+.Purchase-swiper-pagination-bullet:nth-child(1) {
     background-image: url('../../public/img/tok.png') !important;
   } 
-.swiper-pagination-bullet:nth-child(2) {
+.Purchase-swiper-pagination-bullet:nth-child(2) {
     background-image: url('../../public/img/tok.png') !important;
   }
-.swiper-pagination-bullet:nth-child(3) {
+.Purchase-swiper-pagination-bullet:nth-child(3) {
     background-image: url('../../public/img/tok.png') !important;
   }
-.swiper-pagination-bullet:nth-child(4) {
+.Purchase-swiper-pagination-bullet:nth-child(4) {
     background-image: url('../../public/img/tok.png') !important;
   }
-.swiper-pagination-bullet:nth-child(5) {
+.Purchase-swiper-pagination-bullet:nth-child(5) {
     background-image: url('../../public/img/tok.png') !important;
   }
 
-.swiper-pagination-bullet-active {
+.Purchase-swiper-pagination-bullet-active {
 	border: 2px solid #00000073;
 }
 
@@ -116,6 +114,31 @@
     padding-right: 10px;
 }
 
+.wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .target {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s ease-out;
+  }
+  
 
 @media screen and (max-width:50rem){
     .carousel{
@@ -127,7 +150,7 @@
     .myswiper{
         overflow: hidden !important;
     }
-    .swiper-pagination-bullet{
+    .myswiper-pagination-bullet{
         padding: 20px 20px;
     }
 }
