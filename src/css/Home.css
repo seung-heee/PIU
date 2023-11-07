@@ -124,13 +124,6 @@ body::-webkit-scrollbar {
 }
 
 
-/* Piu Campaign 컴포넌트  */
-
-.verti {
-    writing-mode: vertical-rl;
-}
-
-
 /* 반응형 
 
 @media screen and (max-width: 50rem) {

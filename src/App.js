@@ -3,7 +3,6 @@ import './App.css';
 import './css/Font.css';
 import Home from './pages/Home';
 import Team2 from './pages/Team2';
-import Buy from './pages/Buy';
 
 function App() {
   return (
@@ -11,8 +10,7 @@ function App() {
       <div className="App pretendard-R">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/buy' element={<Buy />} />
-
+          <Route path='/team2' element={<Team2 />} />
         </Routes>
       </div>
     </BrowserRouter>
