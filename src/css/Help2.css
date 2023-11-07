@@ -1,0 +1,66 @@
+.pagination {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* help1 */
+
+.Help1-Swiper {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Help1-Swiper .swiper-pagination {
+    --swiper-theme-color: gray;
+}
+
+.Help1-SwiperSlide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.Help1-SwiperSlide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* help2 */
+
+.Help2-Swiper {
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 2rem;
+    width: 85%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.Help2-SwiperSlide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Help2-SwiperSlide img {
+    display: block;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.Help2-SwiperSlide div {
+    padding: 15px;
+    word-break: keep-all;
+}
+
+.PointBlack {
+    background-color: white;
+    color: black;
+}

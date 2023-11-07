@@ -8,16 +8,12 @@ import { PiArrowFatLineRightBold } from "react-icons/pi";
 import SponsoringCompany from "../about/SponsoringCompany.js";
 
 const About = () => {
-    const Navigate = useNavigate();
 
     return (
         <div className="About min-h-screen flex items-center">
             <div className="container mx-auto flex flex-col">
                 <div className="flex justify-between items-center mb-5">
                     <div className="AboutTitle pretendard-EB">PIU <span className="text-2xl AboutSmallTitle">Pet In Universe</span></div>
-                    <button className="flex items-center pretendard-B text-xl" onClick={() => { Navigate('team2') }}>
-                        PIU TEAM<PiArrowFatLineRightBold className="ml-1" />
-                    </button>
                 </div>
                 <div className="AboutSub mt-5 mb-5 text-2xl w-10/12">PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유vPIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.기견들을 지키기 위해 최선을 다합니다. PIU는 유기견들을 지키기 위해 최선을 다합니다 PIU는 유기견들을 지키기 위해 최선을 다합니다 </div>
                 <div className="flex text-4xl mb-10">

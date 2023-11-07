@@ -5,7 +5,6 @@ export const images = {
     tok: PATH + '/img/tok.png',
     Logo: PATH + '/img/Logo.png',
     helpDog: PATH + '/img/helpDog.png',
-    kuma4: PATH + '/img/kuma4.jpg',
     main5: PATH + '/img/main5.jpg',
     // 팀원 미모티콘
     노승희: PATH + '/img/person/노승희.png',
@@ -27,5 +26,15 @@ export const images = {
     Hanwha: PATH + '/img/company/Hanwha.png',
     com1: PATH + '/img/company/com1.jpg',
     SK: PATH + '/img/company/SK.png',
-    com2: PATH + '/img/company/com2.jpg'
+    com2: PATH + '/img/company/com2.jpg',
+    // 구매페이지
+    buy1: PATH + '/img/buy/buy1.png',
+
+    // 임시 img
+    back1: PATH + '/img/back1.jpg',
+    back2: PATH + '/img/back2.jpg',
+    back3: PATH + '/img/back3.jpg',
+    back4: PATH + '/img/back4.jpg',
+    back5: PATH + '/img/back5.jpg',
+
 };

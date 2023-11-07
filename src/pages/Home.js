@@ -8,8 +8,27 @@ import Main from '../components/Home/Main';
 import Purchase from '../components/Home/Purchase';
 import Nav from '../components/Nav';
 import Purchase2 from '../components/Home/Purchase2';
+import Team2 from './Team2';
+import TeamMobile from './TeamMobile';
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 
 const Home = () => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
     return (
         <>
             <FullPage controls controlProps={{ className: 'slide-navigation' }}>
@@ -20,10 +39,10 @@ const Home = () => {
                     </div>
                 </Slide>
                 <Slide>
-                    <div className="w-full h-full"><Help1 /></div>
+                    <div className="w-full h-full"><Help2 /></div>
                 </Slide>
                 <Slide>
-                    <div className="w-full h-full"><Help2 /></div>
+                    <div className="w-full h-full"><Help1 /></div>
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><Help3 /></div>
@@ -39,6 +58,11 @@ const Home = () => {
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><About /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full">
+                        {windowWidth <= 768 ? <TeamMobile /> : <Team2 />}
+                    </div>
                 </Slide>
             </FullPage >
         </>
