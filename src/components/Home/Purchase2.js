@@ -18,10 +18,77 @@ import "swiper/css";
 
 const Purchase2 = () => {
     return (
-        <button type='button' className="py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
-            정기후원하고 굿즈받기
-        </button>
-    );
-};
+        <div className="section min-h-screen">
+            <div className='carousel flex justify-center'>
+                <Swiper
+                className='Purchase-swiper'
+                modules={[Pagination, EffectCoverflow, Navigation]}
+                effect={"coverflow"}
+                centeredSlides={"true"}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 100,
+                    depth: 50,
+                    modifier: 1.5,
+                    slideShadows: true
+                }}
+                loop={true}
+                loopAdditionalSlides={1}
+                pagination={{
+                    el: '.Purchase-swiper-pagination',
+                          clickable: true
+                  }}
+                slidesPerView={2}
+                spaceBetween={10}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  }}
+                breakpoints={{
+                    '@0.75':{
+                        slidesPerView:1,
+                        spaceBetween:50,
+                    },
+                    '@1.00':{
+                        slidesPerView:2,
+                        spaceBetween:40,
+                    },
+                    '@1.50':{
+                        slidesPerView:2,
+                        spaceBetween: 50,
+                    }
+                }}
+                >
+                    <SwiperSlide className='Purchase-swiper-slide'>
+                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                    </SwiperSlide>
+                    <SwiperSlide className='Purchase-swiper-slide'>
+                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                    </SwiperSlide>
+                    <SwiperSlide className='Purchase-swiper-slide'>
+                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                    </SwiperSlide>
+                    <SwiperSlide className='Purchase-swiper-slide'>
+                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                    </SwiperSlide>
+                    <SwiperSlide className='Purchase-swiper-slide'>
+                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                    </SwiperSlide>
+                    <div className="wrap">
+                        <div className="target" data-scale="2" data-image={images.tok}></div>
+                    </div>
+                    <div className="swiper-button-next"></div>
+                    <div className="swiper-button-prev"></div>
+                    <div className='Purchase-swiper-pagination'></div>
+                </Swiper>
+            </div>
+            <div className='button1 flex justify-center items-center w-full'>
+                    <button type='button' className="py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
+                            정기후원하고 굿즈받기
+                        </button>
+                    </div>
+        </div>
+      );
+    };
 
 export default Purchase2;
