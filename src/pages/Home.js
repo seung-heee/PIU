@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Help1 from '../components/Home/Help1';
 import Help2 from '../components/Home/Help2';
+import Purchase2 from '../components/Home/Purchase2';
 
 
 const Home = () => {
@@ -51,6 +52,9 @@ const Home = () => {
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><Purchase /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Purchase2 /></div>
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><About /></div>

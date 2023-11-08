@@ -1,17 +1,16 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { BiSolidQuoteLeft } from 'react-icons/bi';
 import { BiSolidQuoteRight } from 'react-icons/bi';
+import '../../css/Help2.css';
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import '../../css/Help2.css';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 
 // import required modules
-import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { images } from '../../utils/images';
 import PiuCampaignHori from '../Piece/PiuCampaignHori';
 
