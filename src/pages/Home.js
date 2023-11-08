@@ -1,17 +1,15 @@
 import { FullPage, Slide } from 'react-full-page';
 import About from '../components/Home/About';
-import Help1 from '../components/Home/Help1';
-import Help2 from '../components/Home/Help2';
 import Help3 from '../components/Home/Help3';
 import Help4 from '../components/Home/Help4';
 import Main from '../components/Home/Main';
 import Purchase from '../components/Home/Purchase';
 import Nav from '../components/Nav';
-import Purchase2 from '../components/Home/Purchase2';
-import Team2 from './Team2';
-import TeamMobile from './TeamMobile';
+import Team2 from '../components/Home/Team2';
+import TeamMobile from '../components/Mobile/TeamMobile';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Help1 from '../components/Home/Help1';
 
 
 const Home = () => {
@@ -37,11 +35,7 @@ const Home = () => {
                         <Nav />
                         <Main />
                     </div>
-                </Slide>
-                <Slide>
-                    <div className="w-full h-full"><Help2 /></div>
-                </Slide>
-                <Slide>
+                </Slide> <Slide>
                     <div className="w-full h-full"><Help1 /></div>
                 </Slide>
                 <Slide>
@@ -52,9 +46,6 @@ const Home = () => {
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><Purchase /></div>
-                </Slide>
-                <Slide>
-                    <div className="w-full h-full"><Purchase2 /></div>
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><About /></div>

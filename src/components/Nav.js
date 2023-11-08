@@ -42,13 +42,13 @@ const Nav = () => {
     return (
         <div className="Nav mb-3 flex justify-center pretendard-B text-lg">
             <ul className='container flex justify-between items-center h-full '>
-                {/* <li><img src={images.Logo} alt="Logo" className='w-10' /></li> */}
-                <li className='text-4xl'><div>PIU</div></li>
+                <li><Link to='/'><img src={images.PIU} alt="logo" className='w-20' /></Link></li>
+                {/* <li className='text-4xl'><div>PIU</div></li> */}
                 {windowWidth >= 768 ?
                     <>
                         {/* PC */}
                         <div className='flex items-center navVersion'>
-                            <li className='mx-3'><Link to='#'> 패키지 구매</Link></li>
+                            <li className='mx-3'><Link to='/buy'> 패키지 구매</Link></li>
                             <li className='mx-3'><Link to='#'> 주문 | 배송 조회</Link></li>
                             <li className='mx-3'><Link to='#'> 후원하기</Link></li>
                             <li className='RunningPIU mx-3'><Link to='#'> Running PIU App</Link></li>

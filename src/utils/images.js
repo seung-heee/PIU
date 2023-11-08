@@ -1,6 +1,7 @@
 const PATH = process.env.PUBLIC_URL;
 
 export const images = {
+    PIU: PATH + '/img/PIU.png',
     company: PATH + '/img/company.jpg',
     tok: PATH + '/img/tok.png',
     Logo: PATH + '/img/Logo.png',
@@ -31,10 +32,11 @@ export const images = {
     buy1: PATH + '/img/buy/buy1.png',
 
     // 임시 img
-    back1: PATH + '/img/back1.jpg',
-    back2: PATH + '/img/back2.jpg',
-    back3: PATH + '/img/back3.jpg',
-    back4: PATH + '/img/back4.jpg',
-    back5: PATH + '/img/back5.jpg',
+    img1: PATH + '/img/help2Page/img1.jpg',
+    img2: PATH + '/img/help2Page/img2.png',
+    img3: PATH + '/img/help2Page/img3.png',
+    img4: PATH + '/img/help2Page/img4.jpeg',
+    img5: PATH + '/img/help2Page/img5.jpeg',
+    img6: PATH + '/img/help2Page/img6.jpeg',
 
 };

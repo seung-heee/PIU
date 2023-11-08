@@ -1,44 +1,44 @@
-import '../css/About.css';
-import Person from '../components/about/Person';
-import PersonInfo from '../utils/PersonInfo.json';
-import ScrollToTop from '../components/ScrollToTop';
-import PersonMobile from '../components/about/PersonMobile';
+import '../../css/About.css';
+import Person from '../about/Person';
+import { PiArrowUDownLeftBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
+import PersonInfo from '../../utils/PersonInfo.json';
+import ScrollToTop from '../ScrollToTop';
 
-const TeamMobile = () => {
+const Team2 = () => {
     const web = PersonInfo.filter(person => person.position === 'WEB')
     const metaverse = PersonInfo.filter(person => person.position === 'METAVERSE')
     const modeling = PersonInfo.filter(person => person.position === 'MODELING')
 
     return (
         <div className="Team min-h-screen container mx-auto">
-            <div className='grid grid-cols-2 teamBoxMobile h-screen'>
-                {/* 총괄 */}
-                <div>
-                    <div>
-                        <div className='pretendard-B text-lg'>CEO</div>
-                        <PersonMobile id={1} />
-                    </div>
-                </div>
+            <div className='flex justify-evenly items-center teamBox h-screen'>
                 <div className='flex flex-col justify-start'>
-
-
+                    {/* 총괄 */}
+                    <div className='mb-10'>
+                        <div className='pretendard-B text-2xl'>CEO</div>
+                        <Person id={1} />
+                    </div>
                     {/* 메타버스 */}
                     <div>
-                        <div className='pretendard-B text-lg'>METAVERSE</div>
+                        <div className='pretendard-B text-2xl'>METAVERSE</div>
                         {metaverse.map((person) => {
                             return (
-                                <><PersonMobile id={person.id} /></>
+                                <><Person id={person.id} /></>
                             )
                         })}
                     </div>
                 </div>
                 {/* 모델링 */}
                 <div className='flex flex-col justify-start'>
+
+                    <div className='pretendard-EB text-5xl mb-10 bg-white teamTitle text-center'>PIU<br />TEAM</div>
+
                     <div>
-                        <div className='pretendard-B text-lg'>MODELING</div>
+                        <div className='pretendard-B text-2xl'>MODELING</div>
                         {modeling.map((person) => {
                             return (
-                                <><PersonMobile id={person.id} /></>
+                                <><Person id={person.id} /></>
                             )
                         })}
                     </div>
@@ -46,11 +46,11 @@ const TeamMobile = () => {
                 {/* 웹 */}
                 <div className='flex flex-col'>
                     <div>
-                        <div className='pretendard-B text-lg'>WEB</div>
+                        <div className='pretendard-B text-2xl'>WEB</div>
                         {web.map((person) => {
                             console.log(person.id)
                             return (
-                                <><PersonMobile id={person.id} /></>
+                                <><Person id={person.id} /></>
                             )
                         })}
                     </div>
@@ -61,4 +61,4 @@ const TeamMobile = () => {
     )
 }
 
-export default TeamMobile;
+export default Team2;

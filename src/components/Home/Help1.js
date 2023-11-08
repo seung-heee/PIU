@@ -1,90 +1,78 @@
-import React, { useRef, useState } from 'react';
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { images } from '../../utils/images';
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import '../../css/Help2.css';
 
 // import required modules
-import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
-import { images } from '../../utils/images';
+import { Autoplay, EffectFlip, Pagination, Navigation } from "swiper/modules";
+import PiuCampaignHori from "../Piece/PiuCampaignHori";
 
 const Help1 = () => {
     return (
         <>
-            <div className='bg-sky-400 text-white'>
-                <div className='Help1Box flex flex-col justify-center min-h-screen container mx-auto'>
-                    <div className='Help1First pretendard-B text-5xl'>
-                        <span className='inline-block mb-1'>유기견들은 여러분의 도움과 함께</span><br />
-                        새로운 가족을 찾을 수 있습니다.
-                    </div>
-                    <Swiper
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
-                        effect={'coverflow'}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={'auto'}
-                        coverflowEffect={{
-                            rotate: 50,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
-                            slideShadows: true,
-                        }}
-                        pagination={true}
-                        modules={[Autoplay, EffectCoverflow, Pagination]}
-                        className="Help1-Swiper"
-                    >
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.helpDog} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back2} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back3} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back4} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back5} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.main5} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.helpDog} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back1} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back1} />
-                        </SwiperSlide>
-                        <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.back1} />
-                        </SwiperSlide>
-                    </Swiper>
-                    <div className='Help1Last pretendard-R text-2xl mt-3 flex flex-col items-end justify-end'>
-                        <p className='break-keep w-6/12 text-right'>
-                            "PIU 유기견 캠페인과 함께 전국 유기견들이
-                            새로운 삶을 살 수 있도록 힘이 되어주세요.
-                            “SIORAE”도 유기견과 함께하겠습니다."
-                        </p>
-                        <p className='text-lg'>-유기견 후원 반려견 의류 기업 SIORAE 김화정 대표-</p>
-                    </div>
-                </div>
+            <div className="flex justify-center items-center bg-black relative">
+                <PiuCampaignHori vertical={false} />
+                <Swiper
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    direction={"vertical"}
+                    effect={"flip"}
+                    grabCursor={true}
+                    modules={[Autoplay, EffectFlip, Pagination, Navigation]}
+                    className="Help2-Swiper"
+                >
+                    <SwiperSlide className="Help2-SwiperSlide">
+                        <div className="w-full flex items-center justify-center text-center">
+                            <div className="w-6/12 break-keep px-3 text-5xl">
+                                <p>유기견들의 <span className="PointBlack">현실</span>은 우리가 생각하는 것보다 더 심각합니다.</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="Help2-SwiperSlide">
+                        <div className="w-full flex items-center justify-center text-center">
+                            <img className='w-3/12 grayscale' src={images.img1} />
+                            <div className="w-6/12 break-keep px-5 text-5xl">
+                                <p>유기견에게 다가오는 <span className="PointBlack">현실</span>은 너무나도 힘듭니다.</p>
+                                <p className="pretendard-R text-xl mt-2">지난해 130,401마리의 유실.유기 동물이 구조되었으나, 이 중 21% 약 28,000마리의 동물이 안락사되었습니다. </p>
+                            </div>
+                            <img className='w-3/12 grayscale' src={images.img2} />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="Help2-SwiperSlide">
+                        <div className="w-full flex items-center justify-center text-center">
+                            <img className='w-3/12 grayscale ' src={images.img3} />
+                            <div className="w-6/12 break-keep px-5 text-5xl">
+                                <p>지금 우리가 가상에서 할 수 있는 작은 선택이 큰 <span className="PointBlack">현실</span>의 변화를 이끌 것 입니다.</p>
+                                <p className="pretendard-R text-xl mt-2">지난해 130,401마리의 유실.유기 동물 중 입양률은 32.1%에 불과했다.</p></div>
+                            <img className='w-3/12 grayscale' src={images.img4} />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="Help2-SwiperSlide">
+                        <div className="w-full flex items-center justify-center text-center">
+                            <img className='w-3/12 grayscale' src={images.img5} />
+                            <div className="w-6/12 break-keep px-5 text-5xl">
+                                <p>
+                                    우리는 유기견의 <span className="PointBlack">지금</span>을<br /> 바꿀 수 있습니다.<br />
+                                    지금 PIU 팀이 되어주세요
+                                </p>
+                                <p className="pretendard-R text-xl mt-2">자연사·안락사 비율은 각각 25.8%, 15.7%로 여전히 동물보호센터에 입소된 개체의 40% 이상이 센터에서 생을 마감하는 것으로 나타났다.</p>
+
+                            </div>
+                            <img className='w-3/12 grayscale' src={images.img6} />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </>
     );
 }
-
 
 export default Help1;
