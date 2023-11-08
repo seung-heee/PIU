@@ -13,8 +13,8 @@
         "name": "선우희은",
         "department": "미디어소프트웨어학과 20",
         "position": "MODELING",
-        "email": "hapy1122@naver.com",
-        "role": "MODELING"
+        "email": "swhe01@naver.com",
+        "role": "MODELING 총괄"
     },
     {
         "id": 3,
@@ -22,8 +22,8 @@
         "name": "홍윤서",
         "department": "미디어소프트웨어학과 20",
         "position": "METAVERSE",
-        "email": "hapy1122@naver.com",
-        "role": "METAVERSE"
+        "email": "hys_0904@naver.com",
+        "role": "METAVERSE 총괄"
     },
     {
         "id": 4,
@@ -31,16 +31,16 @@
         "name": "김지우",
         "department": "미디어소프트웨어학과 18",
         "position": "WEB",
-        "email": "hapy1122@naver.com",
+        "email": "rlawldn0412@gmail.com",
         "role": "Back-End / Nest.js"
     },
     {
         "id": 5,
         "image": "조성민",
-        "name": "지우친구님",
+        "name": "김도훈",
         "department": "미디어소프트웨어학과 22",
         "position": "WEB",
-        "email": "hapy1122@naver.com",
+        "email": "kimuragen23@gmail.com ",
         "role": "Back-End / Nest.js"
     }, {
         "id": 6,
@@ -48,8 +48,8 @@
         "name": "한성진",
         "department": "미디어소프트웨어학과 19",
         "position": "METAVERSE",
-        "email": "hapy1122@naver.com",
-        "role": "METAVERSE"
+        "email": "gkstjdwls147@naver.com",
+        "role": "Client/Unreal"
     },
     {
         "id": 7,
@@ -57,8 +57,8 @@
         "name": "장민제",
         "department": "미디어소프트웨어학과 19",
         "position": "METAVERSE",
-        "email": "hapy1122@naver.com",
-        "role": "METAVERSE"
+        "email": "jmj1657@gmail.com",
+        "role": "Server/Unreal"
     },
 
     {
@@ -67,8 +67,8 @@
         "name": "오시율",
         "department": "미디어소프트웨어학과 20",
         "position": "MODELING",
-        "email": "hapy1122@naver.com",
-        "role": "MODELING"
+        "email": "ohoi2@naver.com",
+        "role": "Modeling / Blender"
     },
     {
         "id": 9,
@@ -76,8 +76,8 @@
         "name": "김민지",
         "department": "미디어소프트웨어학과 20",
         "position": "METAVERSE",
-        "email": "hapy1122@naver.com",
-        "role": "METAVERSE"
+        "email": "gkstjdwls147@naver.com",
+        "role": "Client/Unity, Spatial"
     },
 
 
@@ -87,7 +87,7 @@
         "name": "노승희",
         "department": "미디어소프트웨어학과 20",
         "position": "WEB",
-        "email": "hapy1122@naver.com",
+        "email": "tmdgml2595@naver.com",
         "role": "Front-End / React"
     },
     {
@@ -96,8 +96,8 @@
         "name": "조성민",
         "department": "미디어소프트웨어학과 20",
         "position": "MODELING",
-        "email": "hapy1122@naver.com",
-        "role": "MODELING"
+        "email": "tjdalsquf8@naver.com",
+        "role": "Modeling / Blender"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "name": "오인우",
         "department": "미디어소프트웨어학과 22",
         "position": "WEB",
-        "email": "hapy1122@naver.com",
+        "email": "dlsdn410@naver.com",
         "role": "Back-End / Nest.js"
     }, {
         "id": 13,
@@ -113,7 +113,7 @@
         "name": "신민서",
         "department": "미디어소프트웨어학과 22",
         "position": "WEB",
-        "email": "hapy1122@naver.com",
+        "email": "kittse@sungkyul.ac.kr",
         "role": "Front-End / React"
     },
     {
@@ -122,7 +122,7 @@
         "name": "노주희",
         "department": "미디어소프트웨어학과 22",
         "position": "WEB",
-        "email": "hapy1122@naver.com",
+        "email": "sarah19270@naver.com",
         "role": "Back-End / Nest.js"
     },
     {
@@ -131,7 +131,7 @@
         "name": "김경진",
         "department": "미디어소프트웨어학과 22",
         "position": "MODELING",
-        "email": "hapy1122@naver.com",
-        "role": "MODELING"
+        "email": "z876901@naver.com",
+        "role": "UV Mapping / Blender"
     }
 ]

@@ -8,7 +8,6 @@ import { PiArrowFatLineRightBold } from "react-icons/pi";
 import SponsoringCompany from "../about/SponsoringCompany.js";
 
 const About = () => {
-
     return (
         <div className="About min-h-screen flex items-center">
             <div className="container mx-auto flex flex-col">

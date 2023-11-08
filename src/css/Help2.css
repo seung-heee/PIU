@@ -29,6 +29,11 @@
     height: 100%;
 }
 
+.Help2 {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: rgb(135, 206, 250)
+}
+
 
 /* help2 */
 

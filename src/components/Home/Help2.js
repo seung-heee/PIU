@@ -18,7 +18,7 @@ import PiuCampaignHori from '../Piece/PiuCampaignHori';
 const Help2 = () => {
     return (
         <>
-            <div className='bg-sky-400 text-white relative'>
+            <div className='Help2 text-white relative'>
                 <PiuCampaignHori vertical={true} />
                 <div className='Help1Box flex flex-col justify-center min-h-screen container mx-auto'>
                     <div className='Help1First pretendard-B text-5xl'>

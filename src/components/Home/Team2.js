@@ -12,41 +12,19 @@ const Team2 = () => {
 
     return (
         <div className="Team min-h-screen container mx-auto">
-            <div className='flex justify-evenly items-center teamBox h-screen'>
-                <div className='flex flex-col justify-start'>
-                    {/* 총괄 */}
-                    <div className='mb-10'>
-                        <div className='pretendard-B text-2xl'>CEO</div>
+            <div className='teamBox h-screen grid grid-cols-3 grid-rows-3 gap-5 p-10'>
+                {/* 총괄 */}
+                <div className='flex justify-center items-center'>
+                    <div>
+                        <div className='pretendard-B text-2xl text-center'>CEO</div>
                         <Person id={1} />
                     </div>
-                    {/* 메타버스 */}
-                    <div>
-                        <div className='pretendard-B text-2xl'>METAVERSE</div>
-                        {metaverse.map((person) => {
-                            return (
-                                <><Person id={person.id} /></>
-                            )
-                        })}
-                    </div>
                 </div>
-                {/* 모델링 */}
-                <div className='flex flex-col justify-start'>
-
-                    <div className='pretendard-EB text-5xl mb-10 bg-white teamTitle text-center'>PIU<br />TEAM</div>
-
-                    <div>
-                        <div className='pretendard-B text-2xl'>MODELING</div>
-                        {modeling.map((person) => {
-                            return (
-                                <><Person id={person.id} /></>
-                            )
-                        })}
-                    </div>
-                </div>
+                <div className='pretendard-EB text-5xl mb-10 bg-white teamTitle text-center'>PIU TEAM</div>
                 {/* 웹 */}
-                <div className='flex flex-col'>
+                <div className='row-span-3 flex justify-center items-center'>
                     <div>
-                        <div className='pretendard-B text-2xl'>WEB</div>
+                        <div className='pretendard-B text-2xl  text-center'>WEB</div>
                         {web.map((person) => {
                             console.log(person.id)
                             return (
@@ -55,6 +33,30 @@ const Team2 = () => {
                         })}
                     </div>
                 </div>
+                {/* 메타버스 */}
+                <div className='row-span-2 flex justify-center items-center'>
+                    <div>
+                        <div className='pretendard-B text-2xl text-center'>METAVERSE</div>
+                        {metaverse.map((person) => {
+                            return (
+                                <><Person id={person.id} /></>
+                            )
+                        })}
+                    </div>
+                </div>
+
+                {/* 모델링 */}
+                <div className='row-span-2 flex justify-center items-center'>
+                    <div>
+                        <div className='pretendard-B text-2xl text-center'>MODELING</div>
+                        {modeling.map((person) => {
+                            return (
+                                <><Person id={person.id} /></>
+                            )
+                        })}
+                    </div>
+                </div>
+
             </div>
             <ScrollToTop />
         </div>

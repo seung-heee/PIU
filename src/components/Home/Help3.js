@@ -1,10 +1,10 @@
 import { images } from '../../utils/images';
-import { PiArrowUpRightBold } from "react-icons/pi";
+import { BiSolidDonateHeart } from "react-icons/bi";
 
 const Help3 = () => {
     return (
-        <div className="Help3 min-h-screen max-h-screen flex justify-center ">
-            <div className='container flex'>
+        <div className="Help3 min-h-screen max-h-screen flex justify-center  text-white">
+            <div className='container flex '>
                 <div className='flex flex-col justify-center'>
                     <div className=' Help3Title pretendard-EB text-5xl px-16 pt-16'>"가상 동반자를 현실로"<br />
                         : 유기견 입양 캠페인
@@ -16,10 +16,10 @@ const Help3 = () => {
                                 따뜻한 가족을 찾아주는데 최선을 다할 것입니다.
                             </p>
                             <p className='text-xl mt-6 mb-12'>우리가 함께할수록 위기에 처한 아이들을 위한 힘은 커집니다.</p>
-                            <div className='pretendard-EB text-center'>
-                                <button className='help3Btn p-3 text-5xl flex justify-center items-center mx-auto'>
-                                    <p className='text-end'><span className='mb-1 inline-block'>유기견 돕고 </span><br />굿즈 받기</p>
-                                    <PiArrowUpRightBold size={130} className='help3arrowbtn' />
+                            <div className='pretendard-EB text-center '>
+                                <button className='bg-sky-400 help3Btn p-3 text-5xl flex justify-center items-center mx-auto'>
+                                    <p className='text-end'><span className='inline-block'>유기견 돕고</span><br />굿즈 받기</p>
+                                    <BiSolidDonateHeart size={130} className='help3arrowbtn ml-5' />
                                 </button>
                             </div>
                         </div>

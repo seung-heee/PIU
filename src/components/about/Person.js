@@ -9,7 +9,7 @@ const Person = ({ id }) => {
             {result.map((person) => {
                 return (
                     <>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex flex-row items-center justify-start w-full'>
                             <img src={images[person.image]} alt="사람" />
                             <div className='ml-3'>
                                 <p>{person.name}</p>
