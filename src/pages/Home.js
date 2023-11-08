@@ -10,6 +10,7 @@ import TeamMobile from '../components/Mobile/TeamMobile';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Help1 from '../components/Home/Help1';
+import Help2 from '../components/Home/Help2';
 
 
 const Home = () => {
@@ -35,8 +36,12 @@ const Home = () => {
                         <Nav />
                         <Main />
                     </div>
-                </Slide> <Slide>
+                </Slide>
+                <Slide>
                     <div className="w-full h-full"><Help1 /></div>
+                </Slide>
+                <Slide>
+                    <div className="w-full h-full"><Help2 /></div>
                 </Slide>
                 <Slide>
                     <div className="w-full h-full"><Help3 /></div>

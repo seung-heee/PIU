@@ -31,12 +31,23 @@ export const images = {
     // 구매페이지
     buy1: PATH + '/img/buy/buy1.png',
 
-    // 임시 img
-    img1: PATH + '/img/help2Page/img1.jpg',
-    img2: PATH + '/img/help2Page/img2.png',
-    img3: PATH + '/img/help2Page/img3.png',
-    img4: PATH + '/img/help2Page/img4.jpeg',
-    img5: PATH + '/img/help2Page/img5.jpeg',
-    img6: PATH + '/img/help2Page/img6.jpeg',
+    // Help1
+    Help1_img1: PATH + '/img/help1page/img1.jpg',
+    Help1_img2: PATH + '/img/help1page/img2.png',
+    Help1_img3: PATH + '/img/help1page/img3.png',
+    Help1_img4: PATH + '/img/help1page/img4.jpeg',
+    Help1_img5: PATH + '/img/help1page/img5.jpeg',
+    Help1_img6: PATH + '/img/help1page/img6.jpeg',
 
+    // Help2
+    Help2_img1: PATH + '/img/help2page/img1.jpeg',
+    Help2_img2: PATH + '/img/help2page/img2.webp',
+    Help2_img3: PATH + '/img/help2page/img3.jpg',
+    Help2_img4: PATH + '/img/help2page/img4.jpg',
+    Help2_img5: PATH + '/img/help2page/img5.jpg',
+    Help2_img6: PATH + '/img/help2page/img6.jpg',
+    Help2_img7: PATH + '/img/help2page/img7.jpg',
+    Help2_img8: PATH + '/img/help2page/img8.jpg',
+    Help2_img9: PATH + '/img/help2page/img9.jpg',
+    Help2_img10: PATH + '/img/help2page/img10.jpg',
 };
