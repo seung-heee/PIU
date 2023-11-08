@@ -50,4 +50,10 @@ export const images = {
     Help2_img8: PATH + '/img/help2page/img8.jpg',
     Help2_img9: PATH + '/img/help2page/img9.jpg',
     Help2_img10: PATH + '/img/help2page/img10.jpg',
+
+    // 그립톡
+    tok1: PATH + '/img/gripTok/tok1.jpg',
+    tok2: PATH + '/img/gripTok/tok2.jpg',
+    tok3: PATH + '/img/gripTok/tok3.jpg',
+    tok4: PATH + '/img/gripTok/tok4.jpg',
 };

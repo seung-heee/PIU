@@ -11,7 +11,7 @@ import { Navigation, EffectCoverflow, Pagination } from 'swiper/modules';
 
 const Purchase2 = () => {
     return (
-        <div className="section min-h-screen">
+        <div className="min-h-screen">
             <div className='carousel flex justify-center'>
                 <Swiper
                     className='Purchase-swiper'
@@ -20,9 +20,9 @@ const Purchase2 = () => {
                     centeredSlides={true}
                     grabCursor={true}
                     coverflowEffect={{
-                        rotate: 0,
+                        rotate: 30,
                         stretch: 100,
-                        depth: 30,
+                        depth: 80,
                         modifier: 1.5,
                         slideShadows: true
                     }}
@@ -54,19 +54,19 @@ const Purchase2 = () => {
                     }}
                 >
                     <SwiperSlide className='Purchase-swiper-slide'>
-                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                        <img src={images.tok4} alt="그립톡" className="giftimg" />
                     </SwiperSlide>
                     <SwiperSlide className='Purchase-swiper-slide'>
-                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                        <img src={images.tok2} alt="그립톡" className="giftimg" />
                     </SwiperSlide>
                     <SwiperSlide className='Purchase-swiper-slide'>
-                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                        <img src={images.tok3} alt="그립톡" className="giftimg" />
                     </SwiperSlide>
                     <SwiperSlide className='Purchase-swiper-slide'>
-                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                        <img src={images.tok2} alt="그립톡" className="giftimg" />
                     </SwiperSlide>
                     <SwiperSlide className='Purchase-swiper-slide'>
-                        <img src={images.tok} alt="그립톡" className="giftimg" />
+                        <img src={images.tok2} alt="그립톡" className="giftimg" />
                     </SwiperSlide>
                     <div className="wrap">
                         <div className="target" data-scale="2" data-image={images.tok}></div>
