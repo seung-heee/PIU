@@ -23,11 +23,11 @@ export const images = {
     희은: PATH + '/img/person/선우희은.png',
     조성민: PATH + '/img/person/김ㅇ훈.png',
     // 기업 로고
+    GoQba: PATH + '/img/company/GoQba.webp',
+    JSH: PATH + '/img/company/JSH.png',
+    대한안전교육협회: PATH + '/img/company/대한안전교육협회.png',
     LG: PATH + '/img/company/LG.png',
-    Hanwha: PATH + '/img/company/Hanwha.png',
-    com1: PATH + '/img/company/com1.jpg',
-    SK: PATH + '/img/company/SK.png',
-    com2: PATH + '/img/company/com2.jpg',
+
     // 구매페이지
     buy1: PATH + '/img/buy/buy1.png',
 
@@ -56,4 +56,5 @@ export const images = {
     tok2: PATH + '/img/gripTok/tok2.jpg',
     tok3: PATH + '/img/gripTok/tok3.jpg',
     tok4: PATH + '/img/gripTok/tok4.jpg',
+
 };

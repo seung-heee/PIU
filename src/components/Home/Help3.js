@@ -1,9 +1,11 @@
 import { images } from '../../utils/images';
 import { BiSolidDonateHeart } from "react-icons/bi";
+import PiuTeam from '../Piece/PiuTeam';
 
 const Help3 = () => {
     return (
-        <div className="Help3 min-h-screen max-h-screen flex justify-center  text-white">
+        <div className="relative Help3 min-h-screen max-h-screen flex justify-center  text-white">
+            <PiuTeam vertical={false} />
             <div className='container flex '>
                 <div className='flex flex-col justify-center'>
                     <div className=' Help3Title pretendard-EB text-5xl px-16 pt-16'>"가상 동반자를 현실로"<br />

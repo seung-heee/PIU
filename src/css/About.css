@@ -27,6 +27,31 @@
 }
 
 
+/* 후원기업 */
+
+.SponsoringCompany>div>div {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.SponsoringCompany>div>div>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.SponsoringCompany>div>div>div>div>div {
+    text-align: center;
+}
+
+.SponsoringCompany>div>div>div>div>div>img {
+    height: 60px;
+    text-align: center;
+}
+
+
 /*모바일 */
 
 .personMobile img {

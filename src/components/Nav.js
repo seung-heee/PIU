@@ -42,8 +42,8 @@ const Nav = () => {
     return (
         <div className="Nav mb-3 flex justify-center pretendard-B text-lg">
             <ul className='container flex justify-between items-center h-full '>
-                <li><Link to='/'><img src={images.PIU} alt="logo" className='w-20' /></Link></li>
-                {/* <li className='text-4xl'><div>PIU</div></li> */}
+                {/* <li><Link to='/'><img src={images.PIU} alt="logo" className='w-20' /></Link></li> */}
+                <li className='text-4xl'><div>PIU</div></li>
                 {windowWidth >= 768 ?
                     <>
                         {/* PC */}
