@@ -44,7 +44,8 @@
 .carousel {
     z-index: 0;
     position: relative;
-    width: calc(min(60rem, 90%));
+    width: 60rem;
+    height: 30rem;
     margin: 0 auto;
     min-height: 80vh;
     column-gap: 3rem;
@@ -54,7 +55,7 @@
 .Purchase-swiper {
     width: 100%;
     padding-top: 3.125rem;
-    padding: 50px 0 !important;
+    padding: 60px 0 !important;
 }
 
 .Purchase-swiper-slider {
