@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
+import BuyBottom from "../components/buy/BuyBottom";
 import { images } from '../utils/images';
 
 const Buy = () => {
@@ -30,6 +32,9 @@ const Buy = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/order'>구매하기 임시링크</Link>
+                    <BuyBottom />
+
                 </div>
             </div>
         </>

@@ -168,53 +168,22 @@ body::-webkit-scrollbar {
     height: 150px;
 }
 
-
-/* 반응형 
-
-@media screen and (max-width: 50rem) {
-    .slideBox {
-        display: flex;
-        height: 10%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .slideItem {
-        min-height: 8vh;
-        min-width: 80%;
-        border-radius: 20px;
-        margin: 10px;
-        cursor: pointer;
-        transition: all 0.7s ease-in-out;
-        filter: blur(2px);
-    }
-    .AboutCompany {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .AboutCompany>div {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .AboutCompanyContent {
-        text-align: start;
-        padding: 10px;
-        font-size: 20px !important;
-    }
-    .AboutCompanyContent>div>p {
-        font-size: 23px;
-    }
-    .AboutCompany img {
-        height: auto;
-    }
-}
-*/
-
 .fp-watermark {
     display: none;
 }
 
 .verti {
     writing-mode: vertical-rl;
+}
+
+
+/* NonmemberLogin */
+
+.inputItem {
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.Order_inputItem {
+    border-bottom: 1px solid gray;
 }

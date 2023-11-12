@@ -20,7 +20,6 @@ const TeamMobile = () => {
                 </div>
                 <div className='flex flex-col justify-start'>
 
-
                     {/* 메타버스 */}
                     <div>
                         <div className='pretendard-B text-lg'>METAVERSE</div>

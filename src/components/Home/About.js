@@ -1,10 +1,8 @@
-import { useNavigate, Link } from "react-router-dom";
-import { images } from '../../utils/images';
+import { Link } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
 import { ImYoutube } from "react-icons/im";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { BsDot } from "react-icons/bs";
-import { PiArrowFatLineRightBold } from "react-icons/pi";
 import SponsoringCompany from "../about/SponsoringCompany.js";
 
 const About = () => {

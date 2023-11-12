@@ -49,7 +49,7 @@ const Nav = () => {
                         {/* PC */}
                         <div className='flex items-center navVersion'>
                             <li className='mx-3'><Link to='/buy'> 패키지 구매</Link></li>
-                            <li className='mx-3'><Link to='#'> 주문 | 배송 조회</Link></li>
+                            <li className='mx-3'><Link to='/nonmemberLogin'> 주문 | 배송 조회</Link></li>
                             <li className='mx-3'><Link to='#'> 후원하기</Link></li>
                             <li className='RunningPIU mx-3'><Link to='#'> Running PIU App</Link></li>
                         </div>
