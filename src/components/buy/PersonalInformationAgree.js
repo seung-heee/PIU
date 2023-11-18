@@ -1,11 +1,10 @@
 import { useState } from "react"
 
-const PersonalInformationAgree = () => {
-    const [inputStatus, setInputStatus] = useState(true)
+const PersonalInformationAgree = ({ agree, setAgree }) => {
 
     const handleClickRadioButton = (e) => {
-        setInputStatus(e.target.value)
-    }
+        setAgree(e.target.value); // 라디오 버튼의 값으로 상태 업데이트
+    };
     return (
         <div>
             <div className="border p-5">
@@ -33,17 +32,29 @@ const PersonalInformationAgree = () => {
                 <p>※ 동의를 거부할 수 있으나 거부시 비회원 구매 서비스 이용이 불가능합니다.</p>
 
                 <div className="flex items-center justify-end ">
-                    <div className=" flex items-center justify-end mr-3">
-                        <input type="radio" name="agreeForm" id="Agree" className="mr-2" value="Agree"
-                            checked={inputStatus === 'Agree'}
-                            onClick={handleClickRadioButton} />
-                        <label for="Agree">개인정보 수집 및 이용에 동의함</label>
+                    <div className="flex items-center justify-end mr-3">
+                        <input
+                            type="radio"
+                            name="agreeForm"
+                            id="Agree"
+                            className="mr-2"
+                            value="Agree"
+                            checked={agree === 'Agree'}
+                            onChange={handleClickRadioButton}
+                        />
+                        <label htmlFor="Agree">개인정보 수집 및 이용에 동의함</label>
                     </div>
-                    <div className=" flex items-center justify-end">
-                        <input type="radio" name="agreeForm" id="disagree" className="mr-2" value="disagree"
-                            checked={inputStatus === 'disagree'}
-                            onClick={handleClickRadioButton} />
-                        <label for="disagree">동의하지 않음</label>
+                    <div className="flex items-center justify-end">
+                        <input
+                            type="radio"
+                            name="agreeForm"
+                            id="disagree"
+                            className="mr-2"
+                            value="disagree"
+                            checked={agree === 'disagree'}
+                            onChange={handleClickRadioButton}
+                        />
+                        <label htmlFor="disagree">동의하지 않음</label>
                     </div>
                 </div>
             </div>

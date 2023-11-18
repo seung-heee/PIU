@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import Nav from "../components/Nav";
 import '../css/Order.css';
 import PersonalInformationAgree from "../components/buy/PersonalInformationAgree";
-import DaumPostcodeEmbed from "react-daum-postcode";
 import Postcode from "../components/buy/Postcode";
 import ProductInfo from "../components/buy/ProductInfo";
+import { APIClient } from "../utils/Auth";
+import { useNavigate } from "react-router-dom";
 
 const Order = () => {
+    const navigate = useNavigate();
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -33,7 +36,6 @@ const Order = () => {
     const [isPasswordConfirm, setIsPasswordConfirm] = useState(false);
     const [isEmail, setIsEmail] = useState(false);
 
-
     const onChangeEmail = (e) => {
         e.preventDefault();
         const currentEmail = e.target.value;
@@ -49,7 +51,9 @@ const Order = () => {
             setIsEmail(true);
         }
     };
+
     const onChangePassword = (e) => {
+        e.preventDefault();
         const currentPassword = e.target.value;
         setPassword(currentPassword);
         const passwordRegExp =
@@ -64,7 +68,9 @@ const Order = () => {
             setIsPassword(true);
         }
     };
+
     const onChangePasswordConfirm = (e) => {
+        e.preventDefault();
         const currentPasswordConfirm = e.target.value;
         setPasswordConfirm(currentPasswordConfirm);
         if (password !== currentPasswordConfirm) {
@@ -76,6 +82,30 @@ const Order = () => {
         }
     };
 
+    const handleSubmit = async (e) => {
+        const formData = {
+            "name": name,
+            "email": email,
+            "phoneNumber ": passwordConfirm,
+            "address": address,
+            "paymentMethod": paymentMethod,
+            "depositorName": depositorName,
+            "depositorybank": depositorybank,
+            "agree": agree,
+        }
+
+        try {
+            const response = await APIClient().post('/Order/', formData);
+            if (response.data) {
+                navigate('/주문완료페이지',);
+            } else {
+                throw new Error(`오류 : ${response.status}`);
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     return (
         <>
             <Nav />
@@ -84,48 +114,48 @@ const Order = () => {
                     <div className="text-4xl mb-10 text-center">ORDER</div>
 
                     <div className="">
-                        <form action="" className="flex flex-col w-1/2 mx-auto">
+                        <form action="" className="flex flex-col w-1/2 mx-auto" onSubmit={handleSubmit}>
                             {/* 주문자 정보 */}
                             <div className="mb-10">
                                 <p className="text-2xl mb-5">주문자정보</p>
-                                <label className="mb-3 flex w-full">
-                                    <span className="flex w-6/12">이름</span>
-                                    <input type="text w-8/12" className="Order_inputItem grow" value={name} onChange={(e) => setName(e.target.value)} />
-                                </label>
-                                <label className="mb-3 flex w-full">
-                                    <span className="flex w-6/12">이메일</span>
+                                <div className="mb-3 flex w-full">
+                                    <label htmlFor="name" className="flex w-6/12">이름</label>
+                                    <input type="text w-8/12" id="name" className="Order_inputItem grow" value={name} onChange={(e) => setName(e.target.value)} />
+                                </div>
+                                <div className="mb-3 flex w-full">
+                                    <label htmlFor='email' className="flex w-6/12">이메일</label>
                                     <div className="grow flex flex-col">
-                                        <input type="email" className="Order_inputItem grow" value={email} onChange={onChangeEmail} />
+                                        <input type="email" id='email' className="Order_inputItem grow" value={email} onChange={onChangeEmail} />
                                         <p className="message">{emailMessage}</p>
                                     </div>
-                                </label>
-                                <label className="mb-3 flex w-full">
-                                    <span className="flex w-6/12 text-right">전화번호</span>
-                                    <input type="text" className="Order_inputItem grow" placeholder="010-0000-0000" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-                                </label>
+                                </div>
+                                <div className="mb-3 flex w-full">
+                                    <label htmlFor='phoneNumber' className="flex w-6/12 text-right">전화번호</label>
+                                    <input type="text" id='phoneNumber' className="Order_inputItem grow" placeholder="010-0000-0000" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                                </div>
                             </div>
 
                             {/* 배송 정보 */}
                             <div className="mb-10">
                                 <p className="text-2xl mb-5">배송 정보</p>
-                                <label className="mb-3 flex w-full">
-                                    <span className="flex w-6/12">주문조회 비밀번호</span>
+                                <div className="mb-3 flex w-full">
+                                    <label htmlFor='password' className="flex w-6/12">주문조회 비밀번호</label>
                                     <div className="grow flex flex-col">
-                                        <input type="password" className="Order_inputItem grow" value={password} onChange={onChangePassword} />
+                                        <input type="password" id='password' className="Order_inputItem grow" value={password} onChange={onChangePassword} />
                                         <p className="message">{passwordMessage}</p>
                                     </div>
-                                </label>
-                                <label className="mb-3 flex w-full">
-                                    <span className="flex w-6/12">주문조회 비밀번호 확인</span>
+                                </div>
+                                <div className="mb-3 flex w-full">
+                                    <label htmlFor='passwordConfirm' className="flex w-6/12">주문조회 비밀번호 확인</label>
                                     <div className="grow flex flex-col">
-                                        <input type="password" className="Order_inputItem grow" value={passwordConfirm} onChange={onChangePasswordConfirm} />
+                                        <input type="password" id='passwordConfirm' className="Order_inputItem grow" value={passwordConfirm} onChange={onChangePasswordConfirm} />
                                         <p className="message">{passwordConfirmMessage}</p>
                                     </div>
-                                </label>
-                                <label className="mb-3 flex w-full">
-                                    <span className="flex w-6/12 text-right">배송지</span>
+                                </div>
+                                <div className="mb-3 flex w-full">
+                                    <label htmlFor='' className="flex w-6/12 text-right">배송지</label>
                                     <Postcode address={address} setAddress={setAddress} />
-                                </label>
+                                </div>
                             </div>
 
                             {/* 상품 정보 */}
@@ -141,7 +171,7 @@ const Order = () => {
                                     <span className="flex w-6/12">결제안내</span>
                                     <div className=" flex items-center">
                                         <input type="radio" name="fav" id="무통장입금" className="Order_inputItem grow mr-2" value={paymentMethod} />
-                                        <label for="무통장입금">무통장입금</label>
+                                        <label htmlFor="무통장입금">무통장입금</label>
                                     </div>
                                 </label>
                                 <label className="mb-3 flex w-full">
@@ -158,8 +188,8 @@ const Order = () => {
                                 </label>
                             </div>
 
-                            <PersonalInformationAgree />
-                            <input type="submit" value="구매하기" className="Buybtn" />
+                            <PersonalInformationAgree agree={agree} setAgree={setAgree} />
+                            <input type="submit" value="구매하기" className="Buybtn cursor-pointer" />
                         </form>
                     </div>
                 </div>
