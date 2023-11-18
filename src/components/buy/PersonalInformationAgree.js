@@ -1,4 +1,11 @@
+import { useState } from "react"
+
 const PersonalInformationAgree = () => {
+    const [inputStatus, setInputStatus] = useState(true)
+
+    const handleClickRadioButton = (e) => {
+        setInputStatus(e.target.value)
+    }
     return (
         <div>
             <div className="border p-5">
@@ -27,11 +34,15 @@ const PersonalInformationAgree = () => {
 
                 <div className="flex items-center justify-end ">
                     <div className=" flex items-center justify-end mr-3">
-                        <input type="radio" name="agreeForm" id="Agree" className="mr-2" value="Agree" />
+                        <input type="radio" name="agreeForm" id="Agree" className="mr-2" value="Agree"
+                            checked={inputStatus === 'Agree'}
+                            onClick={handleClickRadioButton} />
                         <label for="Agree">개인정보 수집 및 이용에 동의함</label>
                     </div>
                     <div className=" flex items-center justify-end">
-                        <input type="radio" name="agreeForm" id="disagree" className="mr-2" value="disagree" />
+                        <input type="radio" name="agreeForm" id="disagree" className="mr-2" value="disagree"
+                            checked={inputStatus === 'disagree'}
+                            onClick={handleClickRadioButton} />
                         <label for="disagree">동의하지 않음</label>
                     </div>
                 </div>

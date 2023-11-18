@@ -30,9 +30,9 @@ export const images = {
 
     // 구매페이지
     buy1: PATH + '/img/buy/buy1.png',
-    buyb_img1 : PATH + '/img/buy/buyb_img1.png',
-    buyb_img2 : PATH + '/img/buy/buyb_img2.png',
-    buyb_img3 : PATH + '/img/buy/buyb_img3.png',
+    buyb_img1: PATH + '/img/buy/buyb_img1.png',
+    buyb_img2: PATH + '/img/buy/buyb_img2.png',
+    buyb_img3: PATH + '/img/buy/buyb_img3.png',
 
     // Help1
     Help1_img1: PATH + '/img/help1page/img1.jpg',
@@ -60,4 +60,5 @@ export const images = {
     tok3: PATH + '/img/gripTok/tok3.jpg',
     tok4: PATH + '/img/gripTok/tok4.jpg',
 
+    buy1: PATH + '/img/buy/buy1.png',
 };
