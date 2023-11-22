@@ -6,6 +6,7 @@ import Postcode from "../components/buy/Postcode";
 import ProductInfo from "../components/buy/ProductInfo";
 import { APIClient } from "../utils/Auth";
 import { Link, useNavigate } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Order = () => {
     const navigate = useNavigate();
@@ -195,6 +196,7 @@ const Order = () => {
                     </div>
                 </div>
             </div >
+            <ScrollToTop />
         </>
     )
 }

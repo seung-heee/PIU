@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import ScrollToTop from "../components/ScrollToTop";
 import { images } from "../utils/images";
 
 const OrderSuccess = () => {
@@ -63,6 +64,7 @@ const OrderSuccess = () => {
                     </div>
                 </div>
             </div>
+            <ScrollToTop />
         </>
     )
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Nav from "../components/Nav";
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { APIClient } from "../utils/Auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NonmemberLogin = () => {
     const navigate = useNavigate();
@@ -44,6 +44,7 @@ const NonmemberLogin = () => {
     return (
         <>
             <Nav />
+
             <div className="flex items-center justify-center">
                 <div className="container mx-auto flex flex-col justify-center items-center">
                     <div className="text-5xl m-10 pretendard-EB">비회원로그인</div>
@@ -71,6 +72,7 @@ const NonmemberLogin = () => {
                             <button type="submit" className="p-4 mt-8 w-1/2 mx-auto rounded-xl bg-neutral-200">조회</button>
                         </form>
                     </div>
+                    <Link to='/orderDetail'>주문상세 임시링크</Link>
                 </div >
             </div >
         </>
