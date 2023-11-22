@@ -31,7 +31,7 @@ const PersonalInformationAgree = ({ agree, setAgree }) => {
                 <p>-보존기간 : 3개월</p>
                 <p>※ 동의를 거부할 수 있으나 거부시 비회원 구매 서비스 이용이 불가능합니다.</p>
 
-                <div className="flex items-center justify-end ">
+                <div className="flex items-center justify-end mt-5">
                     <div className="flex items-center justify-end mr-3">
                         <input
                             type="radio"

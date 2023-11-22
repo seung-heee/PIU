@@ -5,7 +5,7 @@ import PersonalInformationAgree from "../components/buy/PersonalInformationAgree
 import Postcode from "../components/buy/Postcode";
 import ProductInfo from "../components/buy/ProductInfo";
 import { APIClient } from "../utils/Auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Order = () => {
     const navigate = useNavigate();
@@ -95,7 +95,7 @@ const Order = () => {
         }
 
         try {
-            const response = await APIClient().post('/Order/', formData);
+            const response = await APIClient().post('/OrderSuccess/', formData);
             if (response.data) {
                 navigate('/주문완료페이지',);
             } else {
@@ -114,9 +114,9 @@ const Order = () => {
                     <div className="text-4xl mb-10 text-center">ORDER</div>
 
                     <div className="">
-                        <form action="" className="flex flex-col w-1/2 mx-auto" onSubmit={handleSubmit}>
+                        <form action="" className="flex flex-col w-2/3 mx-auto" onSubmit={handleSubmit}>
                             {/* 주문자 정보 */}
-                            <div className="mb-10">
+                            <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">주문자정보</p>
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor="name" className="flex w-6/12">이름</label>
@@ -136,7 +136,7 @@ const Order = () => {
                             </div>
 
                             {/* 배송 정보 */}
-                            <div className="mb-10">
+                            <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">배송 정보</p>
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor='password' className="flex w-6/12">주문조회 비밀번호</label>
@@ -159,13 +159,13 @@ const Order = () => {
                             </div>
 
                             {/* 상품 정보 */}
-                            <div className="mb-10">
+                            <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">상품 정보</p>
                                 <ProductInfo />
                             </div>
 
                             {/* 결제정보 */}
-                            <div className="mb-10">
+                            <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">결제 정보</p>
                                 <label className="mb-3 flex w-full">
                                     <span className="flex w-6/12">결제안내</span>
@@ -190,6 +190,7 @@ const Order = () => {
 
                             <PersonalInformationAgree agree={agree} setAgree={setAgree} />
                             <input type="submit" value="구매하기" className="Buybtn cursor-pointer" />
+                            <Link to='/Ordersuccess'>주문완료 임시링크</Link>
                         </form>
                     </div>
                 </div>
