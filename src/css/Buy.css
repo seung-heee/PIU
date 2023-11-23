@@ -1,0 +1,89 @@
+@media screen and (max-width: 50rem){
+/*buy*/
+.buy-box{
+    flex-direction: column;
+    align-items: center;
+}
+.buy-img{
+    width: 100%;
+}
+.buy-img img{
+    padding: 10px;
+    margin-top:20px;
+    margin-left: 0;
+}
+.buy-content{
+    padding:0;
+    width:100%;
+    padding-left: 20px;
+    padding-top:20px;
+}
+.buy-sub{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*buybottom*/
+.box1, .box2, .box3 {
+    flex-direction: column;
+    align-items: center;
+}
+.box1-text{
+    padding-left: 0;
+    width: 80%;
+    padding-top: 70px;
+}
+.box1-title, .box2-title, .box3-title{
+    font-size: 3.0rem;
+}
+.box1-sub, .box2-sub{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.box1-img{
+    width: 100%;
+    margin-top:55px;
+    justify-content: flex-end;
+    min-height: 0;
+    max-height: none;
+}
+.box1-img img{
+    padding-top: 0px;
+    padding-left: 0px;
+
+}
+.box2-text{
+    padding-left: 0;
+    width: 80%;
+    padding-top: 38px;
+}
+.box2-title{
+    margin-bottom: 0px;
+}
+.box2-img{
+    width:100%;
+    min-height: 0;
+    max-height: none;
+}
+.box2-img img{
+    padding-top:0px;
+    padding-left: 15px;
+    padding-right: 0;
+}
+.box3-img{
+    width:100%;
+    min-height: 0;
+    max-height: none;
+    margin-top: 30px;
+}
+.box3-img img{
+    width:100%;
+    height:100%;
+}
+.box3-text{
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width:70%;
+}
+}
