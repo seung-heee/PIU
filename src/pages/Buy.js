@@ -2,17 +2,40 @@ import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
 import BuyBottom from "../components/buy/BuyBottom";
 import { images } from '../utils/images';
+import React, { useEffect, useState } from "react";
 
+    
 const Buy = () => {
+
+    const product = {
+        price: 10000,
+        stock: 50
+    };
+
+    const [quantity, setQuantity] = useState(1);
+    const [total, setTotal] = useState(product.price);
+
+    const handleClickCounter = (num) => {
+        setQuantity((prev) => prev + num);
+        setTotal((prev) => prev + product.price * num);
+    };
+
+    const handleBlurInput = () => {
+        if (quantity > product.stock) {
+            alert(`${product.stock}개 이하로 구매하실 수 있습니다.`);
+            setQuantity(product.stock);
+            setTotal(product.price * product.stock);
+        }
+    };
     return (
         <>
             <Nav />
             <div className="Buy">
                 <div className="container mx-auto">
-                    <div className="w-full flex">
-                        <div className="w-1/2"><img src={images.buy1} alt="패키지 이미지" className="p-8 ml-8" /></div>
-                        <div className="w-1/2 p-16 pt-24 pr-24">
-                            <p className="text-xl mb-5 font-medium">☆코스튬 기획전☆ [도그웨그] 공작새<br/>
+                    <div className="buy-box w-full flex">
+                        <div className="buy-img w-1/2"><img src={images.buy1} alt="패키지 이미지" className="p-8 ml-8" /></div>
+                        <div className="buy-content w-1/2 p-16 pt-24 pr-24">
+                            <p className="buy-title text-xl mb-5 font-medium">☆코스튬 기획전☆ [도그웨그] 공작새<br/>
                                 강아지 코스튬 고양이 할로윈 코스프레 옷 <br/> [오프라인전용]</p>
                             <div>
                                 <form className="flex flex-col mr-3 pr-5">
@@ -27,11 +50,41 @@ const Buy = () => {
                                         <option value="L">L</option>
                                     </select>
                                     <output name="result" for="a b"></output>
-                                    <div className="mb-6">
+                                    <div className="mb-6 w-full flex">
                                         <p className="w-1/2 text-xl px-2 font-medium">수량</p>
+                                        <div className="counter w-full flex justify-end mr-3">
+                                            <button className="bg-slate-200 w-7"
+                                                type="button"
+                                                disabled={quantity === 1}
+                                                aria-label="수량 내리기"
+                                                onClick={() => handleClickCounter(-1)}
+                                            >
+                                                -
+                                            </button>
+                                            <label className="text-center justify-center">
+                                                <input className="w-8 text-center" 
+                                                type="number"
+                                                min={1}
+                                                value={quantity}
+                                                max={product.stock}
+                                                readOnly
+                                                onBlur={handleBlurInput}
+                                                />
+                                            </label>
+                                            <button className="bg-slate-200 w-7 mr-4"
+                                                type="button"
+                                                disabled={quantity === product.stock}
+                                                aria-label="수량 올리기"
+                                                onClick={() => handleClickCounter(1)}
+                                            >
+                                                +
+                                            </button>
+                                            <p className="text-xl">{product.price}</p>
+                                        </div>
                                     </div>
-                                    <div className="mb-6">
-                                        <p className="w-1/2 text-2xl px-2 font-semibold">총 상품 금액</p>
+                                    <div className="mb-6 w-full flex">
+                                        <p className="w-3/4 text-2xl px-2 font-semibold">총 상품 금액</p>
+                                        <strong className="w-full flex justify-end mr-3 text-xl">{total.toLocaleString()}</strong>
                                     </div>
                                     <hr/>
                                     <div className="w-full flex">
@@ -47,7 +100,7 @@ const Buy = () => {
                                         </svg>
                                     </button>
                                     </div>
-                                    <div className="px-10">
+                                    <div className="buy-sub px-10">
                                         <p className="text-right">누적 판매 1000+
                                         </p>
                                     </div>
@@ -63,5 +116,4 @@ const Buy = () => {
         </>
     )
 }
-
 export default Buy;
