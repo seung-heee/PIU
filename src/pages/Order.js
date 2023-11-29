@@ -7,8 +7,12 @@ import ProductInfo from "../components/buy/ProductInfo";
 import { APIClient } from "../utils/Auth";
 import { Link, useNavigate } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
+import { OrderProvider, useOrderContext } from "../components/buy/OrderContext";
+import { useRef } from "react";
 
 const Order = () => {
+    const { orderData, updateOrderData } = useOrderContext();
+    const [formData, setFormData] = useState({});
     const navigate = useNavigate();
 
     const [name, setName] = useState("");
@@ -23,9 +27,9 @@ const Order = () => {
     const [address, setAddress] = useState({
         zipCode: '',
         fullAddress: '',
-        extraAddress: '',
         detailAddress: ''
     });
+    const [productInfo, setProductInfo] = useState("브랜드A"); // 아마이것도 객체일가능성높음
 
     // 오류메세지 상태 저장
     const [passwordMessage, setPasswordMessage] = useState("");
@@ -36,6 +40,10 @@ const Order = () => {
     const [isPassword, setIsPassword] = useState(false);
     const [isPasswordConfirm, setIsPasswordConfirm] = useState(false);
     const [isEmail, setIsEmail] = useState(false);
+    // useRef를 사용하여 각 입력 필드에 대한 참조 생성
+    const emailInputRef = useRef(null);
+    const passwordInputRef = useRef(null);
+    const confirmPasswordInputRef = useRef(null);
 
     const onChangeEmail = (e) => {
         e.preventDefault();
@@ -84,27 +92,44 @@ const Order = () => {
     };
 
     const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        // 이메일, 비밀번호, 비밀번호 확인 등의 조건을 체크
+        if (!isEmail) {
+            // 이메일 조건 불만족 시
+            // 이메일 입력 필드에 포커스를 주기
+            emailInputRef.current.focus();
+            return;
+        }
+
+        if (!isPassword) {
+            // 비밀번호 조건 불만족 시
+            // 비밀번호 입력 필드에 포커스를 주기
+            passwordInputRef.current.focus();
+            return;
+        }
+
+        if (!isPasswordConfirm) {
+            // 비밀번호 확인 조건 불만족 시
+            // 비밀번호 확인 입력 필드에 포커스를 주기
+            confirmPasswordInputRef.current.focus();
+            return;
+        }
+
         const formData = {
             "name": name,
             "email": email,
-            "phoneNumber ": passwordConfirm,
+            "phoneNumber": phoneNumber,
+            "passwordConfirm": passwordConfirm,
             "address": address,
+            "ProductInfo": productInfo,
             "paymentMethod": paymentMethod,
             "depositorName": depositorName,
             "depositorybank": depositorybank,
             "agree": agree,
         }
 
-        try {
-            const response = await APIClient().post('/OrderSuccess/', formData);
-            if (response.data) {
-                navigate('/주문완료페이지',);
-            } else {
-                throw new Error(`오류 : ${response.status}`);
-            }
-        } catch (error) {
-            console.error(error);
-        }
+        navigate('/orderSuccess', { state: { formData } });
     }
 
     return (
@@ -126,13 +151,13 @@ const Order = () => {
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor='email' className="flex w-6/12">이메일</label>
                                     <div className="grow flex flex-col">
-                                        <input type="email" id='email' className="Order_inputItem grow" value={email} onChange={onChangeEmail} />
+                                        <input ref={emailInputRef} type="email" id='email' className="Order_inputItem grow" value={email} onChange={onChangeEmail} />
                                         <p className="message">{emailMessage}</p>
                                     </div>
                                 </div>
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor='phoneNumber' className="flex w-6/12 text-right">전화번호</label>
-                                    <input type="text" id='phoneNumber' className="Order_inputItem grow" placeholder="010-0000-0000" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                                    <input type="text" id='phoneNumber' className="Order_inputItem grow" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
                                 </div>
                             </div>
 
@@ -142,14 +167,14 @@ const Order = () => {
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor='password' className="flex w-6/12">주문조회 비밀번호</label>
                                     <div className="grow flex flex-col">
-                                        <input type="password" id='password' className="Order_inputItem grow" value={password} onChange={onChangePassword} />
+                                        <input ref={passwordInputRef} type="password" id='password' className="Order_inputItem grow" value={password} onChange={onChangePassword} />
                                         <p className="message">{passwordMessage}</p>
                                     </div>
                                 </div>
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor='passwordConfirm' className="flex w-6/12">주문조회 비밀번호 확인</label>
                                     <div className="grow flex flex-col">
-                                        <input type="password" id='passwordConfirm' className="Order_inputItem grow" value={passwordConfirm} onChange={onChangePasswordConfirm} />
+                                        <input ref={confirmPasswordInputRef} type="password" id='passwordConfirm' className="Order_inputItem grow" value={passwordConfirm} onChange={onChangePasswordConfirm} />
                                         <p className="message">{passwordConfirmMessage}</p>
                                     </div>
                                 </div>
@@ -162,7 +187,7 @@ const Order = () => {
                             {/* 상품 정보 */}
                             <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">상품 정보</p>
-                                <ProductInfo />
+                                {/* <ProductInfo /> */}
                             </div>
 
                             {/* 결제정보 */}
@@ -190,7 +215,10 @@ const Order = () => {
                             </div>
 
                             <PersonalInformationAgree agree={agree} setAgree={setAgree} />
-                            <input type="submit" value="구매하기" className="Buybtn cursor-pointer" />
+                            {/* <input type="submit" value="구매하기" className="Buybtn cursor-pointer" /> */}
+                            <button type="submit" onClick={handleSubmit}>
+                                구매하기
+                            </button>
                             <Link to='/Ordersuccess'>주문완료 임시링크</Link>
                         </form>
                     </div>

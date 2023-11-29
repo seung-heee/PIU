@@ -11,7 +11,9 @@ const Postcode = ({ address, setAddress }) => {
             zipCode: data.zonecode,
             fullAddress: data.address,
             extraAddress: '',
+            detailAddress: ''
         }));
+        console.log(address);
 
         if (data.addressType === 'R') {
             let updatedExtraAddress = '';
@@ -38,12 +40,15 @@ const Postcode = ({ address, setAddress }) => {
         <>
             <div className='grow flex flex-col'>
                 <div className='flex grow items-center justify-between'>
-                    <input type="text" placeholder="우편번호" value={address.zipCode} readOnly />
+                    <input type="text" placeholder="우편번호" value={address.zipCode || ''} readOnly />
                     <button type='button' onClick={handleClick} className='addressbtn'>주소 검색</button>
                 </div>
                 <div className='flex flex-col items-start grow '>
-                    <input type="text" className='w-full' placeholder='주소' value={address.fullAddress} readOnly />
-                    <input type="text" className='w-full' placeholder='상세주소' value={address.detailAddress} onChange={(e) => setAddress((prevAddress) => ({ ...prevAddress, detailAddress: e.target.value }))} />
+                    <input type="text" className='w-full' placeholder='주소' value={address?.fullAddress || ''} readOnly />
+                    <input type="text" className='w-full' placeholder='상세주소' value={address.detailAddress} onChange={(e) => {
+                        console.log(address)
+                        setAddress((prevAddress) => ({ ...prevAddress, detailAddress: e.target.value }))
+                    }} />
                 </div>
             </div>
         </>

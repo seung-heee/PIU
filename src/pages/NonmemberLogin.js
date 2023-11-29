@@ -32,7 +32,7 @@ const NonmemberLogin = () => {
         try {
             const response = await APIClient().post('/nonmemberCheck/', formData);
             if (response.data) {
-                navigate('/주문상세페이지',);
+                navigate('/orderDetail',);
             } else {
                 throw new Error(`오류 : ${response.status}`);
             }

@@ -16,8 +16,8 @@ const ProductInfo = () => {
                     <td className="w-6/12 flex">
                         <img src={images.buy1} alt="" className="w-20" />
                         <div className="flex flex-col justify-center grow text-left ml-5">
-                            <p>[PIU] 패키지</p>
-                            <p>옵션 : </p>
+                            <p>[PIU] 브랜드명 - 상품명</p>
+                            <p>옵션 : 사이즈 M</p>
                         </div>
                     </td>
                     <td className="w-2/12">1개</td>
