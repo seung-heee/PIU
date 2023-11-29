@@ -7,12 +7,9 @@ import ProductInfo from "../components/buy/ProductInfo";
 import { APIClient } from "../utils/Auth";
 import { Link, useNavigate } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
-import { OrderProvider, useOrderContext } from "../components/buy/OrderContext";
 import { useRef } from "react";
 
 const Order = () => {
-    const { orderData, updateOrderData } = useOrderContext();
-    const [formData, setFormData] = useState({});
     const navigate = useNavigate();
 
     const [name, setName] = useState("");
@@ -157,7 +154,7 @@ const Order = () => {
                                 </div>
                                 <div className="mb-3 flex w-full">
                                     <label htmlFor='phoneNumber' className="flex w-6/12 text-right">전화번호</label>
-                                    <input type="text" id='phoneNumber' className="Order_inputItem grow" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                                    <input type="text" id='phoneNumber' className="Order_inputItem grow" placeholder="010-0000-0000" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
                                 </div>
                             </div>
 

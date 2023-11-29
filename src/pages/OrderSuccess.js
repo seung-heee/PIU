@@ -1,16 +1,12 @@
 import Nav from "../components/Nav";
 import ScrollToTop from "../components/ScrollToTop";
 import { images } from "../utils/images";
-import { useOrderContext } from "../components/buy/OrderContext";
 import { useLocation } from 'react-router-dom';
 
 const OrderSuccess = () => {
-    const { orderData } = useOrderContext();
     const location = useLocation();
     const { state } = location;
-
     const formData = state?.formData || {};
-    console.log(formData)
 
     return (
         <>
