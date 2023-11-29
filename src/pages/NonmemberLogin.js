@@ -24,15 +24,17 @@ const NonmemberLogin = () => {
         e.preventDefault();
 
         const formData = {
-            "memberName": values.memberName,
-            "orderNumber": values.orderNumber,
-            "orderPassword ": values.orderPassword,
+            "name": values.memberName,
+            "orderCode": values.orderNumber,
+            "pwd ": values.orderPassword,
         }
+        console.log(formData);
 
         try {
-            const response = await APIClient().post('/nonmemberCheck/', formData);
+            const response = await APIClient().post('/orders/detail', formData);
             if (response.data) {
-                navigate('/orderDetail',);
+                const nonmemberData = response.data
+                navigate('/orderDetail', { state: { nonmemberData } });
             } else {
                 throw new Error(`오류 : ${response.status}`);
             }
@@ -66,7 +68,7 @@ const NonmemberLogin = () => {
                             <div className="mb-3">
                                 <label className="flex">
                                     <span className="w-1/2 grow flex items-center"><MdOutlineKeyboardArrowRight />비회원주문 비밀번호</span>
-                                    <input type='number' className="w-1/2 inputItem" name='orderPassword' value={values.orderPassword} onChange={handleChange}></input>
+                                    <input type='password' className="w-1/2 inputItem" name='orderPassword' value={values.orderPassword} onChange={handleChange}></input>
                                 </label>
                             </div>
                             <button type="submit" className="p-4 mt-8 w-1/2 mx-auto rounded-xl bg-neutral-200">조회</button>

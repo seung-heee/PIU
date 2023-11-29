@@ -91,24 +91,17 @@ const Order = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        // 이메일, 비밀번호, 비밀번호 확인 등의 조건을 체크
         if (!isEmail) {
-            // 이메일 조건 불만족 시
-            // 이메일 입력 필드에 포커스를 주기
             emailInputRef.current.focus();
             return;
         }
 
         if (!isPassword) {
-            // 비밀번호 조건 불만족 시
-            // 비밀번호 입력 필드에 포커스를 주기
             passwordInputRef.current.focus();
             return;
         }
 
         if (!isPasswordConfirm) {
-            // 비밀번호 확인 조건 불만족 시
-            // 비밀번호 확인 입력 필드에 포커스를 주기
             confirmPasswordInputRef.current.focus();
             return;
         }
@@ -117,13 +110,30 @@ const Order = () => {
             "name": name,
             "email": email,
             "phoneNumber": phoneNumber,
-            "passwordConfirm": passwordConfirm,
+            "pwd": passwordConfirm,
             "address": address,
             "ProductInfo": productInfo,
             "paymentMethod": paymentMethod,
             "depositorName": depositorName,
             "depositorybank": depositorybank,
             "agree": agree,
+        }
+
+        try {
+            const response = await APIClient().post('/orders/', formData);
+            if (response.data) {
+
+                const updatedFormData = {
+                    ...formData,
+                    responseData: response.data,
+                }; // 서버에서 받은 데이터 추가
+
+                navigate('/orderSuccess', { state: { updatedFormData } });
+            } else {
+                throw new Error(`오류 : ${response.status}`);
+            }
+        } catch (error) {
+            console.error(error);
         }
 
         navigate('/orderSuccess', { state: { formData } });

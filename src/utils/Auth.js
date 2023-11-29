@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const APIClient = () => axios.create({
-    baseURL: 'https://www.naver.com/',
+    baseURL: 'url',
     headers: {
         'Content-Type': 'application/json',
     }
