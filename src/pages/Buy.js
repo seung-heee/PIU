@@ -12,6 +12,47 @@ const Buy = () => {
         stock: 50
     };
 
+    const [selectedBrand, setSelectedBrand] = useState(null);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [selectedSize, setSelectedSize] = useState(null);
+    
+    const brands = ['브랜드A', '브랜드B', '브랜드C'];
+
+    const productsByBrand = {
+        '브랜드A': ['토끼옷', '다른상품A', '다른상품B'],
+        '브랜드B': ['곰돌이옷', '다른상품C', '다른상품D'],
+        '브랜드C': ['다른브랜드상품A', '다른브랜드상품B'],
+      };
+
+      const sizesByProduct = {
+        '토끼옷': ['S', 'M', 'L'],
+        '곰돌이옷': ['XS', 'S', 'M', 'L'],
+        '다른상품A': ['S', 'M'],
+        '다른상품B': ['L', 'XL'],
+        '다른상품C': ['M', 'L', 'XL'],
+        '다른상품D': ['S', 'XL'],
+        '다른브랜드상품A': ['M', 'L'],
+        '다른브랜드상품B': ['S', 'XL'],
+      };
+      // 브랜드가 변경될 때 호출되는 함수
+    const handleBrandChange = (brand) => {
+        setSelectedBrand(brand);
+        setSelectedProduct(null); // 상품 초기화
+    };
+
+    // 상품이 변경될 때 호출되는 함수
+    const handleProductChange = (product) => {
+        setSelectedProduct(product);
+        setSelectedSize(null); // 사이즈 초기화
+    };
+
+    const handleSizeChange = (size) => {
+        setSelectedSize(size);
+        // 사이즈 변경시 수량과 금액 초기화
+        setQuantity(1);
+        setTotal(sizesByProduct[selectedProduct]?.[size]?.price || 0);
+      };
+    
     const [quantity, setQuantity] = useState(1);
     const [total, setTotal] = useState(product.price);
 
@@ -34,54 +75,76 @@ const Buy = () => {
                 <div className="container mx-auto">
                     <div className="buy-box w-full flex">
                         <div className="buy-img w-1/2"><img src={images.buy1} alt="패키지 이미지" className="p-8 ml-8" /></div>
-                        <div className="buy-content w-1/2 p-16 pt-24 pr-24">
+                        <div className="buy-content w-1/2 p-16 pt-16 pr-24">
                             <p className="buy-title text-xl mb-5 font-medium">☆코스튬 기획전☆ [도그웨그] 공작새<br/>
                                 강아지 코스튬 고양이 할로윈 코스프레 옷 <br/> [오프라인전용]</p>
                             <div>
                                 <form className="flex flex-col mr-3 pr-5">
-                                    <select name="Brand" className="h-12 my-4 p-3 outline outline-1 rounded-md">
-                                        <option value="브랜드A" selected="selected">브랜드A</option>
-                                        <option value="브랜드B">브랜드B</option>
-                                        <option value="브랜드C">브랜드C</option>
+                                    <select name="Brand" className="h-12 my-4 p-3 outline outline-1 rounded-md" onChange={(e) => handleBrandChange(e.target.value)}>
+                                    <option disabled hidden selected>브랜드 선택</option>
+                                    {brands.map((brand, index) => (
+                                    <option key={index} value={brand}>
+                                        {brand}
+                                    </option>
+                                    ))}
                                     </select>
-                                    <select name="Size" className="h-12 mb-6 p-3 outline outline-1 rounded-md">
-                                        <option value="S">S</option>
-                                        <option value="M">M</option>
-                                        <option value="L">L</option>
+                                    {selectedBrand && (
+                                    <select name="Product" className="h-12 mb-4 p-3 outline outline-1 rounded-md" onChange={(e) => handleProductChange(e.target.value)}>
+                                    <option disabled hidden selected>상품 선택</option>
+                                    {productsByBrand[selectedBrand].map((product, index) => (
+                                        <option key={index} value={product}>
+                                        {product}
+                                        </option>
+                                    ))}
                                     </select>
-                                    <output name="result" for="a b"></output>
-                                    <div className="mb-6 w-full flex">
-                                        <p className="w-1/2 text-xl px-2 font-medium">수량</p>
-                                        <div className="counter w-full flex justify-end mr-3">
-                                            <button className="bg-slate-200 w-7"
-                                                type="button"
-                                                disabled={quantity === 1}
-                                                aria-label="수량 내리기"
-                                                onClick={() => handleClickCounter(-1)}
-                                            >
-                                                -
-                                            </button>
-                                            <label className="text-center justify-center">
-                                                <input className="w-8 text-center" 
-                                                type="number"
-                                                min={1}
-                                                value={quantity}
-                                                max={product.stock}
-                                                readOnly
-                                                onBlur={handleBlurInput}
-                                                />
-                                            </label>
-                                            <button className="bg-slate-200 w-7 mr-4"
-                                                type="button"
-                                                disabled={quantity === product.stock}
-                                                aria-label="수량 올리기"
-                                                onClick={() => handleClickCounter(1)}
-                                            >
-                                                +
-                                            </button>
-                                            <p className="text-xl">{product.price}</p>
+                                    )}
+                                    {selectedProduct &&(
+                                    <select name="Size" className="h-12 mb-6 p-3 outline outline-1 rounded-md" >
+                                        <option disabled hidden selected>사이즈 선택</option>
+                                        {sizesByProduct[selectedProduct].map((size, index) => (
+                                            <option key={index} value={size}>
+                                            {size}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    )}
+                                    {selectedBrand && selectedProduct && selectedSize && (
+                                        <div>
+                                            <output name="result" for="a b"></output>
+                                            <div className="mb-6 w-full flex">
+                                                <p className="w-1/2 text-xl px-2 font-medium">수량</p>
+                                                <div className="counter w-full flex justify-end mr-3">
+                                                    <button className="bg-slate-200 w-7"
+                                                        type="button"
+                                                        disabled={quantity === 1}
+                                                        aria-label="수량 내리기"
+                                                        onClick={() => handleClickCounter(-1)}
+                                                    >
+                                                        -
+                                                    </button>
+                                                    <label className="text-center justify-center">
+                                                        <input className="w-8 text-center" 
+                                                        type="number"
+                                                        min={1}
+                                                        value={quantity}
+                                                        max={product.stock}
+                                                        readOnly
+                                                        onBlur={handleBlurInput}
+                                                        />
+                                                    </label>
+                                                    <button className="bg-slate-200 w-7 mr-4"
+                                                        type="button"
+                                                        disabled={quantity === product.stock}
+                                                        aria-label="수량 올리기"
+                                                        onClick={() => handleClickCounter(1)}
+                                                    >
+                                                        +
+                                                    </button>
+                                                    <p className="text-xl">{product.price}</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    )}
                                     <div className="mb-6 w-full flex">
                                         <p className="w-3/4 text-2xl px-2 font-semibold">총 상품 금액</p>
                                         <strong className="w-full flex justify-end mr-3 text-xl">{total.toLocaleString()}</strong>
