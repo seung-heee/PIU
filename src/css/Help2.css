@@ -8,8 +8,8 @@
 
 .Help1-Swiper {
     width: 80%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .Help1-Swiper .swiper-pagination {
@@ -21,17 +21,25 @@
     background-size: cover;
     width: 300px;
     height: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Help1-SwiperSlide p {
+    text-align: right;
 }
 
 .Help1-SwiperSlide img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     height: 100%;
+    margin-right: 15px;
 }
 
 .Help2 {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-    background-color: rgb(135, 206, 250)
+    color: black;
 }
 
 

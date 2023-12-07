@@ -28,7 +28,6 @@ const NonmemberLogin = () => {
             "orderCode": values.orderNumber,
             "pwd ": values.orderPassword,
         }
-        console.log(formData);
 
         try {
             const response = await APIClient().post('/orders/detail', formData);

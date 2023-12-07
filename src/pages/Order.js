@@ -119,22 +119,22 @@ const Order = () => {
             "agree": agree,
         }
 
-        try {
-            const response = await APIClient().post('/orders/', formData);
-            if (response.data) {
+        // try {
+        //     const response = await APIClient().post('/orders/', formData);
+        //     if (response.data) {
 
-                const updatedFormData = {
-                    ...formData,
-                    responseData: response.data,
-                }; // 서버에서 받은 데이터 추가
+        //         const updatedFormData = {
+        //             ...formData,
+        //             responseData: response.data,
+        //         }; // 서버에서 받은 데이터 추가
 
-                navigate('/orderSuccess', { state: { updatedFormData } });
-            } else {
-                throw new Error(`오류 : ${response.status}`);
-            }
-        } catch (error) {
-            console.error(error);
-        }
+        //         navigate('/orderSuccess', { state: { updatedFormData } });
+        //     } else {
+        //         throw new Error(`오류 : ${response.status}`);
+        //     }
+        // } catch (error) {
+        //     console.error(error);
+        // }
 
         navigate('/orderSuccess', { state: { formData } });
     }
@@ -194,7 +194,7 @@ const Order = () => {
                             {/* 상품 정보 */}
                             <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">상품 정보</p>
-                                {/* <ProductInfo /> */}
+                                <ProductInfo />
                             </div>
 
                             {/* 결제정보 */}

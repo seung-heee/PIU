@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 const OrderSuccess = () => {
     const location = useLocation();
     const { state } = location;
-    const formData = state?.updatedFormData || {};
+    const formData = state?.formData || {};
     // const updatedFormData = state?.updatedFormData || {};
 
     return (

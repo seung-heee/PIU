@@ -27,6 +27,34 @@
     },
     {
         "id": 4,
+        "image": "노승희",
+        "name": "노승희",
+        "department": "미디어소프트웨어학과 20",
+        "position": "WEB",
+        "email": "tmdgml2595@naver.com",
+        "role": "Front-End / React"
+    },
+
+    {
+        "id": 5,
+        "image": "신민서",
+        "name": "신민서",
+        "department": "미디어소프트웨어학과 22",
+        "position": "WEB",
+        "email": "kittse@sungkyul.ac.kr",
+        "role": "Front-End / React"
+    },
+    {
+        "id": 12,
+        "image": "오인우",
+        "name": "오인우",
+        "department": "미디어소프트웨어학과 22",
+        "position": "WEB",
+        "email": "dlsdn410@naver.com",
+        "role": "Back-End / Nest.js"
+    },
+    {
+        "id": 10,
         "image": "김지우",
         "name": "김지우",
         "department": "미디어소프트웨어학과 18",
@@ -35,12 +63,21 @@
         "role": "Back-End / Nest.js"
     },
     {
-        "id": 5,
+        "id": 13,
         "image": "조성민",
         "name": "김도훈",
         "department": "미디어소프트웨어학과 22",
         "position": "WEB",
         "email": "kimuragen23@gmail.com ",
+        "role": "Back-End / Nest.js"
+    },
+    {
+        "id": 14,
+        "image": "노주희",
+        "name": "노주희",
+        "department": "미디어소프트웨어학과 22",
+        "position": "WEB",
+        "email": "sarah19270@naver.com",
         "role": "Back-End / Nest.js"
     }, {
         "id": 6,
@@ -79,17 +116,6 @@
         "email": "gkstjdwls147@naver.com",
         "role": "Client/Unity, Spatial"
     },
-
-
-    {
-        "id": 10,
-        "image": "노승희",
-        "name": "노승희",
-        "department": "미디어소프트웨어학과 20",
-        "position": "WEB",
-        "email": "tmdgml2595@naver.com",
-        "role": "Front-End / React"
-    },
     {
         "id": 11,
         "image": "조성민",
@@ -99,32 +125,7 @@
         "email": "tjdalsquf8@naver.com",
         "role": "Modeling / Blender"
     },
-    {
-        "id": 12,
-        "image": "오인우",
-        "name": "오인우",
-        "department": "미디어소프트웨어학과 22",
-        "position": "WEB",
-        "email": "dlsdn410@naver.com",
-        "role": "Back-End / Nest.js"
-    }, {
-        "id": 13,
-        "image": "신민서",
-        "name": "신민서",
-        "department": "미디어소프트웨어학과 22",
-        "position": "WEB",
-        "email": "kittse@sungkyul.ac.kr",
-        "role": "Front-End / React"
-    },
-    {
-        "id": 14,
-        "image": "노주희",
-        "name": "노주희",
-        "department": "미디어소프트웨어학과 22",
-        "position": "WEB",
-        "email": "sarah19270@naver.com",
-        "role": "Back-End / Nest.js"
-    },
+
     {
         "id": 15,
         "image": "김경진",

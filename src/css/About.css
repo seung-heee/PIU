@@ -19,11 +19,15 @@
     font-size: 14px;
 }
 
+.teamBox {
+    background-color: #f1f1f1;
+    margin: 30px;
+}
+
 .teamBox>div {
     padding: 20px;
-    border-radius: 20px;
-    background-color: #ececec;
     margin: 10px;
+    height: 85vh;
 }
 
 

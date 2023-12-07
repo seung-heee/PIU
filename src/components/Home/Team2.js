@@ -11,42 +11,32 @@ const Team2 = () => {
     const modeling = PersonInfo.filter(person => person.position === 'MODELING')
 
     return (
-        <div className="Team min-h-screen container mx-auto">
-            <div className='teamBox h-screen grid grid-cols-3 grid-rows-3 gap-5 p-10'>
-                {/* 총괄 */}
-                <div className='flex justify-center items-center'>
-                    <div>
-                        <div className='pretendard-B text-2xl text-center'>CEO</div>
-                        <Person id={1} />
+        <div className="Team min-h-screen container mx-auto flex items-center justify-center">
+            <div className='teamBox flex justify-center rounded-md'>
+                <div className='pretendard-EB text-5xl mb-10 bg-white rounded-md teamTitle text-center'>PIU TEAM</div>
+                <div className='flex flex-col '>
+                    {/* 총괄 */}
+                    <div className='flex justify-center items-start mb-3'>
+                        <div>
+                            <div className='pretendard-B text-2xl text-center'>CEO</div>
+                            <Person id={1} />
+                        </div>
                     </div>
-                </div>
-                <div className='pretendard-EB text-5xl mb-10 bg-white teamTitle text-center'>PIU TEAM</div>
-                {/* 웹 */}
-                <div className='row-span-3 flex justify-center items-center'>
-                    <div>
-                        <div className='pretendard-B text-2xl  text-center'>WEB</div>
-                        {web.map((person) => {
-                            console.log(person.id)
-                            return (
-                                <><Person id={person.id} /></>
-                            )
-                        })}
-                    </div>
-                </div>
-                {/* 메타버스 */}
-                <div className='row-span-2 flex justify-center items-center'>
-                    <div>
-                        <div className='pretendard-B text-2xl text-center'>METAVERSE</div>
-                        {metaverse.map((person) => {
-                            return (
-                                <><Person id={person.id} /></>
-                            )
-                        })}
+                    {/* 메타버스 */}
+                    <div className='flex justify-center items-start'>
+                        <div>
+                            <div className='pretendard-B text-2xl text-center'>METAVERSE</div>
+                            {metaverse.map((person) => {
+                                return (
+                                    <><Person id={person.id} /></>
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
 
                 {/* 모델링 */}
-                <div className='row-span-2 flex justify-center items-center'>
+                <div className='flex justify-center items-start'>
                     <div>
                         <div className='pretendard-B text-2xl text-center'>MODELING</div>
                         {modeling.map((person) => {
@@ -56,6 +46,19 @@ const Team2 = () => {
                         })}
                     </div>
                 </div>
+                {/* 웹 */}
+                <div className='flex justify-center items-start'>
+                    <div>
+                        <div className='pretendard-B text-2xl  text-center'>WEB</div>
+                        {web.map((person) => {
+                            return (
+                                <><Person id={person.id} /></>
+                            )
+                        })}
+                    </div>
+                </div>
+
+
 
             </div>
             <ScrollToTop />

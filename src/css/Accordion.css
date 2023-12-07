@@ -2,7 +2,7 @@
 
 .slideItem {
     overflow: hidden;
-    height: 85vh;
+    height: 80vh;
     border-radius: 20px;
     margin: 12px;
     cursor: pointer;
@@ -97,9 +97,9 @@
 }
 
 .AccordionTitle h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .AccordionSub {
-    font-size: rem;
+    font-size: 1rem;
 }
