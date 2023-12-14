@@ -114,7 +114,7 @@ const Buy = () => {
                                     </div>
                                     <hr/>
                                     <div className="w-full flex">
-                                    <input type="submit" value="구매하기" className="my-5 ml-10 p-4 bg-black w-3/5 text-white rounded-xl text-xl font-semibold" />
+                                    <input type="submit" value="구매하기" className="my-5 ml-10 p-4 bg-black w-3/5 text-white rounded-xl text-xl font-semibold" onClick={handleSubmit} />
 
                                     <button url="" className="ml-10" onClick={() => handleCopyClipBoard(`${baseUrl}${location.pathname}`)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10">
@@ -124,9 +124,6 @@ const Buy = () => {
                                     </div>
                             </div>
                         </div>
-                    <button type="submit" onClick={handleSubmit}>
-                        구매 임시버튼
-                    </button>
                     <div>
                         <div className="w-full text-center flex justify-center">
                             <button className="w-1/3" onClick={() => handleButtonClick(1)}>Button 1</button>
