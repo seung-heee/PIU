@@ -6,9 +6,8 @@ import { Link, useNavigate } from "react-router-dom";
 const ProductInfo = () => {
     const location = useLocation();
     const { state } = location;
-    const products = state?.products || {};
-    console.log(products);
-    
+    const product_info = state?.products || {};
+
     return (
         <table className="ProductInfo w-full flex flex-col border p-3">
             <thead className="flex w-full">
@@ -28,9 +27,9 @@ const ProductInfo = () => {
                             <p>옵션 : 사이즈 M</p>
                         </div>
                     </td>
-                    <td className="w-2/12">{products.quantity}</td>
+                    <td className="w-2/12">{product_info.product_info}</td>
                     <td className="w-2/12">무료</td>
-                    <td className="w-2/12">{products.total}</td>
+                    <td className="w-2/12">{product_info.orderproduct_count}</td>
                 </tr>
             </tbody>
         </table>

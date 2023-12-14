@@ -107,15 +107,13 @@ const Order = () => {
         }
 
         const formData = {
-            "name": name,
+            "cust_name": name,
             "email": email,
-            "phoneNumber": phoneNumber,
-            "pwd": passwordConfirm,
+            "phone_number": phoneNumber,
+            "cust_pwd": passwordConfirm,
             "address": address,
-            "ProductInfo": productInfo,
-            "paymentMethod": paymentMethod,
-            "depositorName": depositorName,
-            "depositorybank": depositorybank,
+            "product_info": productInfo,
+            "depositor_name": depositorName,
             "agree": agree,
         }
 

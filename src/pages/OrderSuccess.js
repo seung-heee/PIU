@@ -15,7 +15,16 @@ const OrderSuccess = () => {
             <div className="Order">
                 <div className="container mx-auto">
                     <div className="text-center">
-                        <div className="text-4xl mb-3">주문완료</div>
+                        <div className="text-4xl mb-3 ">주문이 성공적으로 <span className="font-bold">완료</span>되었습니다.</div>
+                        <div className="mb-1 flex justify-center items-end">
+                            <div className="text-start">
+                                <p>주문하신 상품의 결제가 성공적으로 완료되었습니다.</p>
+                                <p> 주문 상태는 카카오톡 플러스 친구를 통해 문의하실 있습니다.</p>
+                            </div>
+                            <div className="ml-10">
+                                카카오톡 문의하기
+                            </div>
+                        </div>
                         <div className="text-green-500">주문번호 : 0000000000000000</div>
                         <div className="p-5 bg-zinc-200 w-1/2 mx-auto rounded-xl m-3">
                             <div className="text-xl font-bold">주문정보</div>

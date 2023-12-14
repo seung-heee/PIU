@@ -24,9 +24,9 @@ const NonmemberLogin = () => {
         e.preventDefault();
 
         const formData = {
-            "name": values.memberName,
-            "orderCode": values.orderNumber,
-            "pwd ": values.orderPassword,
+            "cust_name": values.memberName,
+            "order_code": values.orderNumber,
+            "cust_pwd ": values.orderPassword,
         }
 
         try {
