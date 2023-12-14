@@ -1,6 +1,14 @@
 import { images } from "../../utils/images";
+import { useLocation } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
+
 
 const ProductInfo = () => {
+    const location = useLocation();
+    const { state } = location;
+    const products = state?.products || {};
+    console.log(products);
+    
     return (
         <table className="ProductInfo w-full flex flex-col border p-3">
             <thead className="flex w-full">
@@ -20,9 +28,9 @@ const ProductInfo = () => {
                             <p>옵션 : 사이즈 M</p>
                         </div>
                     </td>
-                    <td className="w-2/12">1개</td>
+                    <td className="w-2/12">{products.quantity}</td>
                     <td className="w-2/12">무료</td>
-                    <td className="w-2/12">15,000원</td>
+                    <td className="w-2/12">{products.total}</td>
                 </tr>
             </tbody>
         </table>
