@@ -12,7 +12,7 @@ const BuyBottom = () => {
                                         [PIU]<br />
                                         그립톡 굿즈
                                     </p>
-                                    <p className='box1-sub text-3xl text-white mt-10'>"세상에 단 하나뿐인 반려견 그립톡"</p>
+                                    <p className='box1-sub text-3xl text-white mt-10'>"두번째 화면입니다."</p>
                                 </div>
                                     <div className="box1-img w-1/2 flex min-h-screen max-h-screen">
                                         <img src={images.buyb_img1} alt="패키지 이미지" className="pt-28 pl-28"/>
