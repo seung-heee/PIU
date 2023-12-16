@@ -4,16 +4,20 @@ import { ImYoutube } from "react-icons/im";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { BsDot } from "react-icons/bs";
 import SponsoringCompany from "../about/SponsoringCompany.js";
+import { images } from "../../utils/images.js";
 
 const About = () => {
     return (
         <div className="About min-h-screen flex items-center">
             <div className="container mx-auto flex flex-col">
                 <div className="flex justify-between items-center mb-2">
-                    <div className="AboutTitle pretendard-EB">PIU <span className="text-2xl AboutSmallTitle">Pet In Universe</span></div>
+                    <div className="AboutTitle pretendard-EB flex justify-end items-end">
+                        <img src={images.PIULogo_back} alt="PIU_logo" className="w-52" />
+                        <img src={images.PetInUniverse} alt="PetInUniverse" className="w-52 m-3" />
+                    </div>
                     <div className="flex text-4xl">
                         <Link to='https://www.youtube.com/@piu_official675' target="_blank"><ImYoutube className="mx-2" /></Link>
-                        <Link to='#' target="_blank"><AiFillInstagram className="mx-2" /></Link>
+                        <Link to='https://www.instagram.com/piukorea.official/' target="_blank"><AiFillInstagram className="mx-2" /></Link>
                         <Link to='#' target="_blank"><RiKakaoTalkFill className="mx-2" /></Link>
                     </div>
                 </div>

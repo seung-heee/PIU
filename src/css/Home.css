@@ -75,21 +75,25 @@ body::-webkit-scrollbar {
 .grid1 {
     background-image: url('../../public/img/meta1.png');
     background-position: center;
+    background-size: cover;
 }
 
 .grid2 {
     background-image: url('../../public/img/meta2.png');
     background-position: center;
+    background-size: cover;
 }
 
 .grid3 {
     background-image: url('../../public/img/meta3.png');
     background-position: center;
+    background-size: cover;
 }
 
 .grid4 {
     background-image: url('../../public/img/meta4.png');
     background-position: center;
+    background-size: cover;
 }
 
 .gridItem {

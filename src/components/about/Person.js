@@ -10,7 +10,7 @@ const Person = ({ id }) => {
                 return (
                     <>
                         <div className='flex flex-row items-center justify-start w-full'>
-                            <img src={images[person.image]} alt="사람" />
+                            <img src={images[person.image]} alt="사람" className='p-1' />
                             <div className='ml-3'>
                                 <p>{person.name}</p>
                                 <p>{person.email}</p>

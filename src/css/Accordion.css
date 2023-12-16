@@ -7,7 +7,7 @@
     margin: 12px;
     cursor: pointer;
     transition: all 0.7s ease-in-out;
-    filter: blur(3px);
+    /* filter: blur(3px); */
 }
 
 .slideBox .active {
@@ -17,6 +17,7 @@
 .slideItem0 {
     background-image: url('../../public/img/meta1.png');
     background-position: center;
+    background-size: cover;
 }
 
 .slideItem0 div {
@@ -27,6 +28,7 @@
 .slideItem1 {
     background-image: url('../../public/img/meta2.png');
     background-position: center;
+    background-size: cover;
 }
 
 .slideItem1 div {
@@ -37,6 +39,7 @@
 .slideItem2 {
     background-image: url('../../public/img/meta3.png');
     background-position: center;
+    background-size: cover;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -49,6 +52,7 @@
 .slideItem3 {
     background-image: url('../../public/img/meta4.png');
     background-position: center;
+    background-size: cover;
 }
 
 .slideItem3 div {

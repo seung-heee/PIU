@@ -17,10 +17,10 @@ import PiuCampaignHori from '../Piece/PiuCampaignHori';
 const Help2 = () => {
     return (
         <>
-            <div className='Help2 text-white relative'>
+            <div className='Help2 relative'>
                 <PiuCampaignHori vertical={true} />
                 <div className='Help1Box flex flex-col justify-center min-h-screen container mx-auto'>
-                    <div className='Help1First pretendard-B text-5xl text-center'>
+                    <div className='Help1First pretendard-EB text-5xl text-center'>
                         <span className='inline-block mb-1'>
                             <BiSolidQuoteLeft className='inline-block mb-7' size={30} /> 유기견들은 여러분의 도움과 함께</span><br />
                         새로운 가족을 찾을 수 있습니다. <BiSolidQuoteRight className='inline-block mb-7' size={30} />

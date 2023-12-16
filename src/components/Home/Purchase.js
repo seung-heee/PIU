@@ -20,7 +20,7 @@ const Purchase = () => {
                 </div>
                 <div className='button1 flex justify-center items-center w-full'>
                     <button type='button' className="mt-10 py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
-                        정기후원하고 굿즈받기
+                        후원하고 스마트톡 키트 받기
                     </button>
                 </div>
             </div>

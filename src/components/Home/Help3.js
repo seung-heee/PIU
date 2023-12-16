@@ -1,5 +1,6 @@
 import { images } from '../../utils/images';
 import { BiSolidDonateHeart } from "react-icons/bi";
+import { FaGift } from "react-icons/fa6";
 import PiuTeam from '../Piece/PiuTeam';
 
 const Help3 = () => {
@@ -18,10 +19,10 @@ const Help3 = () => {
                                 따뜻한 가족을 찾아주는데 최선을 다할 것입니다.
                             </p>
                             <p className='text-xl mt-6 mb-12'>우리가 함께할수록 위기에 처한 아이들을 위한 힘은 커집니다.</p>
-                            <div className='pretendard-EB text-center '>
-                                <button className='bg-sky-400 help3Btn p-3 text-5xl flex justify-center items-center mx-auto'>
-                                    <p className='text-end'><span className='inline-block'>유기견 돕고</span><br />굿즈 받기</p>
-                                    <BiSolidDonateHeart size={130} className='help3arrowbtn ml-5' />
+                            <div className='bigBtn pretendard-EB text-center '>
+                                <button className='bg-sky-400 help3Btn p-6 text-5xl flex justify-center items-center mx-auto'>
+                                    <p className='text-start'><span className='inline-block'>유기견 돕고</span><br />스마트톡 키트받기</p>
+                                    <FaGift size={80} className='help3arrowbtn ml-5' />
                                 </button>
                             </div>
                         </div>

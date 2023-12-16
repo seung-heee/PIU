@@ -42,15 +42,16 @@ const Nav = () => {
     return (
         <div className="Nav mb-3 flex justify-center pretendard-B text-lg">
             <ul className='container flex justify-between items-center h-full '>
-                {/* <li><Link to='/'><img src={images.PIU} alt="logo" className='w-20' /></Link></li> */}
-                <li className='text-4xl'><div><Link to='/'>PIU</Link></div></li>
+                <li><Link to='/'><img src={images.PIU} alt="logo" className='w-20' /></Link></li>
+                {/* <li className='text-4xl'><div><Link to='/'>PIU</Link></div></li> */}
                 {windowWidth >= 768 ?
                     <>
                         {/* PC */}
                         <div className='flex items-center navVersion'>
                             <li className='mx-3'><Link to='/buy'> 패키지 구매</Link></li>
                             <li className='mx-3'><Link to='/nonmemberLogin'> 주문 | 배송 조회</Link></li>
-                            <li className='RunningPIU mx-3'><Link to='#'> Running PIU App</Link></li>
+                            {/* <li className='RunningPIU mx-3'><Link to='https://www.spatial.io/s/PIU-654bc9ef10ee2f1f26714032?share=3274268876320783038'> Running PIU App</Link></li> */}
+                            <li className=' mx-3'><Link to='https://www.spatial.io/s/PIU-654bc9ef10ee2f1f26714032?share=3274268876320783038'><img src={images.RunningPIUApp} alt="" className='w-52' /></Link></li>
                         </div>
                     </> :
                     <>
