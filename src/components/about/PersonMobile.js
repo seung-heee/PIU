@@ -9,7 +9,7 @@ const PersonMobile = ({ id }) => {
             {result.map((person) => {
                 return (
                     <>
-                        <div className='flex items-center justify-center text-sm'>
+                        <div className='flex items-start justify-center text-sm mr-auto'>
                             {/* <img src={images[person.image]} alt="사람" className='w-5' /> */}
                             <div className='ml-2'>
                                 <p>{person.name}</p>

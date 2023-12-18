@@ -9,12 +9,12 @@ const TeamMobile = () => {
     const modeling = PersonInfo.filter(person => person.position === 'MODELING')
 
     return (
-        <div className="Team min-h-screen container mx-auto">
-            <div className='grid grid-cols-2 teamBoxMobile h-screen'>
+        <div className="Team min-h-screen container mx-auto flex items-center">
+            <div className='grid grid-cols-2 gap-y-5 teamBoxMobile h-5/6'>
                 {/* 총괄 */}
                 <div>
                     <div>
-                        <div className='pretendard-B text-lg'>CEO</div>
+                        <div className='pretendard-B text-lg text-center mb-2'>CEO</div>
                         <PersonMobile id={1} />
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const TeamMobile = () => {
 
                     {/* 메타버스 */}
                     <div>
-                        <div className='pretendard-B text-lg'>METAVERSE</div>
+                        <div className='pretendard-B text-lg text-center mb-2'>METAVERSE</div>
                         {metaverse.map((person) => {
                             return (
                                 <><PersonMobile id={person.id} /></>
@@ -33,7 +33,7 @@ const TeamMobile = () => {
                 {/* 모델링 */}
                 <div className='flex flex-col justify-start'>
                     <div>
-                        <div className='pretendard-B text-lg'>MODELING</div>
+                        <div className='pretendard-B text-lg  text-center mb-2'>MODELING</div>
                         {modeling.map((person) => {
                             return (
                                 <><PersonMobile id={person.id} /></>
@@ -44,9 +44,8 @@ const TeamMobile = () => {
                 {/* 웹 */}
                 <div className='flex flex-col'>
                     <div>
-                        <div className='pretendard-B text-lg'>WEB</div>
+                        <div className='pretendard-B text-lg text-center mb-2'>WEB</div>
                         {web.map((person) => {
-                            console.log(person.id)
                             return (
                                 <><PersonMobile id={person.id} /></>
                             )
@@ -55,7 +54,7 @@ const TeamMobile = () => {
                 </div>
             </div>
             <ScrollToTop />
-        </div>
+        </div >
     )
 }
 

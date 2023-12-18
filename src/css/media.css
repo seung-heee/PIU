@@ -1,5 +1,3 @@
-    @media (max-width: 1023px) {}
-    
     @media (max-width: 767px) {
         .full-page-controls {
             right: 20px;
@@ -49,8 +47,11 @@
             white-space: normal;
         }
         .help3SecondSection div p:first-child {
-            font-size: 25px;
-            line-height: 30px;
+            font-size: 23px;
+            line-height: 25px;
+        }
+        .help3SecondSection_P {
+            margin-bottom: 1.5rem;
         }
         .help3Btn {
             width: 80%;
@@ -66,6 +67,13 @@
         .Help3>div>div {
             text-align: center;
         }
+        .bigBtn>button>p {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .bigBtn button {
+            padding: 1rem;
+        }
         /* about */
         .people {
             grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -73,6 +81,9 @@
     }
     
     @media (max-width: 639px) {
+        .PiuCampaignHori {
+            display: none;
+        }
         .full-page-controls {
             right: 20px;
         }
@@ -125,8 +136,8 @@
             white-space: normal;
         }
         .help3SecondSection div p:first-child {
-            font-size: 25px;
-            line-height: 30px;
+            font-size: 23px;
+            line-height: 25px;
         }
         .help3Btn {
             width: 100%;
@@ -141,6 +152,16 @@
         }
         .Help3>div>div {
             text-align: center;
+        }
+        .bigBtn>button>p {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .bigBtn button {
+            padding: 1rem;
+        }
+        .help3SecondSection_P {
+            margin-bottom: 1.5rem;
         }
         /* about */
         .About {
@@ -178,11 +199,18 @@
             padding: 10px 0;
         }
         /* help1 */
+        .Help1-SwiperSlide {
+            flex-direction: column;
+        }
+        .Help1-SwiperSlide img,
+        .Help1-SwiperSlide div {
+            width: 80vw;
+        }
         .Help1Box {
             padding: 15px;
         }
         .Help1First {
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: center;
         }
         .Help1-Swiper {

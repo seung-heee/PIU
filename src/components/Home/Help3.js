@@ -18,7 +18,7 @@ const Help3 = () => {
                                 PIU는 유기견을 지키고, 그들에게 새로운<br />
                                 따뜻한 가족을 찾아주는데 최선을 다할 것입니다.
                             </p>
-                            <p className='text-xl mt-6 mb-12'>우리가 함께할수록 위기에 처한 아이들을 위한 힘은 커집니다.</p>
+                            <p className='help3SecondSection_P text-xl mt-6 mb-12'>우리가 함께할수록 위기에 처한 아이들을 위한 힘은 커집니다.</p>
                             <div className='bigBtn pretendard-EB text-center '>
                                 <button className='bg-sky-400 help3Btn p-6 text-5xl flex justify-center items-center mx-auto'>
                                     <p className='text-start'><span className='inline-block'>유기견 돕고</span><br />스마트톡 키트받기</p>
