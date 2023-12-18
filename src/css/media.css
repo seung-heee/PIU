@@ -291,7 +291,8 @@
         text-align: left;
     }
     /* 주문완료 페이지 */
-    .OrderSuccessTitle {
+    .OrderSuccessTitle,
+    .OrderDetailTitle {
         font-size: 1.5rem;
         margin: 15px auto;
     }
@@ -303,7 +304,8 @@
         margin: 0 auto;
         width: 85%;
     }
-    .OrderSuccessbox {
+    .OrderSuccessbox,
+    .OrderDetailbox {
         width: 100%;
         margin: 20px auto;
     }
@@ -311,10 +313,14 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .OrderSuccessInfo div {
+    .OrderSuccessInfo div,
+    .OrderDetailInfo div {
         width: 100%;
     }
     .orderSuccess_number {
         margin: 10px auto;
+    }
+    .Atextright {
+        text-align: right;
     }
 }
