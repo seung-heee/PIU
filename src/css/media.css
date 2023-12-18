@@ -25,7 +25,7 @@
     .Nav {
         width: 80%;
         margin: 0 auto;
-        height: 10% !important;
+        height: 70px !important;
     }
     /* Nav */
     .ul div:last-child {
@@ -115,7 +115,7 @@
     .Nav {
         width: 80%;
         margin: 0 auto;
-        height: 7% !important;
+        height: 70px !important;
     }
     .ul div:first-child {
         display: none;
@@ -289,5 +289,32 @@
     .AgreeBox {
         flex-direction: column;
         text-align: left;
+    }
+    /* 주문완료 페이지 */
+    .OrderSuccessTitle {
+        font-size: 1.5rem;
+        margin: 15px auto;
+    }
+    .OrderSuccessSub {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .OrderInfoBox {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .OrderSuccessbox {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .OrderSuccessbox div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .OrderSuccessInfo div {
+        width: 100%;
+    }
+    .orderSuccess_number {
+        margin: 10px auto;
     }
 }
