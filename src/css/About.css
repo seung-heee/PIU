@@ -32,26 +32,40 @@
 
 /* 후원기업 */
 
-.SponsoringCompany>div>div {
-    height: 150px;
+.SponsoringCompanyBox {
+    height: 8rem;
+}
+
+.SponsoringCompany0 {
+    height: 100px;
+}
+
+.SponsoringCompany0>div>div {
+    height: 100px;
     display: flex;
     align-items: center;
 }
 
-.SponsoringCompany>div>div>div>div {
+.SponsoringCompany0>div>div>div>div {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 100px;
 }
 
-.SponsoringCompany>div>div>div>div>div {
+.SponsoringCompany0>div>div>div>div>div {
+    text-align: center;
+    margin: 0 auto;
+    width: auto !important;
+}
+
+.SponsoringCompany0>div>div>div>div>div>img {
+    height: 40px;
     text-align: center;
 }
 
-.SponsoringCompany>div>div>div>div>div>img {
-    height: 60px;
-    text-align: center;
+.smallsponsor {
+    height: 90px !important;
 }
 
 

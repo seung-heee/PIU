@@ -27,10 +27,12 @@ export const images = {
     김도훈: PATH + '/img/person/Dohoun.png',
     조성민: PATH + '/img/person/Dohoun.png',
     // 기업 로고
-    GoQba: PATH + '/img/company/GoQba.webp',
-    JSH: PATH + '/img/company/JSH.png',
-    대한안전교육협회: PATH + '/img/company/대한안전교육협회.png',
-    LG: PATH + '/img/company/LG.png',
+    sungkyul: PATH + '/img/company/sungkyul.png',
+    siorae: PATH + '/img/company/siorae.png',
+    safetykorea: PATH + '/img/company/safetykorea.png',
+    heychales: PATH + '/img/company/heychales.png',
+    goqba: PATH + '/img/company/goqba.png',
+    anayng: PATH + '/img/company/anayng.png',
 
     // 구매페이지
     buy1: PATH + '/img/buy/buy1.png',

@@ -8,7 +8,7 @@ import { images } from "../../utils/images.js";
 
 const About = () => {
     return (
-        <div className="About min-h-screen flex items-center">
+        <div className="About min-h-screen flex items-center justify-center">
             <div className="container mx-auto flex flex-col">
                 <div className="flex justify-between items-center mb-2">
                     <div className="AboutTitle pretendard-EB flex justify-end items-end">

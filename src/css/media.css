@@ -168,7 +168,11 @@
             padding: 0 20px;
         }
         .AboutTitle {
-            font-size: 50px
+            flex-direction: column;
+        }
+        .AboutTitle img {
+            margin: 5px auto;
+            width: 8rem;
         }
         .AboutSmallTitle {
             display: none;
@@ -223,5 +227,35 @@
             font-size: 1rem;
             line-height: 1rem;
             text-align: center;
+        }
+        /* 후원기업 */
+        .SponsoringCompanyBox {
+            height: 6rem;
+        }
+        .SponsoringCompany0 {
+            height: 80px;
+        }
+        .SponsoringCompany0>div>div {
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+        .SponsoringCompany0>div>div>div>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+        .SponsoringCompany0>div>div>div>div>div {
+            text-align: center;
+            margin: 0 auto;
+            width: auto !important;
+        }
+        .SponsoringCompany0>div>div>div>div>div>img {
+            height: 20px;
+            text-align: center;
+        }
+        .smallsponsor {
+            height: 50px !important;
         }
     }

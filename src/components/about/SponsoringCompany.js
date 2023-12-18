@@ -16,26 +16,26 @@ export default class SponsoringCompany extends Component {
             cssEase: "linear"
         };
         return (
-            <div className='h-44'>
+            <div className='SponsoringCompanyBox'>
                 <p className='pretendard-B text-2xl flex items-center'>후원기업 <BiSolidDonateHeart className='ml-1' /></p>
-                <Slider {...settings} className='SponsoringCompany'>
+                <Slider {...settings} className='SponsoringCompany0'>
                     <div>
-                        <img src={images.GoQba} alt="" />
+                        <img src={images.sungkyul} alt="sungkyul" />
                     </div>
                     <div>
-                        <img src={images.GoQba} alt="" />
+                        <img src={images.siorae} alt="siorae" className='smallsponsor' />
                     </div>
                     <div>
-                        <img src={images.GoQba} alt="" />
+                        <img src={images.safetykorea} alt="safetykorea" />
                     </div>
                     <div>
-                        <img src={images.GoQba} alt="" />
+                        <img src={images.heychales} alt="heychales" className='smallsponsor' />
                     </div>
                     <div>
-                        <img src={images.JSH} alt="" />
+                        <img src={images.goqba} alt="goqba" />
                     </div>
                     <div>
-                        <img src={images.대한안전교육협회} alt="" />
+                        <img src={images.anayng} alt="anayng" />
                     </div>
                 </Slider>
             </div>
