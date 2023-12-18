@@ -39,7 +39,7 @@ const Postcode = ({ address, setAddress }) => {
     return (
         <>
             <div className='grow flex flex-col'>
-                <div className='flex grow items-center justify-between'>
+                <div className='zipcodeBox flex grow items-center justify-between'>
                     <input type="text" placeholder="우편번호" value={address.zipCode || ''} readOnly />
                     <button type='button' onClick={handleClick} className='addressbtn'>주소 검색</button>
                 </div>

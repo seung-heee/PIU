@@ -20,7 +20,7 @@ const ProductInfo = () => {
             </thead>
             <tbody className="flex w-full">
                 <tr className="flex w-full text-center items-center">
-                    <td className="w-6/12 flex">
+                    <td className="productBox w-6/12 flex">
                         <img src={images.buy1} alt="" className="w-20" />
                         <div className="flex flex-col justify-center grow text-left ml-5">
                             <p>[PIU] 브랜드명 - 상품명</p>

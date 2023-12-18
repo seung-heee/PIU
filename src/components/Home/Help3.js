@@ -2,8 +2,11 @@ import { images } from '../../utils/images';
 import { BiSolidDonateHeart } from "react-icons/bi";
 import { FaGift } from "react-icons/fa6";
 import PiuTeam from '../Piece/PiuTeam';
+import { useNavigate } from 'react-router-dom';
 
 const Help3 = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="relative Help3 min-h-screen max-h-screen flex justify-center  text-white">
             <PiuTeam vertical={false} />
@@ -20,7 +23,7 @@ const Help3 = () => {
                             </p>
                             <p className='help3SecondSection_P text-xl mt-6 mb-12'>우리가 함께할수록 위기에 처한 아이들을 위한 힘은 커집니다.</p>
                             <div className='bigBtn pretendard-EB text-center '>
-                                <button className='bg-sky-400 help3Btn p-6 text-5xl flex justify-center items-center mx-auto'>
+                                <button onClick={() => { navigate('/buy') }} className='bg-sky-400 help3Btn p-6 text-5xl flex justify-center items-center mx-auto'>
                                     <p className='text-start'><span className='inline-block'>유기견 돕고</span><br />스마트톡 키트받기</p>
                                     <FaGift size={80} className='help3arrowbtn ml-5' />
                                 </button>

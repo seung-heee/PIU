@@ -142,9 +142,9 @@ const Order = () => {
             <Nav />
             <div className="Order">
                 <div className="container mx-auto">
-                    <div className="text-4xl mb-10 text-center">ORDER</div>
+                    <div className="Ordertitle_Order text-4xl mb-10 text-center">ORDER</div>
 
-                    <div className="">
+                    <div className="OrderFormBox">
                         <form action="" className="flex flex-col w-2/3 mx-auto" onSubmit={handleSubmit}>
                             {/* 주문자 정보 */}
                             <div className="mb-10 border p-10">

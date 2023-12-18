@@ -8,8 +8,11 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation, EffectCoverflow, Pagination } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 
 const Purchase2 = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="min-h-screen">
             <div className='container flex flex-col justify-center items-center mx-auto h-screen'>
@@ -78,11 +81,12 @@ const Purchase2 = () => {
                     </Swiper>
                 </div>
                 <div className='button1 flex justify-center items-center w-full'>
-                    <button type='button' className="py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
+                    <button type='button' onClick={() => { navigate('/buy') }} className="py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
                         후원하고 스마트톡 키트 받기
                     </button>
                 </div>
             </div >
+
         </div>
     );
 };

@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import { images } from '../../utils/images';
 
 const Purchase = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="min-h-screen">
             <div className='container flex flex-col justify-center items-center mx-auto h-screen'>
@@ -19,7 +22,7 @@ const Purchase = () => {
                     <img src={images.tok} alt="그립톡" className="giftimg w-1/4 ml-4" />
                 </div>
                 <div className='button1 flex justify-center items-center w-full'>
-                    <button type='button' className="mt-10 py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
+                    <button type='button' onClick={() => { navigate('/buy') }} className="mt-10 py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
                         후원하고 스마트톡 키트 받기
                     </button>
                 </div>
