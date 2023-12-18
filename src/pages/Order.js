@@ -113,8 +113,8 @@ const Order = () => {
             "cust_pwd": passwordConfirm,
             "address": address,
             "product_info": productInfo,
-            "depositor_name": depositorName,
             "agree": agree,
+            "depositor_name": depositorName,
         }
 
         // try {

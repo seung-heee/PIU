@@ -15,7 +15,7 @@ const OrderDetail = () => {
                 <div className="container mx-auto">
                     <div className="text-center">
                         <div className="OrderDetailTitle text-4xl mb-3">주문상세</div>
-                        <div>주문번호 : {formData.orderNumber} 0000000000000000</div>
+                        <div>주문번호 : {formData.order_code} 0000000000000000</div>
                         <div>결제날짜 : {formData.payDate} 2023.00.00</div>
                     </div>
 
@@ -34,7 +34,7 @@ const OrderDetail = () => {
                         <div className="OrderDetailInfo px-10 py-5">
                             <div className="text-2xl">입금정보</div>
                             {/* 조건부렌더링 */}
-                            {formData.completePayment ?
+                            {formData.orderstatus ?
                                 <div className="bg-zinc-200 p-3 px-6 rounded-xl w-1/2 my-5">
                                     <p>주문접수 - <span className="text-green-600 font-bold">결제 완료</span></p>
                                 </div>
@@ -47,11 +47,11 @@ const OrderDetail = () => {
                             <div className="OrderDetailInfo p-3 w-1/2">
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12 text-neutral-400">주문자</p>
-                                    <p className="w-8/12 Atextright">{formData.name} ex 홍길동</p>
+                                    <p className="w-8/12 Atextright">{formData.cust_name} ex 홍길동</p>
                                 </p>
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12 text-neutral-400">연락처</p>
-                                    <p className="w-8/12 Atextright">{formData.phoneNumber}ex 010-0000-0000</p>
+                                    <p className="w-8/12 Atextright">{formData.phone_number}ex 010-0000-0000</p>
                                 </p>
                                 <p className="w-full flex">
                                     <p className="w-4/12 text-neutral-400">이메일</p>
@@ -64,15 +64,15 @@ const OrderDetail = () => {
                             <div className="p-3 w-1/2">
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12 text-neutral-400">결제 방법</p>
-                                    <p className="w-8/12 Atextright">{formData.paymentMethod} 무통장입금</p>
+                                    <p className="w-8/12 Atextright">무통장입금</p>
                                 </p>
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12 text-neutral-400">총 상품금액</p>
-                                    <p className="w-8/12 Atextright">{formData.summary} ex 50,000원</p>
+                                    <p className="w-8/12 Atextright">{formData.product_price} ex 50,000원</p>
                                 </p>
                                 <p className="w-full flex">
                                     <p className="w-4/12 text-neutral-400">배송비</p>
-                                    <p className="w-8/12 Atextright">무료-이건???</p>
+                                    <p className="w-8/12 Atextright">무료</p>
                                 </p>
                             </div>
                         </div>
@@ -81,11 +81,12 @@ const OrderDetail = () => {
                             <div className="p-3 w-1/2">
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12 text-neutral-400">받는분</p>
-                                    <p className="w-8/12 Atextright">{formData.name} ex 홍길동</p>
+                                    <p className="w-8/12 Atextright">{formData.cust_name} ex 홍길동</p>
                                 </p>
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12 text-neutral-400">주소</p>
-                                    <p className="w-8/12 Atextright">경기도 성남시 중원구 어쩌고 ~</p>
+                                    <p className="w-8/12 Atextright">상세주소 아직에러?
+                                    </p>
                                 </p>
                             </div>
                         </div>
