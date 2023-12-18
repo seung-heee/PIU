@@ -47,10 +47,10 @@ const NonmemberLogin = () => {
             <Nav />
 
             <div className="flex items-center justify-center">
-                <div className="container mx-auto flex flex-col justify-center items-center">
-                    <div className="text-5xl m-10 pretendard-EB">비회원로그인</div>
-                    <div className="text-3xl m-8 pretendard-B">비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</div>
-                    <div className="text-2xl w-6/12 mx-auto my-8">
+                <div className="NonmemberLogin container mx-auto flex flex-col justify-center items-center">
+                    <div className="NonmemberLoginTitle text-5xl m-10 pretendard-EB">비회원로그인</div>
+                    <div className="NonmemberLoginSub text-3xl m-8 pretendard-B">주문시의 주문번호로 주문조회가 가능합니다.</div>
+                    <div className="NonmemberLoginFormBox text-2xl w-6/12 mx-auto my-8">
                         <form action="" className="NonmemberLoginForm flex flex-col" onSubmit={HandleSubmit}>
                             <div className="mb-3">
                                 <label className="flex">

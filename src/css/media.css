@@ -1,85 +1,3 @@
-@media (max-width: 767px) {
-    .full-page-controls {
-        right: 20px;
-        display: none;
-    }
-    /* Main */
-    .Main {
-        height: 85vh;
-    }
-    .slideBox {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: 100%;
-    }
-    .slideItem {
-        height: 8%;
-        width: 85%;
-    }
-    .AccordionTitle h3 {
-        font-size: 25px;
-    }
-    .AccordionSub {
-        font-size: 15px;
-    }
-    .Nav {
-        width: 80%;
-        margin: 0 auto;
-        height: 70px !important;
-    }
-    /* Nav */
-    .ul div:last-child {
-        display: none;
-    }
-    /* help3 */
-    .Help3Title {
-        font-size: 40px;
-        line-height: 45px;
-        padding: 0;
-    }
-    .help3SecondSection {
-        flex-direction: column-reverse;
-        width: 100vw;
-    }
-    .help3SecondSection div {
-        padding: 0;
-        width: 70vw;
-        white-space: normal;
-    }
-    .help3SecondSection div p:first-child {
-        font-size: 23px;
-        line-height: 25px;
-    }
-    .help3SecondSection_P {
-        margin-bottom: 1.5rem;
-    }
-    .help3Btn {
-        width: 80%;
-        font-size: 25px;
-    }
-    .help3arrowbtn {
-        width: 60px;
-        height: 60px;
-    }
-    .Help3Sub {
-        margin-top: 10px;
-    }
-    .Help3>div>div {
-        text-align: center;
-    }
-    .bigBtn>button>p {
-        font-size: 20px;
-        line-height: 22px;
-    }
-    .bigBtn button {
-        padding: 1rem;
-    }
-    /* about */
-    .people {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-}
-
 @media (max-width: 639px) {
     .PiuCampaignHori {
         display: none;
@@ -322,5 +240,25 @@
     }
     .Atextright {
         text-align: right;
+    }
+    /* 비회원 로그인 */
+    .NonmemberLoginTitle {
+        font-size: 2rem;
+        margin: 15px auto;
+    }
+    .NonmemberLoginSub {
+        font-size: 1.5rem;
+        margin: 10px auto;
+        padding: 0 25px;
+        text-align: center;
+    }
+    .NonmemberLoginFormBox {
+        width: 95%;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    .NonmemberLoginForm button {
+        padding: 0.3rem;
+        width: 80%;
     }
 }
