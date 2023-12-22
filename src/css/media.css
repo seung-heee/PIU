@@ -24,6 +24,7 @@
     }
     .AccordionSub {
         font-size: 15px;
+        word-break: keep-all;
     }
     /* help4 */
     .help4Box {
@@ -122,35 +123,35 @@
         padding: 10px 0;
     }
     .help2-title {
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
-    .Help1First{
-        margin-bottom:10px;
+    .Help1First {
+        margin-bottom: 10px;
     }
-    .Help1-SwiperSlide img{
+    .Help1-SwiperSlide img {
         width: 50% !important;
         margin-bottom: 10px;
     }
-    .break-keep{
+    .break-keep {
         text-align: center !important;
         font-size: 1rem;
     }
-    .Help2Last{
-        padding:10px;
+    .Help2Last {
+        padding: 10px;
     }
-    .swiper-pagination{
+    .swiper-pagination {
         margin-top: 30px;
     }
     .Help1-SwiperSlide {
         height: 350px !important;
     }
-    .Help2Last p{
+    .Help2Last p {
         width: 100%;
         line-height: 1.2rem;
         text-align: center;
     }
-    .help2name{
-        font-size: 0.9rem;
+    .help2name {
+        font-size: 0.8rem;
     }
     /* help1 */
     .Help1-SwiperSlide {
@@ -174,6 +175,9 @@
         font-size: 1rem;
         line-height: 1rem;
         text-align: center;
+    }
+    .quoteicon {
+        display: none;
     }
     /* 후원기업 */
     .SponsoringCompanyBox {
@@ -276,10 +280,10 @@
     /* 비회원 로그인 */
     .NonmemberLoginTitle {
         font-size: 2rem;
-        margin: 15px auto;
+        margin: 10px auto;
     }
     .NonmemberLoginSub {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: 10px auto;
         padding: 0 25px;
         text-align: center;

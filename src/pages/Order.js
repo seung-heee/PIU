@@ -209,14 +209,15 @@ const Order = () => {
                                     <span className="flex w-6/12">입금자명</span>
                                     <input type="text" className="Order_inputItem grow" value={depositorName} onChange={(e) => setDepositorName(e.target.value)} />
                                 </label>
-                                <label className="mb-3 flex w-full">
+                                {/* <label className="mb-3 flex w-full">
                                     <span className="flex w-6/12 text-right">입금은행</span>
-                                    <select name="Bank" className="flex w-6/12" value={depositorybank} onChange={(e) => setDepositorybank(e.target.value)}>
+                                    <p>우리은행</p>
+                                  <select name="Bank" className="flex w-6/12" value={depositorybank} onChange={(e) => setDepositorybank(e.target.value)}>
                                         <option value="국민은행">국민은행</option>
                                         <option value="우리은행">우리은행</option>
                                         <option value="카카오뱅크">카카오뱅크</option>
-                                    </select>
-                                </label>
+                                    </select> *
+                                    </label> */}
                             </div>
 
                             <PersonalInformationAgree agree={agree} setAgree={setAgree} />
@@ -227,7 +228,7 @@ const Order = () => {
                             <Link to='/Ordersuccess'>주문완료 임시링크</Link>
                         </form>
                     </div>
-                </div>
+                </div >
             </div >
             <ScrollToTop />
         </>

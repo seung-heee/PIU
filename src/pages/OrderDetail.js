@@ -16,7 +16,7 @@ const OrderDetail = () => {
                     <div className="text-center">
                         <div className="OrderDetailTitle text-4xl mb-3">주문상세</div>
                         <div>주문번호 : {formData.order_code} 0000000000000000</div>
-                        <div>결제날짜 : {formData.payDate} 2023.00.00</div>
+                        <div>주문날짜 : {formData.payDate} 2023.00.00</div>
                     </div>
 
                     <div className="OrderDetailbox w-2/3 mx-auto border m-10 p-5">

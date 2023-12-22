@@ -28,7 +28,7 @@ const Accordion = ({ level, selected, setSelected, showText, setShowText }) => {
                         <p className='AccordionTitle pretendard-EB text-focus-in'>
                             {Title[level]}
                         </p>
-                        <p className='AccordionSub text-xl pretendard-B text-focus-in break-keep'>
+                        <p className='AccordionSub text-xl pretendard-B text-focus-in'>
                             {Sub[level]}
                         </p>
                     </div>
