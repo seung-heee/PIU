@@ -121,6 +121,37 @@
         font-size: 20px;
         padding: 10px 0;
     }
+    .help2-title {
+        margin-bottom:10px;
+    }
+    .Help1First{
+        margin-bottom:10px;
+    }
+    .Help1-SwiperSlide img{
+        width: 50% !important;
+        margin-bottom: 10px;
+    }
+    .break-keep{
+        text-align: center !important;
+        font-size: 1rem;
+    }
+    .Help2Last{
+        padding:10px;
+    }
+    .swiper-pagination{
+        margin-top: 30px;
+    }
+    .Help1-SwiperSlide {
+        height: 350px !important;
+    }
+    .Help2Last p{
+        width: 100%;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+    .help2name{
+        font-size: 0.9rem;
+    }
     /* help1 */
     .Help1-SwiperSlide {
         flex-direction: column;

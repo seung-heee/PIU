@@ -1,3 +1,9 @@
+.Youtube-v iframe{
+    width : 100%;
+    height: 600px;
+    padding:10px 10px;
+}
+
 @media screen and (max-width: 50rem){
 /*buy*/
 .buy-box{
@@ -18,10 +24,16 @@
     padding-left: 20px;
     padding-top:20px;
     margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .buy-sub{
     padding-left: 0;
     padding-right: 0;
+}
+.Youtube-v iframe{
+    width : 330px;
+    height : 200px;
 }
 
 /*buybottom*/
@@ -86,5 +98,9 @@
     margin-bottom: 0;
     margin-left: 0;
     width:70%;
+}
+/*soldout*/
+.disabled{
+    color: gray;
 }
 }

@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 import { APIClient } from "../utils/Auth";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
+import axios from 'axios';
 
 
 const Buy = () => {
@@ -37,40 +38,66 @@ const Buy = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const product = {
-        price: 10000,
-        stock: 5
-    };
+    const [product, setproduct] = useState([]);
+
+    useEffect(()=>{
+        axios.get('https://www.petinuniverse.com/products/1')
+        .then(res=>{
+            console.log(res);
+            console.log(res.data);
+            setproduct(res.data);
+            setTotal(res.data.price || 0);
+        })
+        .catch(err=>{
+            console.log(err);
+        });
+    },[]);
+
+    /*soldout 테스트 코드*/
+    /*const product = {
+        price: 20000,
+        inventory: 0,
+        isSoldout:true,
+    };*/
+
     const [quantity, setQuantity] = useState(1);
-    const [total, setTotal] = useState(product.price);
+    const [total, setTotal] = useState(product?.price || 0);;
     const handleClickCounter = (num) => {
         setQuantity((prev) => prev + num);
         setTotal((prev) => prev + product.price * num);
+        if ( quantity > product.inventory){
+            alert(`${product.inventory}개 이하로 구매하실 수 있습니다.`);
+        }
     };
     const handleBlurInput = () => {
-        if (quantity > product.stock) {
-            alert(`${product.stock}개 이하로 구매하실 수 있습니다.`);
-            setQuantity(product.stock);
-            setTotal(product.price * product.stock);
+        if (quantity > product.inventory) {
+            alert(`${product.inventory}개 이하로 구매하실 수 있습니다.`);
+            setQuantity(product.inventory);
+            setTotal(product.price * product.inventory);
         }
     };
     const handleSubmit = () => {
-        const products = {
-            quantity,
-            total
+        if(product.isSoldout===true){
+            alert("상품이 품절되었습니다.");
         }
-        navigate('/order', { state: { products } });
+        if(product.isSoldout===false){
+            const products = {
+                quantity,
+                total
+            }
+            navigate('/order', { state: { products } });
+        }
     }
     return (
         <>
             <Nav />
             <div className="Buy">
-                <div className="container mx-auto">
+                <div className="container mx-auto  relative">
                     <div className="buy-box w-full flex">
                         <div className="buy-img w-1/2"><img src={images.buy1} alt="패키지 이미지" className="p-8 ml-8" /></div>
                         <div className="buy-content w-1/2 p-16 pt-16 pr-24 mt-20">
                             <p className="buy-title text-xl mb-5 font-medium">☆코스튬 기획전☆ [도그웨그] 공작새<br />
-                                강아지 코스튬 고양이 할로윈 코스프레 옷 <br /> [오프라인전용]</p>
+                                강아지 코스튬 고양이 할로윈 코스프레 옷 <br /> [오프라인전용] <span className="font-bold">{' '} {product.isSoldout && '[품절]'}</span></p>
                             <div>
                                 <form className="flex flex-col mr-3 pr-5">
                                     <div className="w-full flex my-5 mb-10">
@@ -78,7 +105,7 @@ const Buy = () => {
                                         <div className="counter w-full flex justify-end mr-3">
                                             <button className="bg-slate-200 w-7"
                                                 type="button"
-                                                disabled={quantity === 1}
+                                                disabled={quantity === 0}
                                                 aria-label="수량 내리기"
                                                 onClick={() => handleClickCounter(-1)}
                                             >
@@ -87,16 +114,16 @@ const Buy = () => {
                                             <label className="text-center justify-center">
                                                 <input className="w-8 text-center"
                                                     type="number"
-                                                    min={1}
+                                                    min={product.inventory === 0 ? 0 : 1}
                                                     value={quantity}
-                                                    max={product.stock}
+                                                    max={product.inventory}
                                                     readOnly
                                                     onBlur={handleBlurInput}
                                                 />
                                             </label>
                                             <button className="bg-slate-200 w-7 mr-4"
                                                 type="button"
-                                                disabled={quantity === product.stock}
+                                                disabled={quantity >= product.inventory}
                                                 aria-label="수량 올리기"
                                                 onClick={() => handleClickCounter(1)}
                                             >
@@ -110,7 +137,7 @@ const Buy = () => {
                             <div className="mb-6 w-full flex">
                                 <hr />
                                 <p className="w-3/4 text-2xl px-2 font-semibold">총 상품 금액</p>
-                                <strong className="w-full flex justify-end mr-3 text-xl">{total.toLocaleString()}</strong>
+                                <strong className="w-full flex justify-end mr-6 text-xl">{total.toLocaleString()}</strong>
                             </div>
                             <hr />
                             <div className="w-full flex">
@@ -132,12 +159,17 @@ const Buy = () => {
                         </div>
 
                         <div>
+                            <div className="Youtube-v text-center flex justify-center">
+                                <iframe src="https://www.youtube.com/embed/jXpheWfIZdQ?si=rybrZg_ROOfPUJz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                             {selectedButton === 1 && <BuyBottom />}
                             {selectedButton === 2 && <BuyBottom2 />}
                             {selectedButton === 3 && <BuyBottom3 />}
                         </div>
-                        <button className="flex justify-end right-20 bottom-20 absolute" onClick={MoveToTop}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    </div>
+                    <div className="w-full flex justify-end sticky bottom-2">
+                    <button className=" bg-white rounded-full p-1 mr-2" onClick={MoveToTop}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
                             </svg>
                         </button>
