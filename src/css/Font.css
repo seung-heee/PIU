@@ -23,6 +23,28 @@
     src: url('../../public/font/Pretendard-Thin.ttf');
 }
 
+@font-face {
+    font-family: 'RubikBubbles';
+    src: url('../../public/font/RubikBubbles-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'DNFBitBitv2';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
+}
+
+.bitbit {
+    font-family: 'DNFBitBitv2';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.RubikBubbles {
+    font-family: 'RubikBubbles' !important;
+}
+
 .pretendard-EB {
     font-family: 'Pretendard-ExtraBold';
 }

@@ -21,7 +21,7 @@ const About = () => {
                         <Link to='#' target="_blank"><RiKakaoTalkFill className="mx-2" /></Link>
                     </div>
                 </div>
-                <div className="AboutSub mt-5 mb-5 text-2xl w-10/12">PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유vPIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.PIU는 유기견들을 지키기 위해 최선을 다합니다.기견들을 지키기 위해 최선을 다합니다. PIU는 유기견들을 지키기 위해 최선을 다합니다 PIU는 유기견들을 지키기 위해 최선을 다합니다 </div>
+                <div className="AboutSub mt-5 mb-5 text-2xl w-10/12">PIU는 메타버스로 가상세계에서 진행되는 유기견 캠페인을 통해 사회적 인식 개선과 유기견 입양률 증진에 힘쓰고자 합니다. 현재는 유기견 패션쇼와 사진전을 제작하고 있으며 나아가 PIU는 유기동물을 지키기 위해 최선을 다할 것 입니다.</div>
                 <div>
                     <SponsoringCompany />
                 </div>
@@ -33,8 +33,8 @@ const About = () => {
                         <Link to='#' target="_blank">환불규정</Link>
                     </div>
                     <div className="text-md break-all">
-                        상호명 : PIU | 대표: 편진범 | asdf@naver.com | 사업자 번호 : 123-456-7894 | 통신판매업 신고번호 : 2019-강남서울-12345
-                        주소 : 경기도 안양시 만안구 성결대학로 53 | TEL : 031-7895-7895
+                        상호명 : PIU | 대표: 편진범 | petinuniverse.gmail.com | 사업자 번호 : 123-456-7894 | 통신판매업 신고번호 : 2019-강남서울-12345
+                        | 주소 : 경기도 안양시 만안구 성결대학로 53 재림관 602호 | TEL : 010-4159-6462
                     </div>
                 </div>
             </div>

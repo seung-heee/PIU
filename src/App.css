@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.rubicBubble {
+    font-family: Rubik+Bubbles;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -11,4 +15,8 @@ body {
     .container {
         max-width: 1280px;
     }
+}
+
+.MainBlue {
+    color: #0400CF;
 }

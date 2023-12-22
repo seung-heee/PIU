@@ -19,9 +19,9 @@ const Help2 = () => {
     return (
         <>
             <div className='Help2 relative'>
-                <PiuCampaignHori vertical={true} />
+                {/* <PiuCampaignHori vertical={true} /> */}
                 <div className='Help1Box flex flex-col justify-center min-h-screen container mx-auto'>
-                    <div className='Help1First pretendard-EB text-5xl text-center'>
+                    <div className='Help1First pretendard-EB text-5xl text-center  MainBlue'>
                         <span className='help2-title inline-block mb-1'>
                             유기견들은 여러분의 도움과 함께</span><br />
                         새로운 가족을 찾을 수 있습니다.
@@ -41,7 +41,7 @@ const Help2 = () => {
                     >
 
                         <SwiperSlide className='Help1-SwiperSlide flex'>
-                            <img src={images.Help2_img1} />
+                            <img src={images.Help1_img1} />
                             <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
                                 <p className='break-keep'>
                                     <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />
@@ -53,7 +53,7 @@ const Help2 = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.Help2_img3} />
+                            <img src={images.heychales} />
                             <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
                                 <p className='break-keep'>
                                     <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />
@@ -63,7 +63,7 @@ const Help2 = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className='Help1-SwiperSlide'>
-                            <img src={images.Help2_img5} />
+                            <img src={images.PIUTeam} />
                             <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
                                 <p className='break-keep'>
                                     <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />
