@@ -1,11 +1,18 @@
 .Youtube-v iframe{
     width : 100%;
-    height: 600px;
+    height: 700px;
     padding:10px 10px;
 }
 
 @media screen and (max-width: 50rem){
 /*buy*/
+.buy-title{
+    font-size: 20px;
+    margin-left: 0px;
+}
+.buy-btn{
+    margin-left:1.25rem;
+}
 .buy-box{
     flex-direction: column;
     align-items: center;
@@ -32,75 +39,27 @@
     padding-right: 0;
 }
 .Youtube-v iframe{
-    width : 330px;
-    height : 200px;
+    width : 360px;
+    height : 220px;
 }
 
 /*buybottom*/
-.box1, .box2, .box3 {
-    flex-direction: column;
-    align-items: center;
+.buyb-t1{
+    font-size:15px;
+    margin-left:15px;
 }
-.box1-text{
-    padding-left: 0;
-    width: 80%;
-    padding-top: 70px;
+.btn-set{
+    margin-top: 15px;
 }
-.box1-title, .box2-title, .box3-title{
-    font-size: 3.0rem;
+.btn-1{
+    font-size: 13px;
+    margin:10px;
+    padding:6px 10px;
 }
-.box1-sub, .box2-sub{
-    font-size: 1.2rem;
+.btn-2{
+    font-size: 13px;
+    margin:10px;
+    padding:6px 10px;
     margin-top: 10px;
-}
-.box1-img{
-    width: 100%;
-    margin-top:55px;
-    justify-content: flex-end;
-    min-height: 0;
-    max-height: none;
-}
-.box1-img img{
-    padding-top: 0px;
-    padding-left: 0px;
-
-}
-.box2-text{
-    padding-left: 0;
-    width: 80%;
-    padding-top: 38px;
-}
-.box2-title{
-    margin-bottom: 0px;
-}
-.box2-img{
-    width:100%;
-    min-height: 0;
-    max-height: none;
-}
-.box2-img img{
-    padding-top:0px;
-    padding-left: 15px;
-    padding-right: 0;
-}
-.box3-img{
-    width:100%;
-    min-height: 0;
-    max-height: none;
-    margin-top: 30px;
-}
-.box3-img img{
-    width:100%;
-    height:100%;
-}
-.box3-text{
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    width:70%;
-}
-/*soldout*/
-.disabled{
-    color: gray;
 }
 }

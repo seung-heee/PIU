@@ -1,52 +1,33 @@
 import { images } from '../../utils/images';
 import '../../css/Buy.css';
 
+const Siorae = () => {
+    window.location = 'https://m.siorae.com/';
+};
+const heychales = () => {
+    window.location = 'https://smartstore.naver.com/moii';
+};
 const BuyBottom = () => {
     return (
         <div className="BuyBottom">
-                <div className="container1 mx-auto">
-                        <div className="w-full flex min-h-screen max-h-screen bg-[#93BC78]">
-                            <div className='box1 flex justify-start items-center break-keep'>
-                                <div className='box1-text w-1/2 pretendard-B pl-24 whitespace-nowrap'>
-                                    <p className='box1-title text-7xl text-white'>
-                                        [PIU]<br />
-                                        그립톡 굿즈
-                                    </p>
-                                    <p className='box1-sub text-3xl text-white mt-10'>"세상에 단 하나뿐인 반려견 그립톡"</p>
-                                </div>
-                                    <div className="box1-img w-1/2 flex min-h-screen max-h-screen">
-                                        <img src={images.buyb_img1} alt="패키지 이미지" className="pt-28 pl-28"/>
-                                    </div>
-                                </div>
-                        </div>
-                    <div className="container2 mx-auto">
-                        <div className="w-full flex min-h-screen max-h-screen bg-rose-100">
-                            <div className='box2 flex justify-start items-center break-keep'>
-                                <div className='box2-text w-1/2 pretendard-B pl-24 whitespace-nowrap mb-10'>
-                                <p className="box2-title text-7xl mb-16">a.<br/><br/>
-                                    L I K A L I K A</p>
-                                    <p className='box2-sub text-3xl mt-5'>자체 제작을 통해 보장된 품질과 퀄리티</p>
-                                </div>
-                            <div className="box2-img w-1/2 flex min-h-screen max-h-screen">
-                                <img src={images.buyb_img2} alt="패키지 이미지" className="pt-28 px-14"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="container3 mx-auto">
-                        <div className="w-full flex min-h-screen max-h-screen bg-[#FFF3E4]">
-                        <div className='box3 flex justify-start items-center break-keep'>
-                            <div className="box3-img w-1/2 flex min-h-screen max-h-screen">
-                                        <img src={images.buyb_img3} alt="패키지 이미지" className="p-14"/>
-                                        </div>
-                            <div className="box3-text w-1/2 pretendard-B pl-24 whitespace-nowrap ">
-                                    <p className="box3-title text-7xl font-black mb-16 mr-16">상세정보 설명</p>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className='container'>
+                <img src={images.s_page1} alt="상세페이지1"/>
+                <p className='buyb-t1 mt-10 text-2xl'>01.PIU 유기견 봉사활동 브이로그</p>
+                <div className="Youtube-v text-center flex justify-center">
+                    <iframe src="https://www.youtube.com/embed/BMrZ2R1KNW8?si=70fPoRw-NjlQjoAV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+                <p className='buyb-t1 mt-10 text-2xl'>02.PIU 유기견 캠페인 제작 브이로그</p>
+                <div className="Youtube-v text-center flex justify-center mb-10">
+                    <iframe src="https://www.youtube.com/embed/hoaWDeA7y7E?si=NhDUPFqrvh1rfZzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <img src={images.s_page2} alt="상세페이지2"/>
+                <div className='btn-set w-full flex justify-center mt-10'>
+                    <button className='btn-1 mt-5 mr-6 text-4xl font-semibold bg-[#0400CF] p-6 text-white rounded-xl' onClick={Siorae}>시오래에서 구매하기</button>
+                    <button className='btn-2 mt-5 ml-6 text-4xl font-semibold bg-[#0400CF] p-6 text-white rounded-xl' onClick={heychales}>헤이찰스에서 구매하기</button>
+                </div>
+                <img src={images.s_page3} alt="상세페이지3"/>
             </div>
+        </div>
     )
 }
 

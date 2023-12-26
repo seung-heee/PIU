@@ -1,8 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import Nav from "../components/Nav";
 import BuyBottom from "../components/buy/BuyBottom";
-import BuyBottom2 from "../components/buy/BuyBottom2";
-import BuyBottom3 from "../components/buy/BuyBottom3";
 import { images } from '../utils/images';
 import React, { useEffect, useState } from "react";
 import { APIClient } from "../utils/Auth";
@@ -15,8 +13,7 @@ const Buy = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
-    const baseUrl = "http://localhost:3000";
-    /*const baseUrl="https://www.petinuniverse.com";*/
+    const baseUrl="https://www.petinuniverse.com";
 
     const handleCopyClipBoard = async (text) => {
         try {
@@ -94,10 +91,10 @@ const Buy = () => {
             <div className="Buy">
                 <div className="container mx-auto  relative">
                     <div className="buy-box w-full flex">
-                        <div className="buy-img w-1/2"><img src={images.buy1} alt="패키지 이미지" className="p-8 ml-8" /></div>
+                        <div className="buy-img w-1/2"><img src={images.tok} alt="패키지 이미지" className="p-8 ml-8" /></div>
                         <div className="buy-content w-1/2 p-16 pt-16 pr-24 mt-20">
-                            <p className="buy-title text-xl mb-5 font-medium">☆코스튬 기획전☆ [도그웨그] 공작새<br />
-                                강아지 코스튬 고양이 할로윈 코스프레 옷 <br /> [오프라인전용] <span className="font-bold">{' '} {product.isSoldout && '[품절]'}</span></p>
+                            <p className="buy-title text-2xl mb-5 ml-4 font-medium">유기견 입양증진 캠페인<br />
+                            PIU 사랑멍톡 굿즈 세트 [무통장 입금 전용] <br/><span className="font-bold">{' '} {product.isSoldout && '[품절]'}</span></p>
                             <div>
                                 <form className="flex flex-col mr-3 pr-5">
                                     <div className="w-full flex my-5 mb-10">
@@ -140,8 +137,8 @@ const Buy = () => {
                                 <strong className="w-full flex justify-end mr-6 text-xl">{total.toLocaleString()}</strong>
                             </div>
                             <hr />
-                            <div className="w-full flex">
-                                <input type="submit" value="구매하기" className="my-5 ml-10 p-4 bg-black w-3/5 text-white rounded-xl text-xl font-semibold" onClick={handleSubmit} />
+                            <div className="w-full flex mb-10">
+                                <input type="submit" value="구매하기" className="buy-btn my-5 ml-10 p-4 bg-black w-3/5 text-white rounded-xl text-xl font-semibold" onClick={handleSubmit} />
 
                                 <button url="" className="ml-10" onClick={() => handleCopyClipBoard(`${baseUrl}${location.pathname}`)}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10">
@@ -151,22 +148,7 @@ const Buy = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div className="w-full text-center flex justify-center">
-                            <button className="w-1/3" onClick={() => handleButtonClick(1)}>Button 1</button>
-                            <button className="w-1/3" onClick={() => handleButtonClick(2)}>Button 2</button>
-                            <button className="w-1/3" onClick={() => handleButtonClick(3)}>Button 3</button>
-                        </div>
-
-                        <div>
-                            <div className="Youtube-v text-center flex justify-center">
-                                <iframe src="https://www.youtube.com/embed/jXpheWfIZdQ?si=rybrZg_ROOfPUJz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            {selectedButton === 1 && <BuyBottom />}
-                            {selectedButton === 2 && <BuyBottom2 />}
-                            {selectedButton === 3 && <BuyBottom3 />}
-                        </div>
-                    </div>
+                    <div><BuyBottom /></div>
                     <div className="w-full flex justify-end sticky bottom-2">
                     <button className=" bg-white rounded-full p-1 mr-2" onClick={MoveToTop}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">

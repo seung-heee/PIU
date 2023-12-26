@@ -35,10 +35,9 @@ export const images = {
     anayng: PATH + '/img/company/anayng.png',
 
     // 구매페이지
-    buy1: PATH + '/img/buy/buy1.png',
-    buyb_img1: PATH + '/img/buy/buyb_img1.png',
-    buyb_img2: PATH + '/img/buy/buyb_img2.png',
-    buyb_img3: PATH + '/img/buy/buyb_img3.png',
+    s_page1: PATH + '/img/buy/s-page1.png',
+    s_page2: PATH + '/img/buy/s-page2.png',
+    s_page3: PATH + '/img/buy/s-page3.png',
 
     // Help1
     Help1_img1: PATH + '/img/help1page/img1.jpg',
