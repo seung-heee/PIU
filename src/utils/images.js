@@ -53,10 +53,11 @@ export const images = {
     BYF: PATH + '/img/BEYOURFAMILY.png',
 
     // 그립톡
-    tok1: PATH + '/img/gripTok/tok1.jpg',
-    tok2: PATH + '/img/gripTok/tok2.jpg',
-    tok3: PATH + '/img/gripTok/tok3.jpg',
-    tok4: PATH + '/img/gripTok/tok4.jpg',
+    tok1: PATH + '/img/gripTok/tok1.png',
+    tok2: PATH + '/img/gripTok/tok2.png',
+    tok3: PATH + '/img/gripTok/tok3.png',
+    tok4: PATH + '/img/gripTok/tok4.png',
+    tok5: PATH + '/img/gripTok/tok5.png',
 
     buy1: PATH + '/img/buy/buy1.png',
     productImg: PATH + '/img/tok.png',
