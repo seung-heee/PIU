@@ -7,8 +7,8 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 const OrderSuccess = () => {
     const location = useLocation();
     const { state } = location;
-    const formData = state?.formData || {};
-    // const updatedFormData = state?.updatedFormData || {};
+    // const formData = state?.formData || {};
+    const formData = state?.response.data || {};
 
     return (
         <>
@@ -34,7 +34,7 @@ const OrderSuccess = () => {
                             <div>
                                 <div className="text-green-600 orderSuccess_number">주문번호 : {formData.order_code}</div>
                                 <p>{formData.cust_name} / {formData.phone_number} / {formData.email}</p>
-                                <p>{formData.address.fullAddress} {formData.address.detailAddress}</p>
+                                <p>{formData.fullAddress} {formData.detailAddress}</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const OrderSuccess = () => {
                             <div className="p-3 w-1/2">
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12">입금금액</p>
-                                    <p className="w-8/12">15,000원</p>
+                                    <p className="w-8/12">{formData.product_price}원</p>
                                 </p>
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12">예금주</p>
@@ -71,7 +71,7 @@ const OrderSuccess = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-2xl mb-3 px-10 py-5">결제금액 : 11,111원</div>
+                        <div className="text-2xl mb-3 px-10 py-5">결제금액 : {formData.product_price}원</div>
 
                         <div className="my-8 px-10 py-5">
                             <p className="text-red-500">* 주문(결제) 페이지에 나오는 '주문번호'를 반드시 메모해두시기 바랍니다.</p>

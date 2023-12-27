@@ -3,7 +3,12 @@ import { useState } from "react"
 const PersonalInformationAgree = ({ agree, setAgree }) => {
 
     const handleClickRadioButton = (e) => {
-        setAgree(e.target.value); // 라디오 버튼의 값으로 상태 업데이트
+        if (e.target.value === "Agree") {
+            setAgree(true);
+        } else {
+            setAgree(false);
+        }
+
     };
     return (
         <div>
@@ -39,7 +44,7 @@ const PersonalInformationAgree = ({ agree, setAgree }) => {
                             id="Agree"
                             className="mr-2"
                             value="Agree"
-                            checked={agree === 'Agree'}
+                            checked={agree === true}
                             onChange={handleClickRadioButton}
                         />
                         <label htmlFor="Agree">개인정보 수집 및 이용에 동의함</label>
@@ -51,7 +56,7 @@ const PersonalInformationAgree = ({ agree, setAgree }) => {
                             id="disagree"
                             className="mr-2"
                             value="disagree"
-                            checked={agree === 'disagree'}
+                            checked={agree === false}
                             onChange={handleClickRadioButton}
                         />
                         <label htmlFor="disagree">동의하지 않음</label>

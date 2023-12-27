@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const APIClient = () => axios.create({
-    baseURL: 'url',
+    baseURL: 'https://www.petinuniverse.com/',
     headers: {
         'Content-Type': 'application/json',
     }

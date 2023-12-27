@@ -10,10 +10,10 @@ const Postcode = ({ address, setAddress }) => {
             ...prevAddress,
             zipCode: data.zonecode,
             fullAddress: data.address,
-            extraAddress: '',
+            // extraAddress: '',
             detailAddress: ''
         }));
-        console.log(address);
+
 
         if (data.addressType === 'R') {
             let updatedExtraAddress = '';

@@ -3,10 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Link, useNavigate } from "react-router-dom";
 
 
-const ProductInfo = () => {
-    const location = useLocation();
-    const { state } = location;
-    const products = state?.products || {};
+const ProductInfo = ({ products }) => {
 
     return (
         <table className="ProductInfo w-full flex flex-col border p-3">

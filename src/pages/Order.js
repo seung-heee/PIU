@@ -5,11 +5,15 @@ import PersonalInformationAgree from "../components/buy/PersonalInformationAgree
 import Postcode from "../components/buy/Postcode";
 import ProductInfo from "../components/buy/ProductInfo";
 import { APIClient } from "../utils/Auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import { useRef } from "react";
 
 const Order = () => {
+    const location = useLocation();
+    const { state } = location;
+    const products = state?.products || {};
+
     const navigate = useNavigate();
 
     const [name, setName] = useState("");
@@ -20,13 +24,17 @@ const Order = () => {
     const [paymentMethod, setPaymentMethod] = useState("무통장입금"); // 결제 방식
     const [depositorName, setDepositorName] = useState(""); // 입금자명
     const [depositorybank, setDepositorybank] = useState(""); // 입금은행
-    const [agree, setAgree] = useState(""); // 동의여부
+    const [agree, setAgree] = useState(false); // 동의여부
     const [address, setAddress] = useState({
         zipCode: '',
         fullAddress: '',
-        detailAddress: ''
+        detailAddress: '',
+        extraAddress: '',
     });
-    const [productInfo, setProductInfo] = useState("브랜드A"); // 아마이것도 객체일가능성높음
+    const [productInfo, setProductInfo] = useState({
+        product_id: 1,
+        orderproduct_count: products.quantity
+    });
 
     // 오류메세지 상태 저장
     const [passwordMessage, setPasswordMessage] = useState("");
@@ -117,24 +125,22 @@ const Order = () => {
             "depositor_name": depositorName,
         }
 
-        // try {
-        //     const response = await APIClient().post('/orders/', formData);
-        //     if (response.data) {
+        try {
+            const response = await APIClient().post('/orders/', formData);
+            if (response.data) {
+                // const updatedFormData = {
+                //     //   ...formData,
+                //     responseData: response.data,
+                // };
+                navigate('/orderSuccess', { state: response.data });
+            } else {
+                throw new Error(`오류 : ${response.status}`);
+            }
+        } catch (error) {
+            console.error(error);
+        }
 
-        //         const updatedFormData = {
-        //             ...formData,
-        //             responseData: response.data,
-        //         }; // 서버에서 받은 데이터 추가
-
-        //         navigate('/orderSuccess', { state: { updatedFormData } });
-        //     } else {
-        //         throw new Error(`오류 : ${response.status}`);
-        //     }
-        // } catch (error) {
-        //     console.error(error);
-        // }
-
-        navigate('/orderSuccess', { state: { formData } });
+        // navigate('/orderSuccess', { state: { formData } });
     }
 
     return (
@@ -192,7 +198,7 @@ const Order = () => {
                             {/* 상품 정보 */}
                             <div className="mb-10 border p-10">
                                 <p className="text-2xl mb-5">상품 정보</p>
-                                <ProductInfo />
+                                <ProductInfo products={products} />
                             </div>
 
                             {/* 결제정보 */}
