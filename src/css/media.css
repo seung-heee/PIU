@@ -297,4 +297,14 @@
         padding: 0.3rem;
         width: 80%;
     }
+    .Help1-SwiperSlide p {
+        text-align: center;
+    }
+    .Help1-Swiper .swiper-pagination {
+        --swiper-theme-color: gray;
+        display: none;
+    }
+    .Help3subTitle {
+        font-size: 1.5rem;
+    }
 }

@@ -26,11 +26,11 @@ const NonmemberLogin = () => {
         const formData = {
             "cust_name": values.memberName,
             "order_code": values.orderNumber,
-            "cust_pwd ": values.orderPassword,
+            "cust_pwd": values.orderPassword,
         }
 
         try {
-            const response = await APIClient().post('/orders/detail', formData);
+            const response = await APIClient().post('/orders/detail/', formData);
             if (response.data) {
                 const nonmemberData = response.data
                 navigate('/orderDetail', { state: { nonmemberData } });
@@ -62,7 +62,7 @@ const NonmemberLogin = () => {
                                 <div className="mb-3">
                                     <label className="flex">
                                         <span className="w-1/2 grow flex items-center"><MdOutlineKeyboardArrowRight />주문번호</span>
-                                        <input type='number' placeholder="하이픈(-) 포함" className="w-1/2 inputItem" name='orderNumber' value={values.orderNumber} onChange={handleChange}></input>
+                                        <input type='string' placeholder="하이픈(-) 포함" className="w-1/2 inputItem" name='orderNumber' value={values.orderNumber} onChange={handleChange}></input>
                                     </label>
                                 </div>
                                 <div className="mb-3">
@@ -75,8 +75,8 @@ const NonmemberLogin = () => {
                             </form>
                         </div>
                         <Link to='/orderDetail'>주문상세 임시링크</Link>
-                    </div >
-                </div >
+                    </div>
+                </div>
             </div>
         </>
     )

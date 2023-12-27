@@ -13,6 +13,7 @@ import Help1_mobile from '../Mobile/Help1_mobile'
 // import required modules
 import { Autoplay, EffectFlip, Pagination, Navigation } from "swiper/modules";
 import PiuCampaignHori from "../Piece/PiuCampaignHori";
+import RightBottom from "../Piece/RightBottom";
 
 const Help1 = () => {
     return (
@@ -53,7 +54,9 @@ const Help1 = () => {
                                 <img className='w-3/12 grayscale ' src={images.Help1_img3} />
                                 <div className="w-6/12 break-keep px-5 text-5xl leading-snug">
                                     <p>작은 선택이 큰 <span className="PointBlack">현실</span>의 변화를 이끌 것 입니다.</p>
-                                    <p className="pretendard-R text-xl mt-2">지난해 130,401마리의 유실.유기 동물 중 <br /> 입양률은 32.1%에 불과했다.</p></div>
+                                    <p className="pretendard-R text-xl mt-2">지난해 130,401마리의 유실.유기 동물 중 <br /> 입양률은 32.1%에 불과했다.</p>
+
+                                </div>
                                 <img className='w-3/12 grayscale' src={images.Help1_img4} />
                             </div>
                         </SwiperSlide>
@@ -71,6 +74,7 @@ const Help1 = () => {
                             </div>
                         </SwiperSlide>
                     </Swiper>
+                    <RightBottom />
                 </div>
                 :
                 <Help1_mobile />

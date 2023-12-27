@@ -15,7 +15,7 @@ const Help3 = () => {
                     <div className=' MainBlue Help3Title pretendard-EB text-5xl px-16 pt-16'>
                         <span className='RubikBubbles'>"BE YOUR FAMILY"</span>
                         <br />
-                        <span className='text-black text-4xl'>따듯한 가족의 특별함을 강조합니다.</span>
+                        <span className='text-black text-4xl Help3subTitle'>따듯한 가족의 특별함을 강조합니다.</span>
                     </div>
                     <div className='help3SecondSection w-full flex justify-start items-center break-keep'>
                         <div className='w-1/2 pretendard-B pl-16 whitespace-nowrap'>
