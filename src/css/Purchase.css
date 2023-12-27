@@ -9,6 +9,7 @@
     font-size: 1.2rem;
 }
 
+
 @media screen and (max-width:50rem) {
     .Aboutgift {
         font-size: 1.8rem;
@@ -19,13 +20,18 @@
         font-size: 0.85rem;
         text-align: center;
     }
+    .giftcon{
+        margin-right:0px;
+    }
     .gift {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .giftimg {
+    .giftimg1 {
+        margin-top:20px;
         width: 60%;
+        margin-left: 0px;
     }
     .button1 button {
         padding: 0.8rem;
@@ -37,7 +43,6 @@
 .button1 {
     margin-top: 20px;
 }
-
 
 /*Purchase2*/
 
@@ -96,23 +101,23 @@
 }
 
 .Purchase-swiper-pagination span:nth-child(1) {
-    background-image: url('../../public/img/gripTok/tok4.jpg') !important;
+    background-image: url('../../public/img/gripTok/tok1.png') !important;
 }
 
 .Purchase-swiper-pagination span:nth-child(2) {
-    background-image: url('../../public/img/gripTok/tok2.jpg') !important;
+    background-image: url('../../public/img/gripTok/tok2.png') !important;
 }
 
 .Purchase-swiper-pagination span:nth-child(3) {
-    background-image: url('../../public/img/gripTok/tok3.jpg') !important;
+    background-image: url('../../public/img/gripTok/tok3.png') !important;
 }
 
 .Purchase-swiper-pagination span:nth-child(4) {
-    background-image: url('../../public/img/gripTok/tok1.jpg') !important;
+    background-image: url('../../public/img/gripTok/tok4.png') !important;
 }
 
 .Purchase-swiper-pagination span:nth-child(5) {
-    background-image: url('../../public/img/gripTok/tok2.jpg') !important;
+    background-image: url('../../public/img/gripTok/tok5.png') !important;
 }
 
 .Purchase-swiper-pagination-bullet-active {
@@ -176,5 +181,9 @@
     }
     .myswiper-pagination-bullet {
         padding: 20px 20px;
+    }
+    .giftimg {
+        width: 60%;
+        margin-left: 0px;
     }
 }

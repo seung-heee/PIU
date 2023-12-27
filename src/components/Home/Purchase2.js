@@ -58,7 +58,7 @@ const Purchase2 = () => {
                         }}
                     >
                         <SwiperSlide className='Purchase-swiper-slide'>
-                            <img src={images.tok4} alt="그립톡" className="giftimg" />
+                            <img src={images.tok1} alt="그립톡" className="giftimg" />
                         </SwiperSlide>
                         <SwiperSlide className='Purchase-swiper-slide'>
                             <img src={images.tok2} alt="그립톡" className="giftimg" />
@@ -67,10 +67,10 @@ const Purchase2 = () => {
                             <img src={images.tok3} alt="그립톡" className="giftimg" />
                         </SwiperSlide>
                         <SwiperSlide className='Purchase-swiper-slide'>
-                            <img src={images.tok2} alt="그립톡" className="giftimg" />
+                            <img src={images.tok4} alt="그립톡" className="giftimg" />
                         </SwiperSlide>
                         <SwiperSlide className='Purchase-swiper-slide'>
-                            <img src={images.tok2} alt="그립톡" className="giftimg" />
+                            <img src={images.tok5} alt="그립톡" className="giftimg" />
                         </SwiperSlide>
                         <div className="wrap">
                             <div className="target" data-scale="2" data-image={images.tok}></div>

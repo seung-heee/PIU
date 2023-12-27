@@ -8,7 +8,7 @@ const Purchase = () => {
         <div className="min-h-screen">
             <div className='container flex flex-col justify-center items-center mx-auto h-screen'>
                 <div className='gift flex justify-center items-center w-full'>
-                    <div className=' mt-10'>
+                    <div className='giftcon mt-10 mr-10'>
                         <p className="Aboutgift pretendard-B pb-10">
                             당신께 유기견 보호를 향한<br />
                             노력에 감사를 표하는<br />
@@ -19,7 +19,7 @@ const Purchase = () => {
                             유기견 보호에 함께해주셔서 진심으로 감사드립니다.
                         </p>
                     </div>
-                    <img src={images.tok} alt="그립톡" className="giftimg w-1/4 ml-4" />
+                    <img src={images.tok} alt="그립톡" className="giftimg1 w-1/4 ml-4 mt-10" />
                 </div>
                 <div className='button1 flex justify-center items-center w-full'>
                     <button type='button' onClick={() => { navigate('/buy') }} className="mt-10 py-5 px-9 text-xl font-semibold rounded-lg shadow-md text-white bg-slate-800 hover:bg-white hover:text-slate-800">
