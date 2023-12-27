@@ -25,7 +25,7 @@ export const images = {
     홍윤서: PATH + '/img/person/Yoonseo.png',
     희은: PATH + '/img/person/Heeeun.png',
     김도훈: PATH + '/img/person/Dohoun.png',
-    조성민: PATH + '/img/person/Dohoun.png',
+    조성민: PATH + '/img/person/Sungmin.png',
     // 기업 로고
     sungkyul: PATH + '/img/company/sungkyul.png',
     siorae: PATH + '/img/company/siorae.png',
@@ -59,4 +59,5 @@ export const images = {
     tok4: PATH + '/img/gripTok/tok4.jpg',
 
     buy1: PATH + '/img/buy/buy1.png',
+    productImg: PATH + '/img/tok.png',
 };

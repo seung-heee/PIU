@@ -21,10 +21,9 @@ const ProductInfo = () => {
             <tbody className="flex w-full">
                 <tr className="flex w-full text-center items-center">
                     <td className="productBox w-6/12 flex">
-                        <img src={images.buy1} alt="" className="w-20" />
+                        <img src={images.productImg} alt="" className="w-20" />
                         <div className="flex flex-col justify-center grow text-left ml-5">
-                            <p>[PIU] 브랜드명 - 상품명</p>
-                            <p>옵션 : 사이즈 M</p>
+                            <p>유기견 입양증진 캠페인 사랑멍톡 굿즈 세트</p>
                         </div>
                     </td>
                     <td className="w-2/12">{products.quantity}</td>

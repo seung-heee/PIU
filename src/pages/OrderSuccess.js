@@ -1,7 +1,8 @@
 import Nav from "../components/Nav";
 import ScrollToTop from "../components/ScrollToTop";
 import { images } from "../utils/images";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { RiKakaoTalkFill } from "react-icons/ri";
 
 const OrderSuccess = () => {
     const location = useLocation();
@@ -17,18 +18,21 @@ const OrderSuccess = () => {
                     <div className="text-center">
                         <div className="OrderSuccessTitle text-4xl mb-3 ">주문이 성공적으로 <span className="font-bold">완료</span>되었습니다.</div>
                         <div className="OrderSuccessSub mb-1 flex justify-center items-end">
-                            <div className="text-start">
+                            <div className="text-center">
                                 <p>주문하신 상품의 결제가 성공적으로 완료되었습니다.</p>
-                                <p> 주문 상태는 카카오톡 플러스 친구를 통해 문의하실 있습니다.</p>
-                            </div>
-                            <div className="ml-10">
-                                카카오톡 문의하기
+                                <p> 주문 상태는 카카오톡 플러스 친구를 통해 문의하실 수 있습니다.</p>
                             </div>
                         </div>
-                        <div className="text-green-500 orderSuccess_number">주문번호 : {formData.order_code}</div>
+                        <div>
+                            <Link to='/' className="flex items-center justify-center">
+                                <RiKakaoTalkFill className="mr-1" />
+                                <span>카카오톡 문의하기</span>
+                            </Link>
+                        </div>
                         <div className="OrderInfoBox p-5 bg-zinc-200 w-1/2 mx-auto rounded-xl m-3">
                             <div className="text-xl font-bold">주문정보</div>
                             <div>
+                                <div className="text-green-600 orderSuccess_number">주문번호 : {formData.order_code}</div>
                                 <p>{formData.cust_name} / {formData.phone_number} / {formData.email}</p>
                                 <p>{formData.address.fullAddress} {formData.address.detailAddress}</p>
                             </div>
@@ -39,11 +43,10 @@ const OrderSuccess = () => {
                         <div className="px-10 py-5">
                             <div className="text-2xl mb-3">주문상품</div>
                             <div className="flex items-center">
-                                <img src={images.buy1} alt="" className="w-20 mr-3" />
+                                <img src={images.tok} alt="" className="w-20 mr-3" />
                                 <div className="">
                                     <p className="text-blue-800 font-bold">10/18(수) 이내 발송</p>
-                                    <p>패키지명</p>
-                                    <p>상세정보</p>
+                                    <p>유기견 입양증진 캠페인 사랑멍톡 굿즈 세트</p>
                                 </div>
                             </div>
                         </div>
