@@ -6,9 +6,8 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 
 const OrderSuccess = () => {
     const location = useLocation();
-    const { state } = location;
-    // const formData = state?.formData || {};
-    const formData = state?.response.data || {};
+    const responseData = location.state?.responseData || {};
+    console.log('넘어온값', responseData)
 
     return (
         <>
@@ -32,9 +31,9 @@ const OrderSuccess = () => {
                         <div className="OrderInfoBox p-5 bg-zinc-200 w-1/2 mx-auto rounded-xl m-3">
                             <div className="text-xl font-bold">주문정보</div>
                             <div>
-                                <div className="text-green-600 orderSuccess_number">주문번호 : {formData.order_code}</div>
-                                <p>{formData.cust_name} / {formData.phone_number} / {formData.email}</p>
-                                <p>{formData.fullAddress} {formData.detailAddress}</p>
+                                <div className="text-green-600 orderSuccess_number">주문번호 : {responseData.order_code}</div>
+                                <p>{responseData.cust_name} / {responseData.phone_number} / {responseData.email}</p>
+                                <p>{responseData.fullAddress} {responseData.detailAddress}</p>
                             </div>
                         </div>
                     </div>
@@ -45,21 +44,21 @@ const OrderSuccess = () => {
                             <div className="flex items-center">
                                 <img src={images.tok} alt="" className="w-20 mr-3" />
                                 <div className="">
-                                    <p className="text-blue-800 font-bold">10/18(수) 이내 발송</p>
-                                    <p>유기견 입양증진 캠페인 사랑멍톡 굿즈 세트</p>
+                                    {/* <p className="text-blue-800 font-bold">{responseData.expired_date}이내 발송</p> */}
+                                    <p>유기견 입양증진 캠페인 PIU <br />사랑멍톡 굿즈 세트</p>
                                 </div>
                             </div>
                         </div>
                         <div className="px-10 py-5 OrderSuccessInfo">
                             <div className="text-2xl">입금정보</div>
                             <div className="bg-zinc-200 p-3 px-6 rounded-xl w-1/2 my-5">
-                                <p>{formData.expired_date}까지 입금해주세요</p>
+                                <p>입금 만료일 : <span className="font-bold">{responseData.expired_date}</span> </p>
                                 <p className="text-xs">입금 확인이 안될 시 주문이 취소됩니다.</p>
                             </div>
                             <div className="p-3 w-1/2">
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12">입금금액</p>
-                                    <p className="w-8/12">{formData.product_price}원</p>
+                                    <p className="w-8/12">{responseData.product_price}원</p>
                                 </p>
                                 <p className="w-full flex mb-2">
                                     <p className="w-4/12">예금주</p>
@@ -67,11 +66,11 @@ const OrderSuccess = () => {
                                 </p>
                                 <p className="w-full flex">
                                     <p className="w-4/12">입금은행</p>
-                                    <p className="w-8/12">국민은행 000000000000</p>
+                                    <p className="w-8/12">국민은행 93800200638968 </p>
                                 </p>
                             </div>
                         </div>
-                        <div className="text-2xl mb-3 px-10 py-5">결제금액 : {formData.product_price}원</div>
+                        <div className="text-2xl mb-3 px-10 py-5">결제금액 : {responseData.product_price}원</div>
 
                         <div className="my-8 px-10 py-5">
                             <p className="text-red-500">* 주문(결제) 페이지에 나오는 '주문번호'를 반드시 메모해두시기 바랍니다.</p>

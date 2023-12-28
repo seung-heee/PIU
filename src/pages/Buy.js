@@ -13,7 +13,7 @@ const Buy = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
-    const baseUrl="https://www.petinuniverse.com";
+    const baseUrl = "https://www.petinuniverse.com";
 
     const handleCopyClipBoard = async (text) => {
         try {
@@ -37,18 +37,16 @@ const Buy = () => {
 
     const [product, setproduct] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         axios.get('https://www.petinuniverse.com/products/1')
-        .then(res=>{
-            console.log(res);
-            console.log(res.data);
-            setproduct(res.data);
-            setTotal(res.data.price || 0);
-        })
-        .catch(err=>{
-            console.log(err);
-        });
-    },[]);
+            .then(res => {
+                setproduct(res.data);
+                setTotal(res.data.price || 0);
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }, []);
 
     /*soldout 테스트 코드*/
     /*const product = {
@@ -62,7 +60,7 @@ const Buy = () => {
     const handleClickCounter = (num) => {
         setQuantity((prev) => prev + num);
         setTotal((prev) => prev + product.price * num);
-        if ( quantity > product.inventory){
+        if (quantity > product.inventory) {
             alert(`${product.inventory}개 이하로 구매하실 수 있습니다.`);
         }
     };
@@ -74,10 +72,10 @@ const Buy = () => {
         }
     };
     const handleSubmit = () => {
-        if(product.isSoldout===true){
+        if (product.isSoldout === true) {
             alert("상품이 품절되었습니다.");
         }
-        if(product.isSoldout===false){
+        if (product.isSoldout === false) {
             const products = {
                 quantity,
                 total
@@ -94,7 +92,7 @@ const Buy = () => {
                         <div className="buy-img w-1/2"><img src={images.tok} alt="패키지 이미지" className="p-8 ml-8" /></div>
                         <div className="buy-content w-1/2 p-16 pt-16 pr-24 mt-20">
                             <p className="buy-title text-2xl mb-5 ml-4 font-medium">유기견 입양증진 캠페인<br />
-                            PIU 사랑멍톡 굿즈 세트 [무통장 입금 전용] <br/><span className="font-bold">{' '} {product.isSoldout && '[품절]'}</span></p>
+                                PIU 사랑멍톡 굿즈 세트 [무통장 입금 전용] <br /><span className="font-bold">{' '} {product.isSoldout && '[품절]'}</span></p>
                             <div>
                                 <form className="flex flex-col mr-3 pr-5">
                                     <div className="w-full flex my-5 mb-10">
@@ -150,7 +148,7 @@ const Buy = () => {
                     </div>
                     <div><BuyBottom /></div>
                     <div className="w-full flex justify-end sticky bottom-2">
-                    <button className=" bg-white rounded-full p-1 mr-2" onClick={MoveToTop}>
+                        <button className=" bg-white rounded-full p-1 mr-2" onClick={MoveToTop}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
                             </svg>

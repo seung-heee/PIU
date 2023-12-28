@@ -128,11 +128,8 @@ const Order = () => {
         try {
             const response = await APIClient().post('/orders/', formData);
             if (response.data) {
-                // const updatedFormData = {
-                //     //   ...formData,
-                //     responseData: response.data,
-                // };
-                navigate('/orderSuccess', { state: response.data });
+                const responseData = response.data
+                navigate('/orderSuccess', { state: { responseData } });
             } else {
                 throw new Error(`오류 : ${response.status}`);
             }
