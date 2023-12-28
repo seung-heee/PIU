@@ -33,8 +33,7 @@ const About = () => {
                         <Link to='#' target="_blank">환불규정</Link>
                     </div>
                     <div className="text-md break-all">
-                        상호명 : PIU | 대표: 편진범 | petinuniverse.gmail.com | 사업자 번호 : 123-456-7894 | 통신판매업 신고번호 : 2019-강남서울-12345
-                        | 주소 : 경기도 안양시 만안구 성결대학로 53 재림관 602호 | TEL : 010-4159-6462
+                        상호명 : PIU | 대표: 편진범 | petinuniverse.gmail.com | 주소 : 경기도 안양시 만안구 성결대학로 53 재림관 602호 | TEL : 010-4159-6462
                     </div>
                 </div>
             </div>

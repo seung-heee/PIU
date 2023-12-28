@@ -41,7 +41,43 @@ const Help2 = () => {
                     >
 
                         <SwiperSlide className='Help1-SwiperSlide flex'>
-                            <img src={images.Help1_img1} />
+                            <img src={images.sor1} />
+                            <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
+                                <p className='break-keep'>
+                                    <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />
+                                    PIU 유기견 캠페인과 함께 전국 유기견들이
+                                    새로운 삶을 살 수 있도록 힘이 되어주세요.
+                                    “SIORAE”도 유기견과 함께하겠습니다.  <BiSolidQuoteRight className='quoteicon inline-block mb-5' size={12} />
+                                </p>
+                                <p className='text-lg mt-3 help2name'>- 유기견 후원 반려견 의류 기업 SIORAE 김화정 대표 -</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='Help1-SwiperSlide flex'>
+                            <img src={images.sor2} />
+                            <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
+                                <p className='break-keep'>
+                                    <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />
+                                    PIU 유기견 캠페인과 함께 전국 유기견들이
+                                    새로운 삶을 살 수 있도록 힘이 되어주세요.
+                                    “SIORAE”도 유기견과 함께하겠습니다.  <BiSolidQuoteRight className='quoteicon inline-block mb-5' size={12} />
+                                </p>
+                                <p className='text-lg mt-3 help2name'>- 유기견 후원 반려견 의류 기업 SIORAE 김화정 대표 -</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='Help1-SwiperSlide flex'>
+                            <img src={images.sor3} />
+                            <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
+                                <p className='break-keep'>
+                                    <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />
+                                    PIU 유기견 캠페인과 함께 전국 유기견들이
+                                    새로운 삶을 살 수 있도록 힘이 되어주세요.
+                                    “SIORAE”도 유기견과 함께하겠습니다.  <BiSolidQuoteRight className='quoteicon inline-block mb-5' size={12} />
+                                </p>
+                                <p className='text-lg mt-3 help2name'>- 유기견 후원 반려견 의류 기업 SIORAE 김화정 대표 -</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='Help1-SwiperSlide flex'>
+                            <img src={images.sor4} />
                             <div className='mb-5 grow text-end w-1/2 Help2Last pretendard-R text-2xl mt-3 flex flex-col justify-end'>
                                 <p className='break-keep'>
                                     <BiSolidQuoteLeft className='quoteicon inline-block mb-5' size={12} />

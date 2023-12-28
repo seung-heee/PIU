@@ -50,6 +50,10 @@ export const images = {
     // Help2
     heychales: PATH + '/img/help2page/heychales.png',
     PIUTeam: PATH + '/img/help2page/PIUTeam.png',
+    sor1: PATH + '/img/help2page/sor1.jpg',
+    sor2: PATH + '/img/help2page/sor2.jpg',
+    sor3: PATH + '/img/help2page/sor3.jpg',
+    sor4: PATH + '/img/help2page/sor4.jpg',
     BYF: PATH + '/img/BEYOURFAMILY.png',
 
     // 그립톡

@@ -74,7 +74,6 @@ const NonmemberLogin = () => {
                                 <button type="submit" className="p-4 mt-8 w-1/2 mx-auto rounded-xl bg-neutral-200">조회</button>
                             </form>
                         </div>
-                        <Link to='/orderDetail'>주문상세 임시링크</Link>
                     </div>
                 </div>
             </div>

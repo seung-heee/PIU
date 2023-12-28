@@ -228,7 +228,6 @@ const Order = () => {
                             <button type="submit" onClick={handleSubmit}>
                                 구매하기
                             </button>
-                            <Link to='/Ordersuccess'>주문완료 임시링크</Link>
                         </form>
                     </div>
                 </div >
