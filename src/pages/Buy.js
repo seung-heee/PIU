@@ -126,7 +126,9 @@ const Buy = () => {
                                             >
                                                 +
                                             </button>
-                                            <p className="text-xl">{product.price}</p>
+                                            {product.price && (
+                                                <p className="text-xl">{product.price.toLocaleString()}</p>
+                                                )}
                                         </div>
                                     </div>
                                 </form>
