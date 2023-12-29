@@ -13,7 +13,6 @@ import Help1_mobile from '../Mobile/Help1_mobile'
 // import required modules
 import { Autoplay, EffectFlip, Pagination, Navigation } from "swiper/modules";
 import PiuCampaignHori from "../Piece/PiuCampaignHori";
-import RightBottom from "../Piece/RightBottom";
 
 const Help1 = () => {
     return (

@@ -5,7 +5,7 @@ import PersonalInformationAgree from "../components/buy/PersonalInformationAgree
 import Postcode from "../components/buy/Postcode";
 import ProductInfo from "../components/buy/ProductInfo";
 import { APIClient } from "../utils/Auth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import { useRef } from "react";
 
@@ -23,7 +23,6 @@ const Order = () => {
     const [passwordConfirm, setPasswordConfirm] = useState("");
     const [paymentMethod, setPaymentMethod] = useState("무통장입금"); // 결제 방식
     const [depositorName, setDepositorName] = useState(""); // 입금자명
-    const [depositorybank, setDepositorybank] = useState(""); // 입금은행
     const [agree, setAgree] = useState(false); // 동의여부
     const [address, setAddress] = useState({
         zipCode: '',
@@ -137,7 +136,6 @@ const Order = () => {
             console.error(error);
         }
 
-        // navigate('/orderSuccess', { state: { formData } });
     }
 
     return (

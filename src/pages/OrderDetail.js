@@ -8,7 +8,6 @@ const OrderDetail = () => {
     const { state } = location;
     const formData = state?.nonmemberData || {};
 
-    console.log(formData)
 
     return (
         <>

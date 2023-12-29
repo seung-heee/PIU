@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { useDaumPostcodePopup } from 'react-daum-postcode';
 
 const Postcode = ({ address, setAddress }) => {

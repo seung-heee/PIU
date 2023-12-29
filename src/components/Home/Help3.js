@@ -1,5 +1,4 @@
 import { images } from '../../utils/images';
-import { BiSolidDonateHeart } from "react-icons/bi";
 import { FaGift } from "react-icons/fa6";
 import PiuTeam from '../Piece/PiuTeam';
 import { useNavigate } from 'react-router-dom';

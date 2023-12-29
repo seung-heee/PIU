@@ -1,7 +1,4 @@
 import React from 'react';
-// Import Swiper React components
-import { BiSolidQuoteLeft } from 'react-icons/bi';
-import { BiSolidQuoteRight } from 'react-icons/bi';
 import '../../css/Help2.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';

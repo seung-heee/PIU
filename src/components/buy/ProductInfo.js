@@ -1,7 +1,4 @@
 import { images } from "../../utils/images";
-import { useLocation } from 'react-router-dom';
-import { Link, useNavigate } from "react-router-dom";
-
 
 const ProductInfo = ({ products }) => {
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Nav from "../components/Nav";
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { APIClient } from "../utils/Auth";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NonmemberLogin = () => {
     const navigate = useNavigate();

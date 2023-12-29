@@ -1,9 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Nav from "../components/Nav";
 import BuyBottom from "../components/buy/BuyBottom";
 import { images } from '../utils/images';
 import React, { useEffect, useState } from "react";
-import { APIClient } from "../utils/Auth";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import axios from 'axios';
@@ -126,7 +125,7 @@ const Buy = () => {
                                             </button>
                                             {product.price && (
                                                 <p className="text-xl">{product.price.toLocaleString()}</p>
-                                                )}
+                                            )}
                                         </div>
                                     </div>
                                 </form>

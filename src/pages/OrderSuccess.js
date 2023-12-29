@@ -7,7 +7,6 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 const OrderSuccess = () => {
     const location = useLocation();
     const responseData = location.state?.responseData || {};
-    console.log('넘어온값', responseData)
 
     return (
         <>
