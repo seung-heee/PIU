@@ -1,65 +1,64 @@
-.Youtube-v iframe{
-    width : 100%;
-    height: 700px;
-    padding:10px 10px;
-}
-
-@media screen and (max-width: 50rem){
-/*buy*/
-.buy-title{
-    font-size: 20px;
-    margin-left: 0px;
-}
-.buy-btn{
-    margin-left:1.25rem;
-}
-.buy-box{
-    flex-direction: column;
-    align-items: center;
-}
-.buy-img{
+.Youtube-v iframe {
     width: 100%;
-}
-.buy-img img{
-    padding: 10px;
-    margin-top:20px;
-    margin-left: 0;
-}
-.buy-content{
-    padding:0;
-    width:100%;
-    padding-left: 20px;
-    padding-top:20px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.buy-sub{
-    padding-left: 0;
-    padding-right: 0;
-}
-.Youtube-v iframe{
-    width : 360px;
-    height : 220px;
+    height: 700px;
+    padding: 10px 10px;
 }
 
-/*buybottom*/
-.buyb-t1{
-    font-size:15px;
-    margin-left:15px;
-}
-.btn-set{
-    margin-top: 15px;
-}
-.btn-1{
-    font-size: 13px;
-    margin:10px;
-    padding:6px 10px;
-}
-.btn-2{
-    font-size: 13px;
-    margin:10px;
-    padding:6px 10px;
-    margin-top: 10px;
-}
+@media screen and (max-width: 50rem) {
+    /*buy*/
+    .buy-title {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .buy-btn {
+        margin-left: 1.25rem;
+    }
+    .buy-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-img {
+        width: 100%;
+    }
+    .buy-img img {
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .buy-content {
+        padding: 0;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .buy-sub {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Youtube-v iframe {
+        width: 360px;
+        height: 220px;
+    }
+    /*buybottom*/
+    .buyb-t1 {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .btn-set {
+        margin-top: 15px;
+    }
+    .btn-1 {
+        font-size: 13px;
+        margin: 10px;
+        padding: 6px 10px;
+    }
+    .btn-2 {
+        font-size: 13px;
+        margin: 10px;
+        padding: 6px 10px;
+        margin-top: 10px;
+    }
 }

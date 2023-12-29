@@ -299,6 +299,7 @@
     }
     .Help1-SwiperSlide p {
         text-align: center;
+        margin-left: 0 !important;
     }
     .Help1-Swiper .swiper-pagination {
         --swiper-theme-color: gray;

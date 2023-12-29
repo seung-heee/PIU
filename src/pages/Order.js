@@ -225,7 +225,7 @@ const Order = () => {
 
                             <PersonalInformationAgree agree={agree} setAgree={setAgree} />
                             {/* <input type="submit" value="구매하기" className="Buybtn cursor-pointer" /> */}
-                            <button type="submit" onClick={handleSubmit}>
+                            <button className="orderbutton" type="submit" onClick={handleSubmit}>
                                 구매하기
                             </button>
                         </form>

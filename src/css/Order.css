@@ -18,3 +18,10 @@
     width: 30%;
     border-radius: 10px;
 }
+
+.orderbutton {
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}

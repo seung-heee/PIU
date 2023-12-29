@@ -27,7 +27,12 @@
 }
 
 .Help1-SwiperSlide p {
-    text-align: right;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.help2name {
+    text-align: right !important;
 }
 
 .Help1-SwiperSlide img {
@@ -43,6 +48,10 @@
 
 
 /* help2 */
+
+.help1bottom {
+    font-size: 9px;
+}
 
 .Help2-Swiper {
     color: white;
@@ -76,5 +85,3 @@
     background-color: white;
     color: black;
 }
-    
-    

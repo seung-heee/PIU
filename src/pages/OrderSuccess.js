@@ -23,7 +23,7 @@ const OrderSuccess = () => {
                             </div>
                         </div>
                         <div>
-                            <Link to='/' className="flex items-center justify-center">
+                            <Link to='http://pf.kakao.com/_FrbwG' target="_blank" className="flex items-center justify-center">
                                 <RiKakaoTalkFill className="mr-1" />
                                 <span>카카오톡 문의하기</span>
                             </Link>
